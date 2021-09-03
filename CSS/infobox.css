@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
-
-.infobox_custom-1 {
+.infobox_custom-1 .infobox_custom-1 {
     font-family: "roboto condensed";
 
     display: grid;
@@ -19,7 +17,7 @@
 
 /*----------------------------------------------------------------------------*/
 
-.top {
+.infobox_custom-1 .top {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -27,9 +25,10 @@
     grid-auto-flow: row;
     grid-area: top;
 }
+
 /*//////////////////////////////////////*/
 
-.horizontal_line {
+.infobox_custom-1 .horizontal_line {
     align-self: center;
     grid-area: 2 / 1 / 3 / 4;
     height: 1px;
@@ -38,7 +37,7 @@
     background-color: #babfc0;
 }
 
-.title {
+.infobox_custom-1 .title {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -57,7 +56,7 @@
     margin-top: 10px;
 }
 
-.name {
+.infobox_custom-1 .name {
     justify-self: center;
 
     grid-area: name;
@@ -66,7 +65,7 @@
     font-size: large;
 }
 
-.frame {
+.infobox_custom-1 .frame {
     justify-self: center;
 
     align-self: center;
@@ -80,7 +79,7 @@
 
 /*----------------------------------------------------------------------------*/
 
-.middle {
+.infobox_custom-1 .middle {
     grid-area: middle;
 
     display: grid;
@@ -97,7 +96,7 @@
     padding-bottom: 1em;
 }
 
-.vertical-line {
+.infobox_custom-1 .vertical-line {
     grid-area: vertical-line;
 
     justify-self: center;
@@ -107,9 +106,10 @@
 
     background-color: #babfc0;
 }
+
 /*//////////////////////////////////////*/
 
-.detail {
+.infobox_custom-1 .detail {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -126,7 +126,7 @@
     height: 300px;
 }
 
-.detail_service {
+.infobox_custom-1 .detail_service {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -139,7 +139,8 @@
     width: 100%;
     height: 100%;
 }
-.service_header {
+
+.infobox_custom-1 .service_header {
     justify-self: start;
     align-self: center;
     grid-area: service_header;
@@ -147,14 +148,15 @@
 
     font-weight: bold;
 }
-.service_content {
+
+.infobox_custom-1 .service_content {
     justify-self: start;
     align-self: center;
     grid-area: service_content;
     height: 100%;
 }
 
-.detail_psychological {
+.infobox_custom-1 .detail_psychological {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -167,7 +169,8 @@
     width: 100%;
     height: 100%;
 }
-.psychological_header {
+
+.infobox_custom-1 .psychological_header {
     justify-self: start;
     align-self: center;
     grid-area: psychological_header;
@@ -175,14 +178,15 @@
 
     font-weight: bold;
 }
-.psychological_content {
+
+.infobox_custom-1 .psychological_content {
     justify-self: start;
     align-self: center;
     grid-area: psychological_content;
     height: 100%;
 }
 
-.detail_activation {
+.infobox_custom-1 .detail_activation {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -195,7 +199,8 @@
     width: 100%;
     height: 100%;
 }
-.activation_header {
+
+.infobox_custom-1 .activation_header {
     justify-self: start;
     align-self: center;
     grid-area: activation_header;
@@ -203,14 +208,15 @@
 
     font-weight: bold;
 }
-.detail_content {
+
+.infobox_custom-1 .detail_content {
     justify-self: start;
     align-self: center;
     grid-area: detail_content;
     height: 100%;
 }
 
-.detail_height {
+.infobox_custom-1 .detail_height {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -223,7 +229,8 @@
     width: 100%;
     height: 100%;
 }
-.height_header {
+
+.infobox_custom-1 .height_header {
     justify-self: start;
     align-self: center;
     grid-area: height_header;
@@ -231,14 +238,15 @@
 
     font-weight: bold;
 }
-.height_content {
+
+.infobox_custom-1 .height_content {
     justify-self: start;
     align-self: center;
     grid-area: height_content;
     height: 100%;
 }
 
-.detail_weight {
+.infobox_custom-1 .detail_weight {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -251,7 +259,8 @@
     width: 100%;
     height: 100%;
 }
-.weight_header {
+
+.infobox_custom-1 .weight_header {
     justify-self: start;
     align-self: center;
     grid-area: weight_header;
@@ -259,14 +268,15 @@
 
     font-weight: bold;
 }
-.weight_content {
+
+.infobox_custom-1 .weight_content {
     justify-self: start;
     align-self: center;
     grid-area: weight_content;
     height: 100%;
 }
 
-.detail_vital-fluid {
+.infobox_custom-1 .detail_vital-fluid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -279,7 +289,8 @@
     width: 100%;
     height: 100%;
 }
-.vital-fluid_header {
+
+.infobox_custom-1 .vital-fluid_header {
     justify-self: start;
     align-self: center;
     grid-area: vital-fluid_header;
@@ -287,7 +298,8 @@
 
     font-weight: bold;
 }
-.vital-fluid_content {
+
+.infobox_custom-1 .vital-fluid_content {
     justify-self: start;
     align-self: center;
     grid-area: vital-fluid_content;
@@ -295,7 +307,7 @@
 }
 
 /*########################################################*/
-.stats {
+.infobox_custom-1 .stats {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.4fr 2.2fr 0.4fr;
@@ -307,9 +319,10 @@
         "stats_number stats_number stats_number";
     grid-area: stats;
 }
+
 /*//////////////////////////////////////*/
 
-.stat_review {
+.infobox_custom-1 .stat_review {
     grid-area: stat_review;
 
     display: grid;
@@ -322,17 +335,19 @@
     width: max-content;
     height: fit-content;
 }
-.review_header {
+
+.infobox_custom-1 .review_header {
     grid-area: review_header;
     font-weight: bold;
 }
-.review_underline {
+
+.infobox_custom-1 .review_underline {
     grid-area: review_underline;
     font-weight: 100;
     color: rgb(59, 59, 59);
 }
 
-.stats_number {
+.infobox_custom-1 .stats_number {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -344,7 +359,7 @@
     grid-area: stats_number;
 }
 
-.hp_header {
+.infobox_custom-1 .hp_header {
     grid-area: hp_header;
     justify-self: center;
     align-self: center;
@@ -352,7 +367,7 @@
     font-weight: bold;
 }
 
-.atk_header {
+.infobox_custom-1 .atk_header {
     grid-area: atk_header;
     justify-self: center;
     align-self: center;
@@ -360,7 +375,7 @@
     font-weight: bold;
 }
 
-.def_header {
+.infobox_custom-1 .def_header {
     grid-area: def_header;
     justify-self: center;
     align-self: center;
@@ -368,7 +383,7 @@
     font-weight: bold;
 }
 
-.crit_header {
+.infobox_custom-1 .crit_header {
     grid-area: crit_header;
     justify-self: center;
     align-self: center;
@@ -376,31 +391,31 @@
     font-weight: bold;
 }
 
-.hp_number {
+.infobox_custom-1 .hp_number {
     grid-area: hp_number;
     justify-self: center;
     align-self: center;
 }
 
-.atk_number {
+.infobox_custom-1 .atk_number {
     grid-area: atk_number;
     justify-self: center;
     align-self: center;
 }
 
-.def_number {
+.infobox_custom-1 .def_number {
     grid-area: def_number;
     justify-self: center;
     align-self: center;
 }
 
-.crit_number {
+.infobox_custom-1 .crit_number {
     grid-area: crit_number;
     justify-self: center;
     align-self: center;
 }
 
-.stats_graph {
+.infobox_custom-1 .stats_graph {
     justify-self: center;
     align-self: center;
     grid-area: stats_graph;
@@ -410,7 +425,7 @@
 
 /*----------------------------------------------------------------------------*/
 
-.separation_line {
+.infobox_custom-1 .separation_line {
     grid-area: separation_line;
     width: 100%;
     height: 1px;
@@ -420,7 +435,7 @@
 
 /*----------------------------------------------------------------------------*/
 
-.bottom {
+.infobox_custom-1 .bottom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1.5fr;
@@ -444,9 +459,10 @@
 
     padding-top: 1em;
 }
+
 /*//////////////////////////////////////*/
 
-.construct_title {
+.infobox_custom-1 .construct_title {
     grid-area: construct_title;
     justify-self: center;
     align-self: center;
@@ -454,7 +470,7 @@
     font-weight: bold;
 }
 
-.weapon_title {
+.infobox_custom-1 .weapon_title {
     grid-area: weapon_title;
     justify-self: center;
     align-self: center;
@@ -462,7 +478,7 @@
     font-weight: bold;
 }
 
-.exclusive-weapon_title {
+.infobox_custom-1 .exclusive-weapon_title {
     grid-area: exclusive-weapon_title;
     justify-self: center;
     align-self: center;
@@ -470,7 +486,7 @@
     font-weight: bold;
 }
 
-.faction_title {
+.infobox_custom-1 .faction_title {
     grid-area: faction_title;
     justify-self: center;
     align-self: center;
@@ -478,7 +494,7 @@
     font-weight: bold;
 }
 
-.gift_title {
+.infobox_custom-1 .gift_title {
     grid-area: gift_title;
     justify-self: center;
     align-self: center;
@@ -486,7 +502,7 @@
     font-weight: bold;
 }
 
-.rank_title {
+.infobox_custom-1 .rank_title {
     grid-area: rank_title;
     justify-self: center;
     align-self: center;
@@ -494,42 +510,42 @@
     font-weight: bold;
 }
 
-.construct_content {
+.infobox_custom-1 .construct_content {
     grid-area: construct_content;
 
     justify-self: center;
     align-self: center;
 }
 
-.weapon_content {
+.infobox_custom-1 .weapon_content {
     grid-area: weapon_content;
 
     justify-self: center;
     align-self: center;
 }
 
-.exclusive-weapon_content {
+.infobox_custom-1 .exclusive-weapon_content {
     grid-area: exclusive-weapon_content;
 
     justify-self: center;
     align-self: center;
 }
 
-.faction_content {
+.infobox_custom-1 .faction_content {
     grid-area: faction_content;
 
     justify-self: center;
     align-self: center;
 }
 
-.gift_content {
+.infobox_custom-1 .gift_content {
     grid-area: gift_content;
 
     justify-self: center;
     align-self: center;
 }
 
-.rank_content {
+.infobox_custom-1 .rank_content {
     grid-area: rank_content;
 
     justify-self: center;

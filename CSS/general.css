@@ -1,38 +1,54 @@
-#WikiaBar { 
-	display: none;  /* bottom floaty editing toolbar */
+#WikiaBar {
+    display: none;
+    /* bottom floaty editing toolbar */
 }
-.page__right-rail { 
-	display: none; /* right hand rail */
-} 
 
-.main-container { margin-left: 0;width: 100%; } /* stretch main page to compensate for the lack of global nav */
-.global-navigation { display: none;} /* remove global nav completely*/
+.page__right-rail {
+    display: none;
+    /* right hand rail */
+}
+
+.main-container {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* stretch main page to compensate for the lack of global nav */
+.global-navigation {
+    display: none;
+}
+
+/* remove global nav completely*/
 
 /*This drawer is composed of class used to set a translucid background. Background color are coded into hex.
 rgba(red, green, blue, opacity (in decimal 10%->0.1));
 */
-.transparent30{
+.transparent30 {
     background-color: rgba(255, 255, 255, 0.3);
 }
-.transparent80{
+
+.transparent80 {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 .invert_filter {
-  filter: invert(100%);
+    filter: invert(100%);
 }
 
 .custom-space_1 {
- height:15px 
+    height: 15px
 }
+
 .custom-space_2 {
- height:25px 
+    height: 25px
 }
+
 .custom-space_3 {
- margin-bottom:-25px
+    margin-bottom: -25px
 }
+
 /*************************************************************************/
 /*To make anything unclickable*/
-.disableClick{
+.disableClick {
     pointer-events: none;
 }
