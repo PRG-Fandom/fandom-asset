@@ -78,10 +78,16 @@
             }}
         </div>
         <div class="weapon_content">
-            {{icon|Name=Weapon-|Icon=1|Size=40|Link={{{Weapon}}}}}
+            {{icon|Name=|Size=60|Category=1|Link={{{Weapon}}}}}
         </div>
-        <div class="exclusive-weapon_content">NNNNNNNNNN</div>
-        <div class="faction_content">{{icon|Name={{{Faction}}}|Icon=1|Size=60|}}</div>
-        <div class="gift_content">DDDDDDDDD</div>
+        <div class="exclusive-weapon_content">
+            {{icon|Name=|Size=60|Link={{{Weapon}}}}}
+        </div>
+        <div class="faction_content">
+            {{icon|Name=|Size=60|Link={{{Faction}}}}}
+        </div>
+        <div class="gift_content">
+            {{icon|Name=|Size=60|Unclickable=1}}
+        </div>
     </div>
 </div>
