@@ -1,0 +1,7 @@
+{| class="wikitable" border="1"
+|+ Server Time
+|-
+! Sea !! CN !! Global !! JP/KR
+|-
+| {{#time:g:i A|+7 hours }} || {{#time:g:i A|+8 hours }} || {{#time:g:i A|}} || {{#time:g:i A|+9 hours }}
+|}

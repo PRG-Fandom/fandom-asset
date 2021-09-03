@@ -1,0 +1,118 @@
+<includeonly>
+    == Skill Orb ==
+    <div class="custom-class-1">
+        <tabber>
+            Red Orb=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{Red Orb Description}}}
+|-|
+            Blue Orb=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{Blue Orb Description}}}
+|-|
+            Yellow Orb=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{Yellow Orb Description}}}
+        </tabber>
+
+    == Abilities ==
+        <tabber>
+            Basic Attack=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to use the tabber name]|Size=60}}
+            {{{Basic Attack}}}
+|-|
+            Ultimate Skill=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{Ultimate Attack}}}
+|-|
+            QTE=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{QTE Attack}}}
+|-|
+            Class-Specific Passive=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{#switch: [[Category:{{{Category}}}]]
+                |Attacker=Damage is increased by 10('''20''')%.
+                |Tank= Enemies take 10('''20''')% more damage when attacked by you, lasts for 5 seconds.
+                |Support= Increase healing effectiveness by 10('''20''')%.
+                |Compositer=Gain +10('''20''')% damage and 10('''20''')% HP worth of shield for 10s whenever the character enters the battle.
+                |Error: Please set a category for the character. 
+            }}
+            <!--Have to find a way to fill it depending of the Category of the character-->
+|-|
+            Awakening=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+When entering the battle, get 3 signal balls immediately (only once per battle). Needs to be unlocked.
+        </tabber>
+
+    == Passives ==
+        <tabber>
+            Core=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{Core Passive}}}
+|-|
+            Leader=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{Leader Passive}}}
+|-|
+            Passive I=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{I Passive}}}
+|-|
+            Passive II=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{II Passive}}}
+|-|
+            Passive III=
+            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
+            {{{III Passive}}}
+        </tabber>
+    </div>
+</includeonly>
+<noinclude>
+    == Description ==
+    This template is use to display the attacks, passives and orbs for each character. 
+    This template use the "Icon" template, so the image extension for the icons must be png.
+    
+    The template isn't finish yet:
+    First, I need to find a way for the template to auto-complete itself when it comes to the Icon template. He need to read his tabber title, and replace a parameter with it.
+    Second, using the category, auto-complete the "Core Passive" parameter.
+
+    == Parameters ==
+    <div style="text-align: center;">
+    Frame: Frame Name.
+    [Red;Blue;Yellow] Orb Description: Description and details on the orb attack.
+    Basic Attack: As the name suggest.
+    Ultimate Attack: Same.
+    QTE Attack: Same again.
+    Class Passive: Must be write right now, may not need to be in the futur.
+    Core Passive: Frame passive, must have a the icon schema too.
+    Leader Passive: As the name suggest.
+    I Passive: Passive unlock at S rank.
+    II Passive: Passive unlock at SS rank.
+    III Passive: Passive unlock at SSS rank.
+    </div>
+    == Code ==
+    <pr>
+        {{Character_Skill
+            |Frame=
+            |-
+            |Red Orb Description=
+            |Blue Orb Description=
+            |Yellow Orb Description=
+            |-
+            |Basic Attack=
+            |Ultimate Attack=
+            |QTE Attack=
+            |Class Passive= 
+                <!--Delete if patch found-->
+            |-
+            |Core Passive=
+            |Leader Passive=
+            |I Passive=
+            |II Passive=
+            |III Passive=
+        }}
+    </pr>
+    [[Category:Templates]]
+</noinclude>
