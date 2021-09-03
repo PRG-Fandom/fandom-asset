@@ -70,3 +70,12 @@ html:not(.ve-activated) .page.has-right-rail .page__right-rail {
 .fandom-community-header a:hover {
     color: var(--theme-accent-color);
 }
+
+/*************************************************************************/
+/* apply roboto to default mediatext tabber
+/*************************************************************************/
+
+.wds-tabs__tab .wds-tabs__tab-label a {
+    font-size: 16px;
+     font-family: "roboto condensed";
+ }
