@@ -2,8 +2,8 @@
     <div class="top">
         <div class="horizontal_line"></div>
         <div class="title">
-            <div class="name">{{{|}}}</div>
-            <div class="frame">{{{|}}}</div>
+            <div class="name">{{{Name|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}}}}</div>
+            <div class="frame">{{{Frame|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|2}}}}}</div>
         </div>
     </div>
     <div class="middle">
