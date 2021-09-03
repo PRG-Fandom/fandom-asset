@@ -1,0 +1,72 @@
+/*************************************************************************/
+/* Custom Right Panel Color
+/*************************************************************************/
+
+html:not(.ve-activated) .page.has-right-rail .page__right-rail {
+    background-color: var(--theme-link-dynamic-color-1);
+}
+
+.sticky-modules-wrapper section {
+    background-color: var(--theme-link-dynamic-color-1);
+}
+
+
+/*************************************************************************/
+/* apply roboto to all header
+/*************************************************************************/
+
+.page-content h2 {
+    font-family: "roboto condensed";
+}
+
+.page-header__title {
+    font-family: "roboto condensed";
+}
+
+.theme-fandomdesktop-light .custom_header_article h2 {
+    color: black;
+}
+
+.theme-fandomdesktop-dark .custom_header_article h2 {
+    color: white;
+}
+
+.theme-fandomdesktop-light .page-content {
+    color: black;
+}
+
+.theme-fandomdesktop-dark .page-content {
+    color: white
+}
+
+.theme-fandomdesktop-light .page-header__title-wrapper {
+    color: black;
+}
+
+.theme-fandomdesktop-dark .page-header__title-wrapper {
+    color: white;
+}
+
+.theme-fandomdesktop-light #mw-data-after-content {
+    color: black;
+}
+
+.theme-fandomdesktop-dark #mw-data-after-content {
+    color: white;
+}
+
+.theme-fandomdesktop-dark .Comment_wrapper__2mxBn {
+    background-color: #0b0b13;
+}
+
+.theme-fandomdesktop-dark .fandom-sticky-header {
+    background-color: #0b0b13;
+}
+
+.wds-dropdown__content {
+    background-color: var(--theme-page-background-color);
+}
+
+.fandom-community-header a:hover {
+    color: var(--theme-accent-color);
+}
