@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <infobox_custom-1>
+        <div class="right">
+            <div class="top">
+                <div class="horizontal_line"></div>
+                <div class="title">
+                    <div class="name">{{{Name|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}}}}</div>
+                    <div class="frame">{{{Frame|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|2}}}}}</div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="vertical-line"></div>
+                <div class="detail">
+                    <div class="service">
+                        <header>Service</header>
+                        <content>{{{Service Time|}}}</content>
+                    </div>
+                    <div class="psychological">
+                        <header>Psychological Age</header>
+                        <content>{{{Psychological Age|}}} Years old</content>
+                    </div>
+                    <div class="activation">
+                        <header>Activation Date</header>
+                        <content>{{{Activation}}}</content>
+                    </div>
+                    <div class="height">
+                        <header>Height</header>
+                        <content>{{{Height|}}}</content>
+                    </div>
+                    <div class="weight">
+                        <header>Weight</header>
+                        <content>{{{Weight|}}}kg</content>
+                    </div>
+                    <div class="vital-fluid">
+                        <header>Vital Fluid Type</header>
+                        <content>{{{Vital Fluid|}}}</content>
+                    </div>
+                </div>
+                <div class="stats">
+                    <div class="stat_review">
+                        <div class="review_header">Stat</div>
+                        <div class="review_underline">Review</div>
+                    </div>
+                    <div class="stats_number">
+                        <div class="hp_header">HP</div>
+                        <div class="atk_header">ATK</div>
+                        <div class="def_header">DEF</div>
+                        <div class="crit_header">CRIT</div>
+                        <div class="hp_number">{{{HP|}}}</div>
+                        <div class="atk_number">{{{ATK|}}}</div>
+                        <div class="def_number">{{{DEF|}}}</div>
+                        <div class="crit_number">{{{CRIT|}}}</div>
+                    </div>
+                    <div class="stats_graph"></div>
+                </div>
+            </div>
+            <div class="separation_line"></div>
+            <div class="bottom">
+                <div class="rank_title">Rank</div>
+                <div class="class_title">Class</div>
+                <div class="weapon_title">Weapon Type</div>
+                <div class="exclusive-weapon_title">6 Weapon</div>
+                <div class="faction_title">Faction</div>
+                <div class="gift_title">Favorite Gift</div>
+                <div class="rank_content">
+                    {{#switch:{{{Rank}}}
+                        |S= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |A= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |B= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |Error
+                    }}
+                </div>
+                <div class="construct_content">
+                    {{#switch: {{{Class}}}
+                        |Attacker=   {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |Tank=       {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |Support=    {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |Compositer= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                        |Error
+                    }}
+                </div>
+                <div class="weapon_content">
+                    {{icon|Name=|Size=60|Category=1|Link={{{Weapon}}}}}
+                </div>
+                <div class="exclusive-weapon_content">
+                    {{icon|Name=|Size=60|Link={{{Weapon}}}}}
+                </div>
+                <div class="faction_content">
+                    {{icon|Name=|Size=60|Link={{{Faction}}}}}
+                </div>
+                <div class="gift_content">
+                    {{icon|Name=|Size=60|Unclickable=1}}
+                </div>
+            </div>
+        </div>
+    </infobox_custom-1>
+</body>
+</html>
