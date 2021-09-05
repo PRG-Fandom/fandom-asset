@@ -36,7 +36,7 @@ html:not(.ve-activated) .page.has-right-rail .page__right-rail {
 }
 
 .theme-fandomdesktop-dark .page-content {
-    color: white
+    color: white;
 }
 
 .theme-fandomdesktop-light .page-header__title-wrapper {
