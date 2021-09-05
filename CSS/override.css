@@ -76,6 +76,5 @@ html:not(.ve-activated) .page.has-right-rail .page__right-rail {
 /*************************************************************************/
 
 .wds-tabs__tab .wds-tabs__tab-label a {
-    font-size: 16px;
     font-family: "roboto condensed";
 }
