@@ -1,0 +1,102 @@
+infobox_custom-1 left {
+    width: 30%;
+}
+
+
+infobox_custom-1 left .info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "image"
+        "icon"
+        "information_header"
+        "information_content"
+        "speciality_header"
+        "speciality_content"
+        "energy_header"
+        "energy_content";
+}
+
+infobox_custom-1 left .info .image {
+    grid-area: image;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+infobox_custom-1 left .info .icon {
+    grid-area: icon;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+infobox_custom-1 left .info infobox_custom-1 left .information_header {
+    grid-area: information_header;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: #9c144c;
+    color: white;
+}
+
+infobox_custom-1 left .info .speciality_header {
+    grid-area: speciality_header;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: #9c144c;
+    color: white;
+}
+
+infobox_custom-1 left .info .energy_header {
+    grid-area: energy_header;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: #9c144c;
+    color: white;
+}
+
+infobox_custom-1 left .info infobox_custom-1 left .information_content {
+    grid-area: information_content;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+infobox_custom-1 left .info .speciality_content {
+    grid-area: speciality_content;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+infobox_custom-1 left .info .energy_content {
+    grid-area: energy_content;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}

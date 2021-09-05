@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet" />
-</head>
-<body>
-    <infobox_custom-1>
-        <div class="right">
+<infobox_custom-1>
+    <right>
+        <detail>
             <div class="top">
                 <div class="horizontal_line"></div>
                 <div class="title">
@@ -46,61 +38,72 @@
                 </div>
                 <div class="stats">
                     <div class="stat_review">
-                        <div class="review_header">Stat</div>
-                        <div class="review_underline">Review</div>
+                        <header>Stat</header>
+                        <underline>Review</underline>
                     </div>
-                    <div class="stats_number">
-                        <div class="hp_header">HP</div>
-                        <div class="atk_header">ATK</div>
-                        <div class="def_header">DEF</div>
-                        <div class="crit_header">CRIT</div>
-                        <div class="hp_number">{{{HP|}}}</div>
-                        <div class="atk_number">{{{ATK|}}}</div>
-                        <div class="def_number">{{{DEF|}}}</div>
-                        <div class="crit_number">{{{CRIT|}}}</div>
+                    <div class="number">
+                        <div class="hp">
+                            <header>HP</header>
+                            <number>{{{HP|}}}</number>
+                        </div>
+                        <div class="atk">
+                            <header>ATK</header>
+                            <number>{{{ATK|}}}</number>
+                        </div>
+                        <div class="def">
+                            <header>DEF</header>
+                            <number>{{{DEF|}}}</number>
+                        </div>
+                        <div class="crit">
+                            <header>CRIT</header>
+                            <number>{{{CRIT|}}}</number>
+                        </div>
                     </div>
-                    <div class="stats_graph"></div>
+                    <div class="graph"></div>
                 </div>
             </div>
             <div class="separation_line"></div>
             <div class="bottom">
-                <div class="rank_title">Rank</div>
-                <div class="class_title">Class</div>
-                <div class="weapon_title">Weapon Type</div>
-                <div class="exclusive-weapon_title">6 Weapon</div>
-                <div class="faction_title">Faction</div>
-                <div class="gift_title">Favorite Gift</div>
-                <div class="rank_content">
-                    {{#switch:{{{Rank}}}
-                        |S= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |A= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |B= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |Error
-                    }}
+                <div class="rank">
+                    <header>Rank</header>
+                    <content>
+                        {{#switch:{{{Rank}}}
+                            |S= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |A= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |B= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |Error
+                        }}
+                    </content>
                 </div>
-                <div class="construct_content">
-                    {{#switch: {{{Class}}}
-                        |Attacker=   {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |Tank=       {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |Support=    {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |Compositer= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
-                        |Error
-                    }}
+                <div class="class">
+                    <header>Class</header>
+                    <content>
+                        {{#switch: {{{Class}}}
+                            |Attacker=   {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |Tank=       {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |Support=    {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |Compositer= {{icon|Name=|Icon=1|Size=60|Unclickable=1}}
+                            |Error
+                        }}
+                    </content>
                 </div>
-                <div class="weapon_content">
-                    {{icon|Name=|Size=60|Category=1|Link={{{Weapon}}}}}
+                <div class="weapon">
+                    <header>Weapon</header>
+                    <content>{{icon|Name=|Size=60|Category=1|Link={{{Weapon}}}}}</content>
                 </div>
-                <div class="exclusive-weapon_content">
-                    {{icon|Name=|Size=60|Link={{{Weapon}}}}}
+                <div class="exclusive-weapon">
+                    <header>Exclusive Weapon</header>
+                    <content>{{icon|Name=|Size=60|Link={{{Weapon}}}}}</content>
                 </div>
-                <div class="faction_content">
-                    {{icon|Name=|Size=60|Link={{{Faction}}}}}
+                <div class="faction">
+                    <header>Faction</header>
+                    <content>{{icon|Name=|Size=60|Link={{{Faction}}}}}</content>
                 </div>
-                <div class="gift_content">
-                    {{icon|Name=|Size=60|Unclickable=1}}
+                <div class="gift">
+                    <header>Favorite Gift</header>
+                    <content>{{icon|Name=|Size=60|Unclickable=1}}</content>
                 </div>
             </div>
-        </div>
-    </infobox_custom-1>
-</body>
-</html>
+        </detail>
+    </right>
+</infobox_custom-1>

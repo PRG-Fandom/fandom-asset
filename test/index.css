@@ -1,0 +1,8 @@
+@import "left.css";
+@import "right.css";
+
+infobox_custom-1 {
+    font-family: "roboto condensed";
+
+    width: 100%;
+}
