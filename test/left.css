@@ -6,97 +6,89 @@ infobox_custom-1 left {
 infobox_custom-1 left .info {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 3% 0px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1% 0px;
     grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
     grid-template-areas:
-        "image"
+        "full-image"
         "icon"
-        "information_header"
-        "information_content"
-        "speciality_header"
-        "speciality_content"
-        "energy_header"
-        "energy_content";
+        "information"
+        "speciality"
+        "energy";
 }
 
-infobox_custom-1 left .info .image {
-    grid-area: image;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
+infobox_custom-1 left .info .full-image {
+    grid-area: full-image;
 }
 
 infobox_custom-1 left .info .icon {
     grid-area: icon;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
 }
 
-infobox_custom-1 left .info infobox_custom-1 left .information_header {
-    grid-area: information_header;
+infobox_custom-1 left .info .information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "content";
+    grid-area: information;
+}
+infobox_custom-1 left .info .information header {
+    grid-area: header;
+}
+infobox_custom-1 left .info .information content {
+    grid-area: content;
+}
 
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
+infobox_custom-1 left .info .speciality {
+    grid-area: speciality;
 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "content";
+}
+infobox_custom-1 left .info .speciality header {
+    grid-area: header;
+}
+infobox_custom-1 left .info .speciality content {
+    grid-area: content;
+}
+
+infobox_custom-1 left .info .energy {
+    grid-area: energy;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "content";
+}
+infobox_custom-1 left .info .energy header {
+    grid-area: header;
+}
+infobox_custom-1 left .info .energy content {
+    grid-area: content;
+}
+
+
+
+
+header {
     background-color: #9c144c;
     color: white;
-}
 
-infobox_custom-1 left .info .speciality_header {
-    grid-area: speciality_header;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
-
-    background-color: #9c144c;
-    color: white;
-}
-
-infobox_custom-1 left .info .energy_header {
-    grid-area: energy_header;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
-
-    background-color: #9c144c;
-    color: white;
-}
-
-infobox_custom-1 left .info infobox_custom-1 left .information_content {
-    grid-area: information_content;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
-}
-
-infobox_custom-1 left .info .speciality_content {
-    grid-area: speciality_content;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
-}
-
-infobox_custom-1 left .info .energy_content {
-    grid-area: energy_content;
-
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    height: 100%;
+    font-weight: bold;
 }
