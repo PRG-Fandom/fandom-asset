@@ -59,7 +59,9 @@
                             <number>{{{CRIT|}}}</number>
                         </div>
                     </div>
-                    <div class="graph"></div>
+                    <div class="graph">
+                        {{icon|Name={{{Graph File}}}|Unclickable=1}}
+                    </div>
                 </div>
             </div>
             <div class="separation_line"></div>
@@ -68,9 +70,9 @@
                     <header>Rank</header>
                     <content>
                         {{#switch:{{{Rank}}}
-                            |S= {{icon|Name=|Size=60|Unclickable=1}}
-                            |A= {{icon|Name=|Size=60|Unclickable=1}}
-                            |B= {{icon|Name=|Size=60|Unclickable=1}}
+                            |S= S<!--{{icon|Name=|Size=60|Unclickable=1}}-->
+                            |A= A<!--{{icon|Name=|Size=60|Unclickable=1}}-->
+                            |B= B<!--{{icon|Name=|Size=60|Unclickable=1}}-->
                             |Error
                         }}
                     </content>
@@ -79,29 +81,29 @@
                     <header>Class</header>
                     <content>
                         {{#switch: {{{Class}}}
-                            |Attacker=   {{icon|Name=|Size=60|Unclickable=1}}
-                            |Tank=       {{icon|Name=|Size=60|Unclickable=1}}
-                            |Support=    {{icon|Name=|Size=60|Unclickable=1}}
-                            |Compositer= {{icon|Name=|Size=60|Unclickable=1}}
+                            |Attacker=   Attacker<!--{{icon|Name=|Size=60|Unclickable=1}}-->
+                            |Tank=       Tank<!--{{icon|Name=|Size=60|Unclickable=1}}-->
+                            |Support=    Support<!--{{icon|Name=|Size=60|Unclickable=1}}-->
+                            |Compositer= Compositer<!--{{icon|Name=|Size=60|Unclickable=1}}-->
                             |Error
                         }}
                     </content>
                 </div>
                 <div class="weapon">
                     <header>Weapon</header>
-                    <content>{{icon|Name=|Size=60|Category=1|Link={{{Weapon}}}}}</content>
+                    <content>{{icon|Name={{{Weapon File}}}|Size=60|Link={{{Weapon}}}}}</content>
                 </div>
                 <div class="exclusive-weapon">
                     <header>Exclusive Weapon</header>
-                    <content>{{icon|Name=|Size=60|Link={{{Weapon}}}}}</content>
+                    <content>{{icon|Name={{{Exclusive Weapon File}}}|Size=60|Link={{{Exclusive Weapon}}}}}</content>
                 </div>
                 <div class="faction">
                     <header>Faction</header>
-                    <content>{{icon|Name=|Size=60|Link={{{Faction}}}}}</content>
+                    <content>{{icon|Name={{{Faction File}}}|Size=60|Link={{{Faction}}}}}</content>
                 </div>
                 <div class="gift">
                     <header>Favorite Gift</header>
-                    <content>{{icon|Name=|Size=60|Unclickable=1}}</content>
+                    <content>{{icon|Name={{{Favorite Gift File}}}|Size=60|Link={{{Favorite Gift}}}}}</content>
                 </div>
             </div>
         </detail>
