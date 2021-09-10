@@ -2,13 +2,13 @@
     font-family: "roboto condensed";
 
     width: 100%;
-    display: flex;
 }
 
 .infobox_custom-1 .left {
     width: 30%;
 
     float: left;
+    display: flex;
 }
 
 .infobox_custom-1 .left .info {
@@ -112,6 +112,7 @@
 /*****************************************************/
 
 .infobox_custom-1 .right {
+    display: flex;
     float: right;
     width: 70%;
 }
