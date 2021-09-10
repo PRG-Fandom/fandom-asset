@@ -9,6 +9,9 @@
 
     float: left;
     display: flex;
+
+    justify-content: center;
+    align-content: center;
 }
 
 .infobox_custom-1 .left .info {
