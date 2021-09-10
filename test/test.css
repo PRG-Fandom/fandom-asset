@@ -2,6 +2,7 @@
     font-family: "roboto condensed";
 
     width: 100%;
+    overflow: hidden;
 }
 
 .infobox_custom-1 .left {
