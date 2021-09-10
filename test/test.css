@@ -250,7 +250,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .service header {
+.infobox_custom-1 .right .detail .middle .detail .service .header {
     justify-self: start;
     align-self: center;
     grid-area: header;
@@ -259,7 +259,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .service content {
+.infobox_custom-1 .right .detail .middle .detail .service .content {
     justify-self: start;
     align-self: center;
     grid-area: content;
@@ -280,7 +280,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .psychological header {
+.infobox_custom-1 .right .detail .middle .detail .psychological .header {
     justify-self: start;
     align-self: center;
     grid-area: header;
@@ -289,7 +289,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .psychological content {
+.infobox_custom-1 .right .detail .middle .detail .psychological .content {
     justify-self: start;
     align-self: center;
     grid-area: content;
@@ -310,7 +310,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .activation header {
+.infobox_custom-1 .right .detail .middle .detail .activation .header {
     justify-self: start;
     align-self: center;
     grid-area: header;
@@ -319,7 +319,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .activation content {
+.infobox_custom-1 .right .detail .middle .detail .activation .content {
     justify-self: start;
     align-self: center;
     grid-area: content;
@@ -340,7 +340,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .height header {
+.infobox_custom-1 .right .detail .middle .detail .height .header {
     justify-self: start;
     align-self: center;
     grid-area: header;
@@ -349,7 +349,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .height content {
+.infobox_custom-1 .right .detail .middle .detail .height .content {
     justify-self: start;
     align-self: center;
     grid-area: content;
@@ -370,7 +370,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .weight header {
+.infobox_custom-1 .right .detail .middle .detail .weight .header {
     justify-self: start;
     align-self: center;
     grid-area: header;
@@ -379,7 +379,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .weight content {
+.infobox_custom-1 .right .detail .middle .detail .weight .content {
     justify-self: start;
     align-self: center;
     grid-area: content;
@@ -400,7 +400,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .vital-fluid header {
+.infobox_custom-1 .right .detail .middle .detail .vital-fluid .header {
     justify-self: start;
     align-self: center;
     grid-area: header;
@@ -409,7 +409,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .middle .detail .vital-fluid content {
+.infobox_custom-1 .right .detail .middle .detail .vital-fluid .content {
     justify-self: start;
     align-self: center;
     grid-area: content;
@@ -446,12 +446,12 @@
     height: fit-content;
 }
 
-.infobox_custom-1 .right .detail .stats .stat_review header {
+.infobox_custom-1 .right .detail .stats .stat_review .header {
     grid-area: rheader;
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .stats .stat_review underline {
+.infobox_custom-1 .right .detail .stats .stat_review .underline {
     grid-area: underline;
     font-weight: 100;
     color: rgb(59, 59, 59);
@@ -480,7 +480,7 @@
         "number";
 }
 
-.infobox_custom-1 .right .detail .stats .number .hp header {
+.infobox_custom-1 .right .detail .stats .number .hp .header {
     grid-area: header;
     justify-self: center;
     align-self: center;
@@ -488,7 +488,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .stats .number .hp number {
+.infobox_custom-1 .right .detail .stats .number .hp .number {
     grid-area: number;
     justify-self: center;
     align-self: center;
@@ -505,7 +505,7 @@
     grid-area: atk;
 }
 
-.infobox_custom-1 .right .detail .stats .number .atk header {
+.infobox_custom-1 .right .detail .stats .number .atk .header {
     grid-area: header;
     justify-self: center;
     align-self: center;
@@ -513,7 +513,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .stats .number .atk number {
+.infobox_custom-1 .right .detail .stats .number .atk .number {
     grid-area: number;
     justify-self: center;
     align-self: center;
@@ -530,7 +530,7 @@
         "number";
 }
 
-.infobox_custom-1 .right .detail .stats .number .def header {
+.infobox_custom-1 .right .detail .stats .number .def .header {
     grid-area: header;
     justify-self: center;
     align-self: center;
@@ -538,7 +538,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .stats .number .def number {
+.infobox_custom-1 .right .detail .stats .number .def .number {
     grid-area: number;
     justify-self: center;
     align-self: center;
@@ -555,7 +555,7 @@
         "number";
 }
 
-.infobox_custom-1 .right .detail .stats .number .crit header {
+.infobox_custom-1 .right .detail .stats .number .crit .header {
     grid-area: header;
     justify-self: center;
     align-self: center;
@@ -563,7 +563,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .stats .number .crit number {
+.infobox_custom-1 .right .detail .stats .number .crit .number {
     grid-area: number;
     justify-self: center;
     align-self: center;
@@ -636,7 +636,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .bottom .rank header {
+.infobox_custom-1 .right .detail .bottom .rank .header {
     justify-self: center;
     align-self: end;
     grid-area: header;
@@ -644,7 +644,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .bottom .rank content {
+.infobox_custom-1 .right .detail .bottom .rank .content {
     justify-self: center;
     align-self: start;
     grid-area: content;
@@ -669,7 +669,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .bottom .class header {
+.infobox_custom-1 .right .detail .bottom .class .header {
     justify-self: center;
     align-self: end;
     grid-area: header;
@@ -677,7 +677,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .bottom .class content {
+.infobox_custom-1 .right .detail .bottom .class .content {
     justify-self: center;
     align-self: start;
     grid-area: content;
@@ -702,7 +702,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .bottom .weapon header {
+.infobox_custom-1 .right .detail .bottom .weapon .header {
     justify-self: center;
     align-self: end;
     grid-area: header;
@@ -710,7 +710,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .bottom .weapon content {
+.infobox_custom-1 .right .detail .bottom .weapon .content {
     justify-self: center;
     align-self: start;
     grid-area: content;
@@ -735,7 +735,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .bottom .exclusive-weapon header {
+.infobox_custom-1 .right .detail .bottom .exclusive-weapon .header {
     justify-self: center;
     align-self: end;
     grid-area: header;
@@ -743,7 +743,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .bottom .exclusive-weapon content {
+.infobox_custom-1 .right .detail .bottom .exclusive-weapon .content {
     justify-self: center;
     align-self: start;
     grid-area: content;
@@ -768,7 +768,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .bottom .faction header {
+.infobox_custom-1 .right .detail .bottom .faction .header {
     justify-self: center;
     align-self: end;
     grid-area: header;
@@ -776,7 +776,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .bottom .faction content {
+.infobox_custom-1 .right .detail .bottom .faction .content {
     justify-self: center;
     align-self: start;
     grid-area: content;
@@ -801,7 +801,7 @@
     height: 100%;
 }
 
-.infobox_custom-1 .right .detail .bottom .gift header {
+.infobox_custom-1 .right .detail .bottom .gift .header {
     justify-self: center;
     align-self: end;
     grid-area: header;
@@ -809,7 +809,7 @@
     font-weight: bold;
 }
 
-.infobox_custom-1 .right .detail .bottom .gift content {
+.infobox_custom-1 .right .detail .bottom .gift .content {
     justify-self: center;
     align-self: start;
     grid-area: content;
