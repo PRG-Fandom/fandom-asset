@@ -26,6 +26,9 @@
         "speciality_content"
         "energy_header"
         "energy_content";
+
+    align-items: center;
+    justify-items: center;
 }
 
 .infobox_custom-1 .left .info .image {
