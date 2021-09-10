@@ -279,6 +279,10 @@ td {
     height: 95px;
 }
 
+.custom-table_1 .fix_align_middle img {
+    margin-top: -1.8em;
+}
+
 .custom-table_th p {
     height: 35px;
     font-weight: 900;
