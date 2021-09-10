@@ -2,7 +2,7 @@
     font-family: "roboto condensed";
 
     width: 100%;
-    overflow: hidden;
+    display: flex;
 }
 
 .infobox_custom-1 .left {
@@ -113,6 +113,7 @@
 
 .infobox_custom-1 .right {
     float: right;
+    width: 70%;
 }
 
 .infobox_custom-1 .right .detail {
@@ -128,8 +129,6 @@
         "bottom          bottom          bottom         ";
 
     padding: 1em;
-
-    width: 70%;
 }
 
 /*----------------------------------------------------------------------------*/
