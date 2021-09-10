@@ -1,3 +1,7 @@
+infobox_custom-1 right {
+    float: right;
+}
+
 infobox_custom-1 right detail {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

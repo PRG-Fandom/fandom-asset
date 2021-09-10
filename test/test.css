@@ -7,6 +7,8 @@
 
 .infobox_custom-1 .left {
     width: 30%;
+
+    float: left;
 }
 
 .infobox_custom-1 .left .info {
@@ -108,6 +110,10 @@
 }
 
 /*****************************************************/
+
+.infobox_custom-1 .right {
+    float: right;
+}
 
 .infobox_custom-1 .right .detail {
     display: grid;
