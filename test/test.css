@@ -821,7 +821,7 @@
     grid-area: content;
 }
 
-infobox_custom-1 .right .secret {
+.infobox_custom-1 .right .secret {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -841,7 +841,7 @@ infobox_custom-1 .right .secret {
     width: 70%;
 }
 
-infobox_custom-1 .right .secret .secret-1 {
+.infobox_custom-1 .right .secret .secret-1 {
     grid-area: secret-1;
 
     display: grid;
@@ -852,14 +852,14 @@ infobox_custom-1 .right .secret .secret-1 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-1 .header {
+.infobox_custom-1 .right .secret .secret-1 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-1 .content {
+.infobox_custom-1 .right .secret .secret-1 .content {
     grid-area: content;
 
     display: grid;
@@ -875,19 +875,19 @@ infobox_custom-1 .right .secret .secret-1 .content {
     justify-content: end;
 }
 
-infobox_custom-1 .right .secret .secret-1 .content .first {
+.infobox_custom-1 .right .secret .secret-1 .content .first {
     grid-area: first;
 
     align-self: end;
 }
 
-infobox_custom-1 .right .secret .secret-1 .content .second {
+.infobox_custom-1 .right .secret .secret-1 .content .second {
     grid-area: second;
 
     align-self: start;
 }
 
-infobox_custom-1 .right .secret .secret-2 {
+.infobox_custom-1 .right .secret .secret-2 {
     grid-area: secret-2;
 
     display: grid;
@@ -898,14 +898,14 @@ infobox_custom-1 .right .secret .secret-2 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-2 .header {
+.infobox_custom-1 .right .secret .secret-2 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-2 .content {
+.infobox_custom-1 .right .secret .secret-2 .content {
     grid-area: content;
 
     display: grid;
@@ -921,19 +921,19 @@ infobox_custom-1 .right .secret .secret-2 .content {
     justify-content: end;
 }
 
-infobox_custom-1 .right .secret .secret-2 .content .first {
+.infobox_custom-1 .right .secret .secret-2 .content .first {
     grid-area: first;
 
     align-self: end;
 }
 
-infobox_custom-1 .right .secret .secret-2 .content .second {
+.infobox_custom-1 .right .secret .secret-2 .content .second {
     grid-area: second;
 
     align-self: start;
 }
 
-infobox_custom-1 .right .secret .secret-3 {
+.infobox_custom-1 .right .secret .secret-3 {
     grid-area: secret-3;
 
     display: grid;
@@ -944,14 +944,14 @@ infobox_custom-1 .right .secret .secret-3 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-3 .header {
+.infobox_custom-1 .right .secret .secret-3 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-3 .content {
+.infobox_custom-1 .right .secret .secret-3 .content {
     grid-area: content;
 
     display: grid;
@@ -967,19 +967,19 @@ infobox_custom-1 .right .secret .secret-3 .content {
     justify-content: end;
 }
 
-infobox_custom-1 .right .secret .secret-3 .content .first {
+.infobox_custom-1 .right .secret .secret-3 .content .first {
     grid-area: first;
 
     align-self: end;
 }
 
-infobox_custom-1 .right .secret .secret-3 .content .second {
+.infobox_custom-1 .right .secret .secret-3 .content .second {
     grid-area: second;
 
     align-self: start;
 }
 
-infobox_custom-1 .right .secret .secret-4 {
+.infobox_custom-1 .right .secret .secret-4 {
     grid-area: secret-4;
 
     display: grid;
@@ -990,14 +990,14 @@ infobox_custom-1 .right .secret .secret-4 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-4 .header {
+.infobox_custom-1 .right .secret .secret-4 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-4 .content {
+.infobox_custom-1 .right .secret .secret-4 .content {
     grid-area: content;
 
     display: grid;
@@ -1013,19 +1013,19 @@ infobox_custom-1 .right .secret .secret-4 .content {
     justify-content: end;
 }
 
-infobox_custom-1 .right .secret .secret-4 .content .first {
+.infobox_custom-1 .right .secret .secret-4 .content .first {
     grid-area: first;
 
     align-self: end;
 }
 
-infobox_custom-1 .right .secret .secret-4 .content .second {
+.infobox_custom-1 .right .secret .secret-4 .content .second {
     grid-area: second;
 
     align-self: start;
 }
 
-infobox_custom-1 .right .secret .secret-5 {
+.infobox_custom-1 .right .secret .secret-5 {
     grid-area: secret-5;
 
     display: grid;
@@ -1036,14 +1036,14 @@ infobox_custom-1 .right .secret .secret-5 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-5 .header {
+.infobox_custom-1 .right .secret .secret-5 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-5 .content {
+.infobox_custom-1 .right .secret .secret-5 .content {
     grid-area: content;
 
     display: grid;
@@ -1059,19 +1059,19 @@ infobox_custom-1 .right .secret .secret-5 .content {
     justify-content: end;
 }
 
-infobox_custom-1 .right .secret .secret-5 .content .first {
+.infobox_custom-1 .right .secret .secret-5 .content .first {
     grid-area: first;
 
     align-self: end;
 }
 
-infobox_custom-1 .right .secret .secret-5 .content .second {
+.infobox_custom-1 .right .secret .secret-5 .content .second {
     grid-area: second;
 
     align-self: start;
 }
 
-infobox_custom-1 .right .secret .secret-6 {
+.infobox_custom-1 .right .secret .secret-6 {
     grid-area: secret-6;
 
     display: grid;
@@ -1082,20 +1082,20 @@ infobox_custom-1 .right .secret .secret-6 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-6 .header {
+.infobox_custom-1 .right .secret .secret-6 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-6 .content {
+.infobox_custom-1 .right .secret .secret-6 .content {
     grid-area: content;
 
     justify-content: end;
 }
 
-infobox_custom-1 .right .secret .secret-7 {
+.infobox_custom-1 .right .secret .secret-7 {
     grid-area: secret-7;
 
     display: grid;
@@ -1106,14 +1106,14 @@ infobox_custom-1 .right .secret .secret-7 {
     grid-template-areas: "header content";
 }
 
-infobox_custom-1 .right .secret .secret-7 .header {
+.infobox_custom-1 .right .secret .secret-7 .header {
     grid-area: header;
 
     justify-content: start;
     font-weight: bold;
 }
 
-infobox_custom-1 .right .secret .secret-7 .content {
+.infobox_custom-1 .right .secret .secret-7 .content {
     grid-area: content;
 
     justify-content: end;
