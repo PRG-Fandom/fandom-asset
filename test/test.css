@@ -174,9 +174,8 @@
 /*****************************************************/
 
 .infobox_custom-1 .right {
-    display: flex;
-    float: right;
     width: 70%;
+    height: 600px;
 }
 
 .infobox_custom-1 .right .detail {
