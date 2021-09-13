@@ -1,6 +1,6 @@
 .infobox_custom-1 {
     font-family: "roboto condensed";
-
+    display: flex;
     width: 100%;
 }
 
