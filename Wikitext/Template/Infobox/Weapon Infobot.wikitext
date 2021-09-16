@@ -1,0 +1,37 @@
+<includeonly>
+{| style="width: 100%; height: 50%; border: none; margin: 0;"  cellpadding="0" cellspacing="0"
+| rowspan="5" style="width:200px;height:200px;text-align:center; background-color:white;"<div class="article">|<div style="position:relative;"> {{Icon|Name=Item-{{{Image|{{PAGENAME}}}}}|Size=180|DisableClick=1}}<div style="position:absolute;top:128px;left:11px">{{Icon|Name=UI-Supply-{{#switch:|1=★|2=★★|3=★★★|4=★★★★|5=★★★★★|6=★★★★★★|Error}}-Star|Size=170|DisableClick=1}}</div></div>
+| colspan="2" style="text-indent: 10px; background-color:#{{#switch:{{{rarity}}}|1= 696969|2= 72b772|3= 00AAEE|4= cc68c1|5= 696969|6= FE642E}};"|<b style="font-size: 5; color: white;">{{{Name|{{PAGENAME}}}}}</b></div>
+|-
+|colspan=2 style="background-color: #494A5E; text-indent: 15px;"|<span "font-size: 5;">{{#switch: {{{rarity}}}
+| 1 = [[Category:1 Stars|<span style="color: #696969;">★</span>]]
+| 2 = [[Category:2 Stars|<span style="color: #72b772;">★★</span>]]
+| 3 = [[Category:3 Stars|<span style="color: #00AAEE;">★★★</span>]]
+| 4 = [[Category:4 Stars|<span style="color: #cc68c1;">★★★★</span>]]
+| 5 = [[Category:5 Stars|<span style="color: #ff8d1e;">★★★★★</span>]]
+| 6 = [[Category:6 Stars|<span style="color: #FE642E;">★★★★★★</span>]]
+|Error
+}}</span>
+|-
+|colspan="2" style="background-color: #494A5E; text-indent: 15px;"|<b style="font-size: 4; color: white;">{{{Main Description|Please add main description}}}</b>
+|-
+|style="background-color: #494A5E; text-indent: 7px;" |<div style="text-indent:7px;"><nowiki /></></div> ||style="background-color: #494A5E;"|<span style="font-size: 3; color: white;">{{{Sub Description|}}}</span>
+|-
+|colspan="2" style="background-color: #494A5E; text-indent: 11px;"| ||‎
+|-
+|colspan="3" | {{{text|Description}}}
+|}
+</includeonly>
+
+<noinclude>
+<pre>
+{{Item Infobox
+|Image= <!--By default, page name-->
+|Name= 
+|Rarity= <!--Between 1 and 6-->
+|Main Description=
+|Sub Description=
+|Description=
+}}
+</pre>
+</noinclude>
