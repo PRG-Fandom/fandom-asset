@@ -1,0 +1,118 @@
+<includeonly>
+<!--LEFT COLUMN START-->
+<div style="vertical-align:top; margin:4px; padding:6px 0 0 0; text-align:left; width:582px; display:inline-block">
+==Construct Information==
+<tabber>
+|-|Details=
+=== Construct Type ===
+Attacker
+
+=== Energy Coefficient ===
+Physical 80% <br>
+Fire 20%
+
+=== Specialty ===
+Duel - Has strong single attack ability <br> Blades - Attack DMG boosting skill
+
+|-|Data=
+<small>
+=== Service Time ===
+6 Years
+
+=== Psychological Age ===
+17
+
+=== Activation Date ===
+15 Jun
+
+=== Height ===
+165cm
+
+=== Weight ===
+48kg
+
+=== Vital Fluid Type ===
+A
+</small>
+
+|-|Info=
+
+=== No.001 ===
+
+Leader of Gray Raven. Attacker.
+
+An outstanding soldier, committed to eliminating the infection and paving the way for humanity’s return. Wields a katana. In burst mode, she launches a flurry of attackers by forming twin energy blades.
+
+=== No.002 ===
+
+“Permission to engage the enemy.”
+
+Absolutely loyal to the mission, carrying out orders calmly and efficiently. Has a tendency to ignore her own safety in combat.
+|}
+
+=== No.003 ===
+
+One of the first batch of military Constructs. 
+
+No crisis will faze this veteran of countless battles. Suppresses surging emotions to prevent them from affecting the war.
+
+|-|Secrets=
+
+=== Lotus’ Secret 1 ===
+Has many identical red scarves.
+
+=== Lotus’ Secret 2 ===
+Tried to make lunch for the Commandant. Blew up the kitchen.
+
+=== Lotus’ Secret 3 ===
+When wielding dual blades, her body temperature goes up in a similar way to how humans have fevers.
+
+=== Lotus’ Secret 4 ===
+Her hair is made from composite fibers and cannot be cut by common blades.
+</tabber>
+
+</div>
+<!--LEFT COLUMN END-->
+<!--RIGHT COLUMN START-->
+<div style="vertical-align:top; width:582px; display:inline-block">
+<div style="vertical-align:top; margin:4px; padding:6px 0 0 0; text-align:left; width:582px; display:inline-block">
+
+==Coatings==
+
+<tabber>
+|-|Generic=
+
+[[File:Coating-Lotus-Generic.png|520x520px|center]]
+
+|-|Generic - Modified=
+
+[[File:Coating-Lotus-GenericModified.png|520x520px|center]]
+
+|-|Generic - Final=
+
+[[File:Coating-Lotus-GenericFinal.png|520x520px|center]]
+
+|-|Gray Feathers: Lotus=
+
+[[File:Coating-Lotus-GrayFeathers.png|520x520px|center]]
+
+|-|Daybreak=
+
+[[File:Coating-Lotus-Daybreak.png|520x520px|center]]
+
+|-|Rain Walking=
+
+[[File:Coating-Lotus-RainWalking.png|520x520px|center]]
+
+</tabber>
+
+
+</div>
+</div>
+<!--RIGHT COLUMN END-->
+</includeonly>
+<noinclude>
+
+
+[[Category:Template]]
+</noinclude>
