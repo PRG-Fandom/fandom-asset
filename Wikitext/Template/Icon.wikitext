@@ -1,9 +1,6 @@
 <includeonly>
-{{#if:{{{Unclickable}}}|<div class="disableClick">|}}
-[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]
-{{#if:{{{Unclickable}}}|</div>|}}
+{{#if:{{{Unclickable}}}|<div class="disableClick">|}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]{{#if:{{{Unclickable}}}|</div>|}}
 </includeonly>
-
 
 <noinclude>
 == Description ==
@@ -14,7 +11,7 @@ The size can also be choose using ''Size'', as well as it's alignement using ''P
 Finally, the image can be configure to redirect to a page: if ''Link'' has a value (anything), it will redirect to the page that has the same name as the file. Same for ''Category'': if this parameter has any value, then it will redirect to the Category.
 == Code ==
 <pre>
-{{icon|Name=|Icon=<!--Boolean-->|Extension=<!--Can stay empty (default: png)-->|Size=<!--Can stay empty (default: 40px)-->|Category=<!--Can stay empty-->|Position=<!--Can stay empty (default: center)-->|Link=<!--Boolean-->}}
+{{icon|Name=|Icon=<!--Boolean-->|Extension=<!--Can stay empty (default: png)-->|Size=<!--Can stay empty (default: 40px)-->|Category=<!--Can stay empty-->|Position=<!--Can stay empty (default: center)-->|Link=<!--Boolean-->|Unclickable=}}
 </pre>
-[[Category:Templates]]
+[[Category:Template]]
 </noinclude>
