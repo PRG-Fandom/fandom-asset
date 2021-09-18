@@ -1,6 +1,4 @@
-<includeonly>
-{{#if:{{{Unclickable}}}|<div class="disableClick">|}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]{{#if:{{{Unclickable}}}|</div>|}}
-</includeonly>
+<includeonly>{{#if:{{{Unclickable}}}|<div class="disableClick">|}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]{{#if:{{{Unclickable}}}|</div>|}}</includeonly>
 
 <noinclude>
 == Description ==
