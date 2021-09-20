@@ -114,5 +114,6 @@ When entering the battle, get 3 signal balls immediately (only once per battle).
             |III Passive=
         }}
     </pr>
-    [[Category:Templates]]
+
+[[Category:Template]]
 </noinclude>
