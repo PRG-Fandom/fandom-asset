@@ -1,0 +1,90 @@
+.left {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+
+    grid-template-areas:
+        "Profile"
+        "Icons"
+        "Informations"
+        "Role"
+        "Element";
+
+    border: 1px solid #616161;
+    border-radius: 5px 0px 0px 5px;
+
+    width: 400px;
+    float: left;
+}
+
+/*--------------------------------------------*/
+.left #header {
+    grid-area: header;
+
+    color: white;
+    background-color: #9c144c;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.left #content {
+    grid-area: content;
+
+    text-align: start;
+}
+/*--------------------------------------------*/
+
+.left .profil {
+    grid-area: profil;
+
+    object-position: 50% 50%;
+
+    border-bottom: 1px solid #4d4d4dbd;
+}
+
+.left .icon {
+    grid-area: icon;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas: "" "" "";
+}
+
+.left .information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+
+    grid-template-areas:
+        "header"
+        "content";
+    grid-area: Informations;
+}
+
+.left .role {
+    grid-area: role;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+
+    grid-template-areas:
+        "header"
+        "content";
+}
+
+.left .element {
+    grid-area: element;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+
+    grid-template-areas:
+        "header"
+        "content";
+}

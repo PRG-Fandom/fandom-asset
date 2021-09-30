@@ -1,37 +1,59 @@
 <includeonly>
-{| style="width: 100%; height: 50%; border: none; margin: 0;"  cellpadding="0" cellspacing="0"
-| rowspan="5" style="width:200px;height:200px;text-align:center; background-color:white;"<div class="article">|<div style="position:relative;"> {{Icon|Name=Item-{{{Image|{{PAGENAME}}}}}|Size=180|DisableClick=1}}<div style="position:absolute;top:128px;left:11px">{{Icon|Name=UI-Supply-{{#switch:|1=★|2=★★|3=★★★|4=★★★★|5=★★★★★|6=★★★★★★|Error}}-Star|Size=170|DisableClick=1}}</div></div>
-| colspan="2" style="text-indent: 10px; background-color:#{{#switch:{{{rarity}}}|1= 696969|2= 72b772|3= 00AAEE|4= cc68c1|5= 696969|6= FE642E}};"|<b style="font-size: 5; color: white;">{{{Name|{{PAGENAME}}}}}</b></div>
+{| style="width: 100%; height: 50%; border: none; margin: 0px;"  cellpadding="0" cellspacing="0"
+| rowspan="5" style="width:200px;height:200px;text-align:center; background-color:white;"|<div style="position:relative;"> {{Icon|Name={{{image|{{PAGENAME}}}}}|Size=180|DisableClick=1}}<div style="position:absolute;top:128px;left:11px">{{Icon|Name=UI-Supply-{{{rarity|Error}}}Star|Size=170|DisableClick=1}}</div></div>
+|style="background-color:#{{#switch:{{{rarity}}}|1= 808080|2= 71B771|3= 3E70BA|4= CB68C2|5= FF8D1C|6= FB5824}};text-indent: 15px"|<span style="opacity:0;"><nowiki>-</nowiki></span>
+|colspan="2" style="background-color:#{{#switch:{{{rarity}}}|1= 808080|2= 71B771|3= 3E70BA|4= CB68C2|5= FF8D1C|6= FB5824}};"|<font size="5"><b style="color: white;">{{{name|{{PAGENAME}}}}}</b></font>
 |-
-|colspan=2 style="background-color: #494A5E; text-indent: 15px;"|<span "font-size: 5;">{{#switch: {{{rarity}}}
-| 1 = [[Category:1 Stars|<span style="color: #696969;">★</span>]]
-| 2 = [[Category:2 Stars|<span style="color: #72b772;">★★</span>]]
-| 3 = [[Category:3 Stars|<span style="color: #00AAEE;">★★★</span>]]
-| 4 = [[Category:4 Stars|<span style="color: #cc68c1;">★★★★</span>]]
-| 5 = [[Category:5 Stars|<span style="color: #ff8d1e;">★★★★★</span>]]
-| 6 = [[Category:6 Stars|<span style="color: #FE642E;">★★★★★★</span>]]
-|Error
-}}</span>
+|style="background-color: #2B2B33;text-indent: 17px"|<span style="opacity:0;"><nowiki>-</nowiki></span>
+|colspan="2" style="background-color: #2B2B33"|<font size="4">{{Rarity|{{{rarity}}}}}</font>
 |-
-|colspan="2" style="background-color: #494A5E; text-indent: 15px;"|<b style="font-size: 4; color: white;">{{{Main Description|Please add main description}}}</b>
+|style="background-color: #2B2B33;text-indent: 15px"|<span style="opacity:0;"><nowiki>-</nowiki></span>
+|colspan="2" style="background-color: #2B2B33"|<font size="4"><b style="color: white;">{{{main description|Please add main description}}}</b></font>
 |-
-|style="background-color: #494A5E; text-indent: 7px;" |<div style="text-indent:7px;"><nowiki /></></div> ||style="background-color: #494A5E;"|<span style="font-size: 3; color: white;">{{{Sub Description|}}}</span>
+|style="background-color: #2B2B33;text-indent: 15px"|<span style="opacity:0;"><nowiki>-</nowiki></span>
+|colspan="2" style="background-color: #2B2B33;"|<font size="3><span style="color: white;">{{{sub description|}}}</span></font>
 |-
-|colspan="2" style="background-color: #494A5E; text-indent: 11px;"| ||‎
-|-
-|colspan="3" | {{{text|Description}}}
-|}
-</includeonly>
+|colspan="3" style="background-color: #2B2B33; text-indent: 11px; margin-bottom:-10px""|<span style="opacity:0;"><nowiki>-</nowiki></span>
+|}<span style="vertical-align: middle;">{{{description|}}}</span><!--
+-->[[Category:Item]]<!--
+-->[[Category:{{{rarity}}} Stars]]<!--
+--></includeonly>
 
 <noinclude>
+== Detail ==
+This template is '''Item Infobox'''.
+
+It is an _Infobox_ template for the different items for the wiki, which includes the weapons, the ressources (etc.)
+
+The parameters are:
+''Image'' is the name of the file for the item.''
+''Name'' is the name of the item.
+''Rarity'' is a switch statement that use a value between 1 and 6 for the rarity (which links to its category) of the weapon.
+''Main Description'' is the name of the passif (for weapons).
+''Sub Description'' is the description of the passif (for weapons).
+''Description'' is to add more informations about the items.
+
+
+== Code ==
 <pre>
 {{Item Infobox
-|Image= <!--By default, page name-->
-|Name= 
-|Rarity= <!--Between 1 and 6-->
-|Main Description=
-|Sub Description=
-|Description=
+|image= <!--By default, page name-->
+|name= 
+|rarity= <!--Between 1 and 6-->
+|main description=
+|sub description=
+|description= <!--description under table-->
 }}
 </pre>
+
+== Exemple ==
+{{Item Infobox
+|image=Weapon-WolfFang-Icon
+|rarity=6
+|main description=Predator's Maxim
+|sub description=All DMG increased by 20% when attacking enemies in a burning area.
+|description= Signature weapon belonging to [[Lee: Entropy]].
+}} 
+
+[[Category:Template]][[Category:Infobox]]
 </noinclude>
