@@ -1,0 +1,100 @@
+@import "right-biography.css"; /*Biography part*/
+@import "right-information.css"; /*Detail part*/
+@import "right-stat.css"; /*Stats part (graph+stats table)*/
+
+/*--------------------------------------------*/
+.right .data {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content max-content 1px fit-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+    grid-template-areas:
+        "top"
+        "middle"
+        "h_line"
+        "bottom";
+
+    padding: 1em;
+}
+
+/*--------------------------------------------*/
+.data .top {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.data .name {
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    align-self: end;
+
+    text-transform: uppercase;
+}
+
+.data .frame {
+    grid-area: 2 / 2 / 3 / 3;
+
+    background-color: white;
+    align-self: center;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+.data .horizontal-line {
+    grid-area: 2 / 1 / 3 / 4;
+    align-self: center;
+
+    background-color: #babfc0;
+
+    width: 100%;
+    height: 1px;
+}
+
+.data .middle {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "biography v_line stat";
+    grid-area: 2 / 1 / 3 / 2;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.data .detail {
+    grid-area: detail;
+}
+
+.data #v_line {
+    grid-area: v_line;
+    background-color: #babfc0;
+}
+
+.data .stat {
+    grid-area: stat;
+}
+
+.data #h_line {
+    grid-area: h_line;
+    background-color: #babfc0;
+}
+
+.data .bottom {
+    grid-area: 3 / 1 / 4 / 2;
+
+    margin-top: 5px;
+}
+
+.data .information {
+    grid-area: 3 / 1 / 4 / 2;
+}

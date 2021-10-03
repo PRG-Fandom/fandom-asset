@@ -1,18 +1,20 @@
-@import "detail.css";
-@import "stat.css";
-@import "information.css";
+@import "data.css"; /*First table, for the Data tab*/
+@import "secret.css"; /*Second table, for the Secret tab*/
+@import "quote.css"; /*Third table, for the Quote tab*/
 
-.right {
-    float: right;
+/*--------------------------------------------*/
+#infobox-character .right {
+    /*	float: ;*/
 
-    width: 100%;
     height: 100%;
     border: 1px solid #616161;
+    border-left: none;
     border-radius: 0px 5px 5px 0px;
 }
 
 /*--------------------------------------------*/
 .right #header {
+    /*Style for all the header on the right side*/
     grid-area: header;
 
     text-align: start;
@@ -20,6 +22,7 @@
 }
 
 .right #content {
+    /*Style for all the content on the right side*/
     grid-area: content;
 
     text-align: start;

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href=".\css\main.css" />
+        <title>Character Template Final</title>
+    </head>
+    <body>
+        <div id="infobox_custom-1">
+            <div class="left">
+                <div class="Profile">
+                    {{Icon|Name={{{Character Artwork|}}}|Unclickable=1}}
+                </div>
+                <div class="Icons"></div>
+                <div class="Informations">
+                    <div id="header">Information</div>
+                    <div id="content">{{{Information|}}}</div>
+                </div>
+                <div class="Role">
+                    <div id="header">Role</div>
+                    <div id="content">{{{Role|}}}</div>
+                </div>
+                <div class="Element">
+                    <div id="header">Element</div>
+                    <div id="content">{{{Element|}}}</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="data">
+                    <div class="top">
+                        <div class="name">Lucia</div>
+                        <div class="frame">Crimson Abyss</div>
+                        <div class="horizontal-line"></div>
+                    </div>
+                    <div class="middle">
+                        <div class="biography">
+                            <div class="service">
+                                <div id="header">Service Time</div>
+                                <div id="content">{{{Service Time|}}}</div>
+                            </div>
+                            <div class="psychological">
+                                <div id="header">Psychological Age</div>
+                                <div id="content">
+                                    {{{Psychological Age|}}} Years old
+                                </div>
+                            </div>
+                            <div class="activation">
+                                <div id="header">Activation Date</div>
+                                <div id="content">{{{Activation|}}}</div>
+                            </div>
+                            <div class="height">
+                                <div id="header">Height</div>
+                                <div id="content">{{{Height|}}}</div>
+                            </div>
+                            <div class="weight">
+                                <div id="header">Weight</div>
+                                <div id="content">{{{Weight|}}}</div>
+                            </div>
+                            <div class="vital-fluid">
+                                <div id="header">Vital Fluid Type</div>
+                                <div id="content">{{{Vital Fluid|}}}</div>
+                            </div>
+                        </div>
+                        <div id="v_line"></div>
+                        <div class="stat">
+                            <div class="top">
+                                <div id="header">Stat</div>
+                                <div id="content">Review</div>
+                            </div>
+                            <div class="graph">
+                                {{icon|Name={{{Graph File|}}}|Unclickable=1}}
+                            </div>
+                            <div
+                                class="table"
+                                style="
+                                    text-align: start;
+                                    vertical-align: middle;
+                                "
+                            >
+                                <div class="HP">
+                                    <div id="header">HP</div>
+                                    <div id="content">{{{HP|}}}</div>
+                                </div>
+                                <div class="DEF">
+                                    <div id="header">DEF</div>
+                                    <div id="content">{{{DEF|}}}</div>
+                                </div>
+                                <div class="ATK">
+                                    <div id="header">ATK</div>
+                                    <div id="content">{{{ATK|}}}</div>
+                                </div>
+                                <div class="CRIT">
+                                    <div id="header">CRIT</div>
+                                    <div id="content">{{{CRIT|}}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="h_line"></div>
+                    <div class="bottom">
+                        <div class="information">
+                            <div class="rank">
+                                <div id="header">Rank</div>
+                                <div id="content">
+                                    {{#switch:{{{Rank}}} |S= S |A= A |B= B
+                                    |Error }}
+                                </div>
+                            </div>
+                            <div class="class">
+                                <div id="header">Class</div>
+                                <div id="content">
+                                    {{#switch: {{{Class}}} |Attacker= Attacker
+                                    |Tank= Tank |Support=
+                                    Support|Compositer=Compositer|Error }}
+                                </div>
+                            </div>
+                            <div class="weapon">
+                                <div id="header">Weapon</div>
+                                <div id="content">
+                                    {{icon|Name={{{Weapon
+                                    File}}}|Size=60|Link={{{Weapon}}}}}
+                                </div>
+                            </div>
+                            <div class="exclusive-weapon">
+                                <div id="header">Exclusive Weapon</div>
+                                <div id="content">
+                                    {{icon|Name={{{Exclusive Weapon
+                                    File}}}|Size=60|Link={{{Exclusive
+                                    Weapon}}}}}
+                                </div>
+                            </div>
+                            <div class="faction">
+                                <div id="header">Faction</div>
+                                <div id="content">
+                                    {{icon|Name={{{Faction
+                                    File}}}|Size=60|Link={{{Faction}}}}}
+                                </div>
+                            </div>
+                            <div class="gift">
+                                <div id="header">Gift</div>
+                                <div id="content">
+                                    {{icon|Name={{{Favorite Gift
+                                    File}}}|Size=60|Link={{{Favorite Gift}}}}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,4 +1,6 @@
-.container {
+.right .stat {
+    grid-area: stat;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr min-content;
@@ -8,18 +10,38 @@
         "top"
         "graph"
         "table";
+
+    width: 300px;
+
+    padding-left: 1em;
 }
 
 /*--------------------------------------------*/
-.top {
+.right .table #content,
+.right .table #header {
+    text-align: center;
+}
+
+/*--------------------------------------------*/
+.stat .top {
     grid-area: top;
+    display: grid;
+    grid-template-columns: min-content;
+    grid-template-rows: min-content min-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "content";
 }
 
-.graph {
+.stat .graph {
     grid-area: graph;
+
+    object-position: 50% 50%;
 }
 
-.table {
+.stat .table {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -29,7 +51,7 @@
     grid-area: table;
 }
 
-.HP {
+.stat .HP {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -41,7 +63,7 @@
     grid-area: HP;
 }
 
-.DEF {
+.stat .DEF {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -54,7 +76,7 @@
     grid-area: DEF;
 }
 
-.ATK {
+.stat .ATK {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -67,7 +89,7 @@
     grid-area: ATK;
 }
 
-.CRIT {
+.stat .CRIT {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);

@@ -1,8 +1,10 @@
-.detail {
+.right .biography {
+    grid-area: biography;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    gap: 5px 0px;
+    gap: 7px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "service"
@@ -11,10 +13,12 @@
         "height"
         "weight"
         "vital-fluid";
+
+    width: 300;
 }
 
 /*--------------------------------------------*/
-.detail .service {
+.biography .service {
     grid-area: service;
 
     grid-template-columns: 1fr;
@@ -26,7 +30,7 @@
         "content";
 }
 
-.detail .psychological {
+.biography .psychological {
     grid-area: psychological;
 
     grid-template-columns: 1fr;
@@ -38,7 +42,7 @@
         "content";
 }
 
-.detail .activation {
+.biography .activation {
     grid-area: activation;
 
     grid-template-columns: 1fr;
@@ -50,7 +54,7 @@
         "content";
 }
 
-.detail .height {
+.biography .height {
     grid-area: height;
 
     grid-template-columns: 1fr;
@@ -62,7 +66,7 @@
         "content";
 }
 
-.detail .weight {
+.biography .weight {
     grid-area: weight;
 
     grid-template-columns: 1fr;
@@ -74,7 +78,7 @@
         "content";
 }
 
-.detail .vital-fluid {
+.biography .vital-fluid {
     grid-area: vital-fluid;
 
     grid-template-columns: 1fr;
