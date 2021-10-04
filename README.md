@@ -1,28 +1,26 @@
-# fandom-asset
-Main repository of PGR-Fandom Github. It serves as a backup and a host for different kind of files.
-[Test Environment](https://codesandbox.io/dashboard/home?workspace=30174fa7-6dfb-487f-80bf-ffe8a3fd1e27)
+# Presentation
+Main repository for the [Punishing Grey Miraheze](). It serves as a backup as for all kinds of files.
 
-## CSS 
-This folder contains all the CSS files used on the wiki. 
-It is desired that a short TXT details what the file, or better each class, do.
+# Off-Github Website Ressources
+- [Test Environment](https://codesandbox.io/dashboard/home?workspace=30174fa7-6dfb-487f-80bf-ffe8a3fd1e27).
+- [Table Generator]().
+- [CSS Grid Compiler]().
+- [Mediatext Wiki]().
 
-##### TODO
-- [ ] Import all the CSS from the wiki.
-- [ ] Export to the wiki the different CSS.
+# Folders 
+A quick description of the files layout on the github repository.
+(It may changes in the futur)
+## CSS
+Where all the CSS files use on the Fandom are stored. They are import on fandom using the @import command.
+
+For backup, a copy of the main files from Miraheze are also stored.  
+
+## Ressources
 
 
-## HTML 
-This folder contains all the HTML files used on the wiki. 
-This includes __Preset__, __Table__ (etc.).
-
-##### TODO
-- [ ] Add the different Preset from the wiki as backup & add corresponding doc.
+## Test
+Folder to experiment and try different function and code. Everyone should have their own deposit since Git's pull ignore it.
 
 
-## Template
-This folder contains all the Template used on the wiki. 
-It is desired that a short TXT details how the template work, and what are the  parameters .
-
-##### TODO
-- [ ] Import all the templates for backup.
-- [ ] Modernize all the templates to use the 2.0 naming.
+## Wikitext
+Where every function template and bit of code coded into mediawiki must be stored as backup.
