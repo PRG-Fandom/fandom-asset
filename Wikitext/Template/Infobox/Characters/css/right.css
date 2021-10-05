@@ -4,26 +4,29 @@
 
 /*--------------------------------------------*/
 #infobox-character .right {
-    /*	float: ;*/
+	float: right;
+	flex-wrap: wrap;
 
-    height: 100%;
-    border: 1px solid #616161;
-    border-left: none;
-    border-radius: 0px 5px 5px 0px;
+	border: 1px solid #616161;
+	border-left: none;
+	border-radius: 0px 5px 5px 0px;
+
+	height: 500px;
+	width: 80%;
 }
 
 /*--------------------------------------------*/
 .right #header {
-    /*Style for all the header on the right side*/
-    grid-area: header;
+	/*Style for all the header on the right side*/
+	grid-area: header;
 
-    text-align: start;
-    font-weight: bold;
+	text-align: start;
+	font-weight: bold;
 }
 
 .right #content {
-    /*Style for all the content on the right side*/
-    grid-area: content;
+	/*Style for all the content on the right side*/
+	grid-area: content;
 
-    text-align: start;
+	text-align: start;
 }

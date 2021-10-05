@@ -1,104 +1,107 @@
 .left {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
 
-    grid-template-areas:
-        "Profile"
-        "Icons"
-        "Informations"
-        "Role"
-        "Element";
+	grid-template-areas:
+		"Profile"
+		"Icons"
+		"Informations"
+		"Role"
+		"Element";
 
-    border: 1px solid #616161;
-    border-radius: 5px 0px 0px 5px;
+	border: 1px solid #616161;
+	border-radius: 5px 0px 0px 5px;
 
-    width: 400px;
-    float: left;
+	width: 20%;
+	min-width: 166px;
+	height: 440px;
+	float: left;
+	flex-wrap: wrap;
 }
 
 /*--------------------------------------------*/
 .left #header {
-    grid-area: header;
+	grid-area: header;
 
-    color: white;
-    background-color: #9c144c;
+	color: white;
+	background-color: #9c144c;
 
-    text-align: center;
+	text-align: center;
 
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .left #content {
-    grid-area: content;
+	grid-area: content;
 
-    text-align: start;
+	text-align: start;
 }
 /*--------------------------------------------*/
 
 .left .profil {
-    grid-area: profil;
+	grid-area: profil;
 
-    object-position: 50% 50%;
+	object-position: 50% 50%;
 
-    border-bottom: 1px solid #4d4d4dbd;
+	border-bottom: 1px solid #4d4d4dbd;
 }
 
 .left .icon {
-    grid-area: icon;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+	grid-area: icon;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
 
-    grid-template-areas: "a" "b" "c";
+	grid-template-areas: "a" "b" "c";
 
-    border-top: 1px solid #4d4d4dbd;
+	border-top: 1px solid #4d4d4dbd;
 }
 .icon .a {
-    grid-area: a;
+	grid-area: a;
 }
 .icon .b {
-    grid-area: b;
+	grid-area: b;
 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 .icon .c {
-    grid-area: c;
+	grid-area: c;
 }
 
 .left .information {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
-    grid-area: Informations;
+	grid-template-areas:
+		"header"
+		"content";
+	grid-area: Informations;
 }
 
 .left .role {
-    grid-area: role;
+	grid-area: role;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .left .element {
-    grid-area: element;
+	grid-area: element;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }

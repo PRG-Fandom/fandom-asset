@@ -1,93 +1,93 @@
 .right .information {
-    grid-area: information;
+	grid-area: information;
 
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 10px;
-    grid-template-areas: "rank class weapon exclusive-weapon faction gift";
-    justify-content: space-evenly;
-    /*  border: 1px solid black;*/
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	grid-auto-columns: 1fr;
+	gap: 0px 10px;
+	grid-template-areas: "rank class weapon exclusive-weapon faction gift";
+	justify-content: space-evenly;
+	/*  border: 1px solid black;*/
 
-    padding-top: 4px;
+	padding-top: 4px;
 }
 
 /*--------------------------------------------*/
 .right .information #content,
 .right .information #header {
-    text-align: center;
+	text-align: center;
 }
 
 /*--------------------------------------------*/
 .information .rank {
-    grid-area: rank;
+	grid-area: rank;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(fit-content+4px) 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "content";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .information .class {
-    grid-area: class;
+	grid-area: class;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(fit-content+4px) 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "content";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .information .weapon {
-    grid-area: weapon;
+	grid-area: weapon;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(fit-content+4px) 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "content";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .information .exclusive-weapon {
-    grid-area: exclusive-weapon;
+	grid-area: exclusive-weapon;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(fit-content+4px) 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "content";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .information .faction {
-    grid-area: faction;
+	grid-area: faction;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(fit-content+4px) 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "content";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .information .gift {
-    grid-area: gift;
+	grid-area: gift;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(fit-content+4px) 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "header"
-        "content";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
 }

@@ -1,91 +1,91 @@
 .right .biography {
-    grid-area: biography;
+	grid-area: biography;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 7px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "service"
-        "psychological"
-        "activation"
-        "height"
-        "weight"
-        "vital-fluid";
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	gap: 7px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"service"
+		"psychological"
+		"activation"
+		"height"
+		"weight"
+		"vital-fluid";
 
-    width: 300;
+	width: 300;
 }
 
 /*--------------------------------------------*/
 .biography .service {
-    grid-area: service;
+	grid-area: service;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .biography .psychological {
-    grid-area: psychological;
+	grid-area: psychological;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .biography .activation {
-    grid-area: activation;
+	grid-area: activation;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .biography .height {
-    grid-area: height;
+	grid-area: height;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .biography .weight {
-    grid-area: weight;
+	grid-area: weight;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
 
 .biography .vital-fluid {
-    grid-area: vital-fluid;
+	grid-area: vital-fluid;
 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1px 0px;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
 
-    grid-template-areas:
-        "header"
-        "content";
+	grid-template-areas:
+		"header"
+		"content";
 }
