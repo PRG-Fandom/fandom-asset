@@ -1,0 +1,552 @@
+
+/*--------------------------------------------*/
+#infobox-character {
+	/*Main Setting of the Infobox*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "left" "right";
+	/*
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) 1px 1fr;
+    gap: 4px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "top"
+        "middle"
+        "separation"
+        "information";
+
+    font-family: "roboto condensed";
+
+    padding: 1em;
+    max-width: 1440px;
+    width: 100%;
+    /*  TODO: Add the correct size for the Character Infobox
+    max-height: %;
+    height: ;
+
+
+    vertical-align: middle;
+*/
+}
+/*ID for a horizontal and vertical line*/
+#v_line {
+	background-color: black; /*By default*/
+	width: 2px;
+	height: 100%;
+}
+#h_line {
+	background-color: black; /*By default*/
+	width: 100%;
+	height: 2px;
+}
+
+.left {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+
+	grid-template-areas:
+		"Profile"
+		"Icons"
+		"Informations"
+		"Role"
+		"Element";
+
+	border: 1px solid #616161;
+	border-radius: 5px 0px 0px 5px;
+
+	width: 20%;
+	min-width: 166px;
+	height: 440px;
+	float: left;
+	flex-wrap: wrap;
+}
+
+/*--------------------------------------------*/
+.left #header {
+	grid-area: header;
+
+	color: white;
+	background-color: #9c144c;
+
+	text-align: center;
+
+	font-weight: bold;
+}
+
+.left #content {
+	grid-area: content;
+
+	text-align: start;
+}
+/*--------------------------------------------*/
+
+.left .profil {
+	grid-area: profil;
+
+	object-position: 50% 50%;
+
+	border-bottom: 1px solid #4d4d4dbd;
+}
+
+.left .icon {
+	grid-area: icon;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+
+	grid-template-areas: "a" "b" "c";
+
+	border-top: 1px solid #4d4d4dbd;
+}
+.icon .a {
+	grid-area: a;
+}
+.icon .b {
+	grid-area: b;
+
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+.icon .c {
+	grid-area: c;
+}
+
+.left .information {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+	grid-area: Informations;
+}
+
+.left .role {
+	grid-area: role;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.left .element {
+	grid-area: element;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+
+/*--------------------------------------------*/
+#infobox-character .right {
+	float: right;
+	flex-wrap: wrap;
+
+	border: 1px solid #616161;
+	border-left: none;
+	border-radius: 0px 5px 5px 0px;
+
+	height: 500px;
+	width: 80%;
+}
+
+/*--------------------------------------------*/
+.right #header {
+	/*Style for all the header on the right side*/
+	grid-area: header;
+
+	text-align: start;
+	font-weight: bold;
+}
+
+.right #content {
+	/*Style for all the content on the right side*/
+	grid-area: content;
+
+	text-align: start;
+}
+
+
+/*--------------------------------------------*/
+.data .top {
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-area: 1 / 1 / 2 / 2;
+}
+
+.data .name {
+	grid-area: 1 / 2 / 2 / 3;
+	text-align: center;
+	align-self: end;
+
+	text-transform: uppercase;
+}
+
+.data .frame {
+	grid-area: 2 / 2 / 3 / 3;
+
+	background-color: white;
+	align-self: center;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	z-index: 1;
+}
+
+.data .top #h_line {
+	grid-area: 2 / 1 / 3 / 4;
+
+	align-self: center;
+	background-color: #8888;
+}
+
+.data .middle {
+	display: grid;
+	grid-template-columns: 1fr 1px 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas: "biography v_line stat";
+	grid-area: 2 / 1 / 3 / 2;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.data .detail {
+	grid-area: detail;
+}
+
+.data .middle #v_line {
+	grid-area: v_line;
+	background-color: #8888;
+}
+
+.data .stat {
+	grid-area: stat;
+}
+
+.data #h_line {
+	grid-area: h_line;
+	background-color: #8888;
+}
+
+.data .bottom {
+	grid-area: 3 / 1 / 4 / 2;
+
+	margin-top: 5px;
+}
+
+.data .information {
+	grid-area: 3 / 1 / 4 / 2;
+}
+
+.right .biography {
+	grid-area: biography;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 1fr);
+	gap: 7px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"service"
+		"psychological"
+		"activation"
+		"height"
+		"weight"
+		"vital-fluid";
+
+	width: 300;
+}
+
+/*--------------------------------------------*/
+.biography .service {
+	grid-area: service;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.biography .psychological {
+	grid-area: psychological;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.biography .activation {
+	grid-area: activation;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.biography .height {
+	grid-area: height;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.biography .weight {
+	grid-area: weight;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.biography .vital-fluid {
+	grid-area: vital-fluid;
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1px 0px;
+
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.right .information {
+	grid-area: information;
+
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 1fr;
+	grid-auto-columns: 1fr;
+	gap: 0px 10px;
+	grid-template-areas: "rank class weapon exclusive-weapon faction gift";
+	justify-content: space-evenly;
+	/*  border: 1px solid black;*/
+
+	padding-top: 4px;
+}
+
+/*--------------------------------------------*/
+.right .information #content,
+.right .information #header {
+	text-align: center;
+}
+
+/*--------------------------------------------*/
+.information .rank {
+	grid-area: rank;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.information .class {
+	grid-area: class;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.information .weapon {
+	grid-area: weapon;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.information .exclusive-weapon {
+	grid-area: exclusive-weapon;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.information .faction {
+	grid-area: faction;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.information .gift {
+	grid-area: gift;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: calc(fit-content+4px) 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.right .stat {
+	grid-area: stat;
+
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content 1fr min-content;
+	gap: 10px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"top"
+		"graph"
+		"table";
+
+	width: 300px;
+
+	padding-left: 1em;
+}
+
+/*--------------------------------------------*/
+.right .table #content,
+.right .table #header {
+	text-align: center;
+}
+
+/*--------------------------------------------*/
+.stat .top {
+	grid-area: top;
+	display: grid;
+	grid-template-columns: min-content;
+	grid-template-rows: min-content min-content;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header"
+		"content";
+}
+
+.stat .graph {
+	grid-area: graph;
+
+	object-position: 50% 50%;
+}
+
+.stat .table {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	gap: 0px 5px;
+	grid-auto-flow: row;
+	grid-template-areas: "HP DEF ATK CRIT";
+	grid-area: table;
+}
+
+.stat .HP {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header"
+		"content";
+	grid-area: HP;
+}
+
+.stat .DEF {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header"
+		"content";
+
+	grid-area: DEF;
+}
+
+.stat .ATK {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header"
+		"content";
+
+	grid-area: ATK;
+}
+
+.stat .CRIT {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header"
+		"content";
+
+	grid-area: CRIT;
+}
