@@ -54,16 +54,16 @@
 
     border-top: 1px solid #4d4d4dbd;
 }
-.icon .a {
+.left .icon .a {
     grid-area: a;
 }
-.icon .b {
+.left .icon .b {
     grid-area: b;
 
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-.icon .c {
+.left .icon .c {
     grid-area: c;
 }
 
