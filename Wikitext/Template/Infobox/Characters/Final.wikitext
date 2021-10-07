@@ -107,10 +107,10 @@
                             {{icon|Name={{{Weapon Type}}}|Size=60|Link={{{Weapon}}}}}
                         </div>
                     </div>
-                    <div class="exclusive-weapon">
-                        <div id="header">Exclusive Weapon</div>
+                    <div class="signature-weapon">
+                        <div id="header">Signature Weapon</div>
                         <div id="content">
-                            {{icon|Name=Weapon-{{{Exclusive Weapon}}}-Icon|Size=60|Link={{{Exclusive Weapon}}}}}
+                            {{icon|Name=Weapon-{{{Signature Weapon}}}-Icon|Size=60|Link={{{Exclusive Weapon}}}}}
                         </div>
                     </div>
                     <div class="faction">
@@ -160,7 +160,7 @@
 |-
 |Faction=
 |Weapon Type=
-|Exclusive Weapon=
+|Signature Weapon=
 }}
 </pre>
 
