@@ -2,9 +2,13 @@
 <div id="infobox-character">
     <div class="left">
         <div class="Profile">
-            {{Icon|Name=Character-{{{Frame|}}}-Portrait}}}|Unclickable=1}}
+            {{Icon|Name=Character-{{{Frame|}}}-Portrait|Unclickable=1}}
         </div>
-        <div class="Icons"></div>
+        <div class="Icons">
+            <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}</div>
+            <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}</div>
+            <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Awakening-Icon|Size=60|Unclickable=1}}</div>
+        </div>
         <div class="Informations">
             <div id="header">Information</div>
             <div id="content">{{{Information|}}}</div>
@@ -22,21 +26,19 @@
     <div class="right">
         <div class="data">
             <div class="top">
-                <div class="name">Lucia</div>
-                <div class="frame">Crimson Abyss</div>
+                <div class="name">{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|0|<nowiki />-<nowiki />}}</div>
+                <div class="frame">{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}</div>
                 <div id="h_line"></div>
             </div>
             <div class="middle">
                 <div class="biography">
                     <div class="service">
                         <div id="header">Service Time</div>
-                        <div id="content">{{{Service Time|}}}</div>
+                        <div id="content">{{{Service Time|}}} Years</div>
                     </div>
                     <div class="psychological">
                         <div id="header">Psychological Age</div>
-                        <div id="content">
-                            {{{Psychological Age|}}} Years old
-                        </div>
+                        <div id="content">{{{Psychological Age|}}}</div>
                     </div>
                     <div class="activation">
                         <div id="header">Activation Date</div>
@@ -90,37 +92,37 @@
                     <div class="rank">
                         <div id="header">Rank</div>
                         <div id="content">
-                            {{#switch:{{{Rank}}} |S= S |A= A |B= B |Error }}
+                            {{Icon|Name={{#switch:{{{Rank}}} |S=Icon-Rank-S|A=Icon-Rank-A|B=Icon-Rank-B|Error}}|Size=60|Category=1}}
                         </div>
                     </div>
                     <div class="class">
                         <div id="header">Class</div>
                         <div id="content">
-                            {{#switch: {{{Class}}} |Attacker= Attacker |Tank= Tank |Support= Support|Compositer= Compositer|Error}}
+                            {{Icon|Name={{#switch: {{{Class}}} |Attacker=Icon-Class-Attacker|Tank=Icon-Class-Tank|Support=Icon-Class-Support|Compositer=Compositer|Error}}|Size=60|Category=1}}
                         </div>
                     </div>
                     <div class="weapon">
-                        <div id="header">Weapon</div>
+                        <div id="header">Weapon Type</div>
                         <div id="content">
-                            {{icon|Name={{{Weapon File}}}|Size=60|Link={{{Weapon}}}}}
+                            {{icon|Name={{{Weapon Type}}}|Size=60|Link={{{Weapon}}}}}
                         </div>
                     </div>
                     <div class="exclusive-weapon">
                         <div id="header">Exclusive Weapon</div>
                         <div id="content">
-                            {{icon|Name={{{Exclusive Weapon File}}}|Size=60|Link={{{Exclusive Weapon}}}}}
+                            {{icon|Name=Weapon-{{{Exclusive Weapon}}}-Icon|Size=60|Link={{{Exclusive Weapon}}}}}
                         </div>
                     </div>
                     <div class="faction">
                         <div id="header">Faction</div>
                         <div id="content">
-                            {{icon|Name={{{Faction File}}}|Size=60|Link={{{Faction}}}}}
+                            {{icon|Name=Icon-Faction-{{{Faction}}}|Size=60|Link=[[Lore#{{{Faction}}}]]}}
                         </div>
                     </div>
                     <div class="gift">
                         <div id="header">Gift</div>
                         <div id="content">
-                            {{icon|Name={{{Favorite Gift File}}}|Size=60|Link={{{Favorite Gift}}}}}
+                            {{icon|Name=Item-Gift-{{{Frame}}}|Size=60|Link=[[Gift]]}}
                         </div>
                     </div>
                 </div>
@@ -131,14 +133,38 @@
 </includeonly>
 
 <noinclude>
+== Detail ==
 == Code ==
 <pre>
 {{Character-Infobox|
 |Name=
 |Frame=
-|
-|Faction File=
-|Favorite Gift File=
+|Rarity= <!--S ; A ; B-->
+|Class= <!--Attacker ; Tank ; Support-->
+|-
+|Information=
+|Role=
+|Element=
+|-
+|Service Time=
+|Psychological Age=
+|Activation=
+|Height=
+|Weight=
+|Vital Fluid=
+|-
+|HP=
+|DEF=
+|ATK=
+|CRIT=
+|-
+|Faction=
+|Weapon Type=
+|Exclusive Weapon=
 }}
 </pre>
+
+== Exemple ==
+
+[[Category:Template]]
 </noinclude>
