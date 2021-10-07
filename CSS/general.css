@@ -1,6 +1,6 @@
-#WikiaBar {
+/*#WikiaBar {
     display: none;
-    /* bottom floaty editing toolbar */
+    /* bottom floaty editing toolbar 
 }
 
 /*
@@ -8,14 +8,14 @@
     display: none;
     // right hand rail
 }
-*/
+*//*
 
 .main-container {
     margin-left: 0;
     width: 100%;
 }
 
-/* stretch main page to compensate for the lack of global nav */
+/* stretch main page to compensate for the lack of global nav 
 .global-navigation {
     display: none;
 }
