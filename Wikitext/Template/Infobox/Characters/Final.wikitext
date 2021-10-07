@@ -1,23 +1,23 @@
 <includeonly>
 <div id="infobox-character">
     <div class="left">
-        <div class="Profile">
+        <div class="profile">
             {{Icon|Name=Character-{{{Frame|}}}-Portrait|Unclickable=1}}
         </div>
-        <div class="Icons">
+        <div class="icon">
             <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}</div>
-            <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}</div>
-            <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Awakening-Icon|Size=60|Unclickable=1}}</div>
+            <div class="b">{{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}</div>
+            <div class="c">{{Icon|Name=Dialogue-{{{Frame}}}-Awaken-Icon|Size=60|Unclickable=1}}</div>
         </div>
-        <div class="Informations">
+        <div class="information">
             <div id="header">Information</div>
             <div id="content">{{{Information|}}}</div>
         </div>
-        <div class="Role">
-            <div id="header">Role</div>
-            <div id="content">{{{Role|}}}</div>
+        <div class="role">
+            <div id="header">Speciality</div>
+            <div id="content">{{{Speciality|}}}</div>
         </div>
-        <div class="Element">
+        <div class="element">
             <div id="header">Element</div>
             <div id="content">{{{Element|}}}</div>
         </div>
@@ -26,8 +26,8 @@
     <div class="right">
         <div class="data">
             <div class="top">
-                <div class="name">{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|0|<nowiki />-<nowiki />}}</div>
-                <div class="frame">{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}</div>
+                <div class="name">{{{Name|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|0|<nowiki />-<nowiki />}}}}}</div>
+                <div class="frame">{{{Frame|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}}}}</div>
                 <div id="h_line"></div>
             </div>
             <div class="middle">
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="faction">
-                        <div id="header">Faction</div>
+                        <div id="header">Army</div>
                         <div id="content">
                             {{icon|Name=Icon-Faction-{{{Faction}}}|Size=60|Link=[[Lore#{{{Faction}}}]]}}
                         </div>
@@ -136,7 +136,7 @@
 == Detail ==
 == Code ==
 <pre>
-{{Character-Infobox|
+{{Character Infobox|
 |Name=
 |Frame=
 |Rarity= <!--S ; A ; B-->
@@ -166,5 +166,5 @@
 
 == Exemple ==
 
-[[Category:Template]]
+[[Category:Infobox]]
 </noinclude>
