@@ -5,11 +5,11 @@
     gap: 0px 0px;
 
     grid-template-areas:
-        "Profile"
-        "Icons"
-        "Informations"
-        "Role"
-        "Element";
+        "profile"
+        "icon"
+        "information"
+        "speciality"
+        "element";
 
     border: 1px solid #616161;
     border-radius: 5px 0px 0px 5px;
@@ -37,8 +37,8 @@
 }
 /*--------------------------------------------*/
 
-.left .profil {
-    grid-area: profil;
+.left .profile {
+    grid-area: profile;
 
     object-position: 50% 50%;
 
@@ -56,18 +56,26 @@
 }
 .left .icon .a {
     grid-area: a;
+
+    object-position: 50% 50%;
 }
 .left .icon .b {
     grid-area: b;
 
     border-left: 1px solid black;
     border-right: 1px solid black;
+
+    object-position: 50% 50%;
 }
 .left .icon .c {
     grid-area: c;
+
+    object-position: 50% 50%;
 }
 
 .left .information {
+    grid-area: information;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -76,11 +84,10 @@
     grid-template-areas:
         "header"
         "content";
-    grid-area: Informations;
 }
 
-.left .role {
-    grid-area: role;
+.left .speciality {
+    grid-area: speciality;
 
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;

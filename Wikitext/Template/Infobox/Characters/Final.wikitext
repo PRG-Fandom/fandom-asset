@@ -2,14 +2,14 @@
 <div id="infobox-character">
     <div class="left">
         <div class="profile">
-            {{Icon|Name=Character-{{{Frame|}}}-Portrait|Size=300x300px|Unclickable=1}}
+            {{Icon|Name=Character-{{{Frame|}}}-Portrait|Unclickable=1}}
         </div>
-        <div class="icons">
+        <div class="icon">
             <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}</div>
             <div class="b">{{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}</div>
             <div class="c">{{Icon|Name=Dialogue-{{{Frame}}}-Awaken-Icon|Size=60|Unclickable=1}}</div>
         </div>
-        <div class="informations">
+        <div class="information">
             <div id="header">Information</div>
             <div id="content">{{{Information|}}}</div>
         </div>
