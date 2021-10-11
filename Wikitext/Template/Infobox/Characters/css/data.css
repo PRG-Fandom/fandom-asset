@@ -35,7 +35,17 @@
     text-align: center;
     align-self: end;
 
+<<<<<<< Updated upstream
     text-transform: uppercase;
+=======
+<<<<<<< Updated upstream
+	text-transform: uppercase;
+=======
+    text-transform: uppercase;
+
+    font-weight: bolder;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
 
 .data .frame {
