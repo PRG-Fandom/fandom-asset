@@ -1,0 +1,1087 @@
+/* CSS placed here will be applied to all skins */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+:root {
+    /**************************- Website -**************************/
+    /*Whole Site Style*/
+    --ws-bg-color: #0F0F0F;
+    /*Sidebar Colors*/
+    --sb-bg-color: ;
+    --sb-link-color: #f72058;
+    --sb-v_link-color: #f72058;
+    /*Main Container Style*/
+    --main-bg-color: linear-gradient(#921131 0, #141416 7rem);
+    /**************************- Infobox -**************************/
+    /**/
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    /* Below is the colour below the top bar (and maybe sidebar?) */
+    background: #0F0F0F;
+}
+
+.mw-body h1, .mw-body h2, .mw-body h3, .mw-body h4, .mw-body h5, .mw-body h6, .mw-body udt {
+    font-family: 'Lato', sans-serif !important;
+}
+
+#p-logo-text a.long {
+    font-size: 1.4em !important;
+    padding: 0 0.5em !important;
+    font-family: "roboto condensed";
+}
+
+#mw-content-container {
+    background-image: url(TBA) !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-bottom: solid 4px #ffffff4a !important;
+}
+
+#mw-content {
+    font-size: 1.05em !important;
+    width: inherit !important;
+    background: white;
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+#mw-footer-container {
+    background: #152942;
+}
+
+.color-middle, .color-right, .color-left {
+    background: #3366cc;
+}
+
+.sidebar-chunk {
+    background: white;
+    background: rgba(248, 250, 255, 0.9) !important;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+
+.filter-button-selected, .filter-button-selected:hover {
+    background: #ccc;
+}
+
+/** Spoiler CSS **/
+
+.spoiler-text {
+    filter: blur(5px);
+    transition-property: -webkit-filter;
+    transition-duration: .4s;
+}
+
+.spoiler-text:hover, .spoiler-text:focus {
+    filter: blur(0px);
+}
+
+.spoiler-img {
+    filter: blur(15px);
+    transition-property: -webkit-filter;
+    transition-duration: .4s;
+}
+
+.spoiler-img:hover, .spoiler-img:focus {
+    filter: blur(0px);
+}
+
+/** Card CSS **/
+
+.card {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    background: linear-gradient(45deg, #b9ecff, transparent);
+    padding: 0.25em .5em;
+}
+
+.card table {
+    width: 100%;
+    border: none;
+}
+
+.card table th {
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.card table td {
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+table.half th, table.half td {
+    width: 50%;
+}
+
+.card table tr:last-of-type td, .card table tr:last-of-type th {
+    border: none;
+}
+
+/** Responsive Image **/
+
+.res-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* CSS For No History Tabber (Template:Tab) */
+
+.no-history-tabber-panel .oo-ui-optionWidget {
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px .5em;
+}
+
+.no-history-tabber-panel .oo-ui-optionWidget:hover {
+    background-color: #e4e4e4 !important;
+}
+
+.no-history-tabber-panel .oo-ui-optionWidget.oo-ui-widget-enabled {
+    border: 1px solid #e0e0e0;
+}
+
+.no-history-tabber-panel .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.no-history-tabber-panel .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
+    border: 0 !important;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.no-history-tabber-panel .oo-ui-tabSelectWidget-framed {
+    background-color: inherit;
+}
+
+.no-history-tabber-panel .oo-ui-optionWidget {
+    color: black;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 3px .5em;
+    background: linear-gradient(to right, #d7e9fb 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .25s ease-out;
+}
+
+.no-history-tabber-panel .oo-ui-optionWidget:hover {
+    background-position: left bottom;
+}
+
+.no-history-tabber-panel .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+    border: 1px solid #000;
+}
+
+/* End of No History Tabber CSS*/
+
+/** Unit icon CSS **/
+
+.icon-template {
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+}
+
+/** Cargo Tables **/
+
+.cargoTable thead tr {
+    background: #e2f2ff !important;
+    border: 1px solid #d4d4d4;
+}
+
+/** Notice Templates **/
+
+.page-notice {
+    padding: 0.25em 1em;
+    background: #eee;
+    margin: auto;
+    max-width: 600px;
+    border: 1px solid lightgray;
+    border-left: 8px solid gray;
+}
+
+/** Template:Page header **/
+
+#page-header {
+    background-color: #b9ecff;
+    border: 1px solid skyblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1em;
+}
+
+#page-header-left {
+    grid-row: 1;
+    text-align: left;
+    align-self: center;
+}
+
+#page-header-right {
+    grid-row: 1;
+    text-align: right;
+    align-self: center;
+}
+
+#page-header-center {
+    grid-row: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#page-subheader-center {
+    font-size: 0.7em;
+}
+
+/** Template:Info grid **/
+
+.info-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-gap: 0.5em;
+}
+
+.info-grid-image {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    text-align: center;
+    padding: 1em;
+    margin: auto;
+}
+
+.info-grid-image img {
+    width: 100%;
+    height: auto;
+}
+
+.info-grid-general {
+    grid-row: 1;
+    text-align: center;
+    grid-column-start: 8;
+    grid-column-end: 13;
+    padding: 1em;
+}
+
+.info-grid-general .wikitable {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .info-grid-image {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .info-grid-general {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+}
+
+/* One-sided navigation menu */
+
+/* One-sided navigation menu */
+
+@media (min-width: 1340px) {
+    #mw-content-block {
+        display: grid;
+        grid-template-rows: max-content;
+        width: 70%;
+    }
+    #mw-content {
+        width: 100%
+    }
+    #mw-content, #content-bottom-stuff {
+        margin-left: 14em;
+    }
+    #mw-content-wrapper {
+        grid-row-start: 1;
+        grid-row-end: 99;
+        grid-column: 1;
+        order: unset;
+    }
+    #mw-site-navigation {
+        grid-row: 1;
+        grid-column: 1;
+        order: unset;
+    }
+    #mw-related-navigation {
+        grid-row: 2;
+        grid-column: 1;
+        width: 14em;
+        padding: 0 1em 0 0;
+        order: unset;
+    }
+    /*Change sidebar link color*/
+    #site-navigation a {
+        color: #f72058;
+    }
+    #site-navigation a:visited {
+        color: #f72058;
+    }
+    div.color-middle {
+        margin-right: 0;
+    }
+}
+
+/*Changing small screen bg from white to black*/
+
+@media (max-width: 850px) {
+    #mw-content-block {
+        background: inherit;
+    }
+}
+
+/* Re-aligning bottom logos */
+
+#footer {
+    padding-right: 1em;
+}
+
+/***************************************************************************/
+
+/****************************- Custom Elements -****************************/
+
+/***************************************************************************/
+
+.mw-editsection {
+    display: none;
+}
+
+#mw-header-container {
+    background: linear-gradient(#111112, #28282a);
+}
+
+#mw-header-container div {
+    color: white;
+}
+
+#mw-header-container #p-banner {
+    color: white;
+}
+
+#mw-header-container #personal h2 {
+    font-family: "roboto condensed";
+}
+
+#pt-notifications-alert .oo-ui-icon-bell {
+    filter: invert(100%);
+}
+
+#pt-notifications-notice .oo-ui-icon-tray {
+    filter: invert(100%);
+}
+
+#pt-notifications-alert .mw-echo-notifications-badge::after, #pt-notifications-notice .mw-echo-notifications-badge::after {
+    color: black;
+}
+
+div.color-left {
+    background-color: #C2185E;
+}
+
+div.color-middle, div.color-right {
+    background-color: white;
+}
+
+#p-personal-label {
+    color: black;
+}
+
+#mw-content-block {
+    display: flex;
+}
+
+#mw-site-navigation {
+    order: 1;
+    margin-right: 0em;
+    /*    flex: 0 0 225px; */
+    width: inherit;
+    margin-top: -0.3em;
+}
+
+#mw-content-wrapper {
+    order: 2;
+    margin-top: 1.4rem;
+    /*   margin-right: 1em;
+    margin-left: 2em; */
+}
+
+#mw-content-wrapper #mw-content {
+    width: 100%;
+}
+
+#mw-related-navigation {
+    order: 3;
+    width: 100%;
+    flex: 0 0 225px;
+}
+
+@media only screen and (min-width: 1340px) {
+    #mw-content, #content-bottom-stuff {
+        margin-left: 0;
+    }
+}
+
+.mw-wiki-logo {
+    background-position: center center;
+    background-size: auto 165px;
+}
+
+/*--------------------- BG IMG OR Color ----------------------*/
+
+#mw-content-container {
+    background: url("https://cdn.discordapp.com/attachments/296188895933235200/895215481278066698/unknown.png"), transparent !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: transparent !important;
+}
+
+#mw-content-container .sidebar-chunk {
+    color: #fcfcfc;
+    background-color: transparent !important;
+}
+
+/*----this part has the main content container bg colour------*/
+
+/*------add 0.7 after rgb colours to add transparency------*/
+
+#mw-content-container #mw-content {
+    color: #fcfcfc;
+    background: linear-gradient(#921131 0, #141416 7rem) !important;
+}
+
+#mw-content {
+    border: none;
+    font-family: "roboto condensed";
+}
+
+#mw-content div {
+    color: #c0c3d0 !important;
+    background-color: transparent/*!important*/
+    ;
+}
+
+#mw-content h1, #mw-content h2, #mw-content h3, #mw-content h4, #mw-content h5, #mw-content h6 {
+    font-family: "roboto condensed" !important;
+}
+
+#mw-content-container div {
+    color: #fcfcfc;
+}
+
+#mw-related-navigation {
+    display: none;
+}
+
+#p-navigation {
+    display: none;
+}
+
+#site-tools {
+    display: none;
+}
+
+#mw-site-navigation .sidebar-chunk {
+    border: none;
+}
+
+/*************************************************************************/
+
+/* Custom article and header
+/*************************************************************************/
+
+.custom-article_1 {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    text-align: justify;
+}
+
+.custom-article_1 .floatnone {
+    padding-bottom: 10px;
+}
+
+.custom-article_1 .ca_L {
+    margin-right: 20px;
+    width: auto;
+}
+
+.custom-article_1 .ca_R {
+    margin-right: 20px;
+    width: auto;
+}
+
+.custom-article_1 .ca_L-w50 {
+    margin-right: 20px;
+    width: 50%;
+}
+
+.custom-article_1 .ca_R-w30 {
+    margin-left: 20px;
+    width: 30%;
+}
+
+.custom-article_1 .ca_R-w35 {
+    margin-left: 20px;
+    width: 35%;
+}
+
+.custom-article_1 .ca_R-w40 {
+    margin-left: 20px;
+    width: 40%;
+}
+
+.custom-article_1 .ca_R-w45 {
+    margin-left: 20px;
+    width: 45%;
+}
+
+.custom-article_1 .ca_R-w50 {
+    margin-left: 20px;
+    width: 50%;
+}
+
+.custom-article_1 .ca_R-w55 {
+    margin-left: 20px;
+    width: 55%;
+}
+
+.custom-article_1 .ca_R-w60 {
+    margin-left: 20px;
+    width: 60%;
+}
+
+.custom-article_1 .ca_R-w65 {
+    margin-left: 20px;
+    width: 65%;
+}
+
+.custom-article_1 .ca_R-w70 {
+    margin-left: 20px;
+    width: 70%;
+}
+
+.custom_header_article {
+    font-family: helvetica;
+}
+
+.custom_header_article h2 {
+    font-family: "roboto condensed";
+    margin-top: -5px;
+    font-weight: 900;
+    font-size: 24px;
+    border-bottom: 0px solid var(--theme-border-color);
+}
+
+.custom_header_article .page-content h2 {
+    border-bottom: 0px solid var(--theme-border-color);
+}
+
+/***************************************************************************/
+
+.mw-underline-always a {
+    color: red;
+}
+
+.mw-underline-always a:visited {
+    color: #ad410e;
+}
+
+#searchform {
+    width: 40%;
+    margin: auto;
+}
+
+body {
+    margin-bottom: -1%;
+    background: tranparent !important;
+}
+
+#mw-header-hack {
+    display: none;
+}
+
+/*Search Bar Styling*/
+
+#mw-header-container #simpleSearch {
+    border: none;
+    box-shadow: none;
+}
+
+#mw-header-container #searchInput {
+    background: #0F0F0F;
+    color: white;
+    border-radius: 0;
+}
+
+#ca-ve-edit {
+    display: none;
+}
+
+#ca-cargo-purge {
+    display: none;
+}
+
+/* Change mobile icons to white */
+
+#ca-history a {
+    background-image: url(https://static.miraheze.org/pgrwiki/b/b8/Icon-Clock-White.svg);
+}
+
+#ca-more span {
+    background-image: url(https://static.miraheze.org/pgrwiki/5/54/Icon-SettingsCog-White.svg);
+}
+
+#searchform #searchButton {
+    background-image: url("https://static.miraheze.org/pgrwiki/0/02/White-SearchIcon.svg");
+    margin: auto;
+}
+
+/*End of Search Bar Styling*/
+
+#mw-content a, #mw-content a:visited {
+    color: #f72058;
+    text-shadow: 1px 1px 1px #0f0104;
+    display: inline-block;
+}
+
+/* ------ Striped Table STRIPES ----- */
+
+.striped_row tr:nth-child(even) {
+    background-color: rgba(9, 9, 10, 0.3);
+}
+
+/***************************************************************************/
+
+mw-footer-container {
+    background: transparent !important;
+}
+
+/* ----------------------------------------- */
+
+/* ------: Custom grid for enemy pages:----- */
+
+.infobox_custom2 {
+    display: grid;
+    grid-template-columns: 0.5fr 2.2fr 2.4fr 0.5fr;
+    grid-template-rows: 0.9fr 1.6fr 0.7fr 1.7fr 0.3fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Left-space Enemy-image Enemy-image Right-space" "Left-space Enemy-image Enemy-image Right-space" "Left-space Enemy-specs Enemy-specs Right-space" "Left-space Enemy-description Enemy-description Right-space" "Left-space Enemy-traits Enemy-traits Right-space";
+}
+
+.Enemy-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "Image-space-tLeft Enemy-name Image-space-tRight" "Image-space-center Image-space-center Image-space-center" "Image-space-center Image-space-center Image-space-center";
+    grid-area: Enemy-image;
+}
+
+.Enemy-name {
+    grid-area: Enemy-name;
+}
+
+.Image-space-tLeft {
+    grid-area: Image-space-tLeft;
+}
+
+.Image-space-tRight {
+    grid-area: Image-space-tRight;
+}
+
+.Image-space-center {
+    grid-area: Image-space-center;
+}
+
+.Enemy-specs {
+    grid-area: Enemy-specs;
+}
+
+.Enemy-description {
+    grid-area: Enemy-description;
+}
+
+.Enemy-traits {
+    grid-area: Enemy-traits;
+}
+
+.Left-space {
+    grid-area: Left-space;
+}
+
+.Right-space {
+    grid-area: Right-space;
+}
+
+/* ---------: End of custom grid :---------- */
+
+/**Custom wikitable used on the Enemies page**/
+
+table.wikitable-custom1 {
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table.wikitable-custom1 th {
+    height: 40px;
+    background-color: #2D2A2A;
+    font-weight: normal;
+    font-size: 17px;
+    border: #0A0001 5px solid;
+}
+
+table.wikitable-custom1 td {
+    height: 200px;
+    border: #0A0001 3px solid;
+    border-top: 1px solid #fff;
+}
+
+table.wikitable-custom1 tfoot td {
+    font-size: 11px;
+    border: #0A0001 3px solid;
+}
+
+table.wikitable-custom1 tbody td {
+    background: url('https://static.miraheze.org/pgrwiki/9/91/Wiki-Background-EnemyCellDark.png');
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    border: #0A0001 3px solid;
+}
+
+table.wikitable-custom1 tbody:hover td:hover {
+    filter: invert(15%);
+}
+
+.enemyIcon {
+    size: 120px;
+    position: center;
+    z-index: 2;
+}
+
+.enemyIconBackground {
+    background: url('https://static.miraheze.org/pgrwiki/0/00/Wiki-Background-EnemyCellNew.png');
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+}
+
+.enemyIconBackground:hover {
+    filter: invert(80%);
+}
+
+span.fontWhite a {
+    color: white;
+}
+
+/* ---------: End of custom table :--------- */
+
+/* --: Horizontal sidescrolling gallery :--- */
+
+.shop-scroller {
+    width: auto;
+    height: 400px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #FAFCE9 !important;
+}
+
+.shop-scroller>div {
+    display: inline-block;
+    width: 250px;
+    height: 340px;
+    margin: 25px;
+    text-align: center;
+    color: #0A0001 !important;
+}
+
+/* ---------: End of shop scroller :--------- */
+
+#custom-header-notch {
+    display: flex;
+    flex: auto;
+    height: 2.5rem;
+    width: 20rem;
+}
+
+#custom-header-notch .notch {
+    height: 0;
+    width: 0;
+    border-bottom: 2.5rem solid transparent;
+}
+
+#custom-header-notch .header {
+    padding-left: 10px;
+    width: 250px;
+    padding: 0 0.5rem;
+    background: rgb(245, 0, 0);
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2.5rem;
+    font-weight: 900;
+}
+
+/***************************************************************************/
+
+/*- custom Left Menu -*/
+
+#p-logo {
+    /*	margin-top: -0.6em;
+	margin-left: -0.5em; */
+    width: 100%;
+}
+
+#p-logo a {
+    width: 246px;
+    background-position: center;
+    background-size: contain;
+}
+
+#site-navigation {
+    margin-top: -40px !important;
+    width: inherit;
+}
+
+/*Change Hamburger Icon for Mobile*/
+
+#site-navigation h2 {
+    background-image: url(https://static.miraheze.org/pgrwiki/7/79/Icon-BurgerMenu-White.svg);
+}
+
+#site-navigation .sidebar-inner {
+    width: 250px;
+    /*  margin-left: -2em; */
+}
+
+#p-N_A_V_I_G_A_T_I_O_N {
+    margin-top: 0.26em;
+    font-family: "roboto condensed";
+    display: inline-block;
+    height: 32px;
+    font-size: 18px;
+    font-weight: 900 !important;
+}
+
+#p-N_A_V_I_G_A_T_I_O_N h3 {
+    margin-top: 0.3em !important;
+    border-bottom: none !important;
+}
+
+#p-N_A_V_I_G_A_T_I_O_N {
+    width: 100% !important;
+    text-align: center;
+    font-weight: 900;
+    background-image: url(https://cdn.discordapp.com/attachments/887726034412249160/887752045371748352/asset1.png);
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+#p-N_A_V_I_G_A_T_I_O_N span {
+    color: white;
+    font-size: 20px;
+    font-family: "roboto condensed";
+}
+
+#p-N_A_V_I_G_A_T_I_O_N a:hover {
+    text-decoration: none;
+}
+
+/* ------ top menu ----- */
+
+.mediawiki {
+    margin-top: -1.3rem !important;
+}
+
+#mw-header-container {
+    height: 2.4rem !important;
+    min-height: 0 !important;
+    font-family: "roboto condensed" !important;
+}
+
+#searchInput-container {
+    margin-top: 0.4em !important;
+    background-color: #28282a;
+}
+
+#mw-header {
+    margin-top: -0.4rem;
+}
+
+#searchInput {
+    height: 1.4rem;
+}
+
+#searchButton {
+    height: 1.6rem;
+}
+
+#p-banner {
+    font-family: "roboto condensed" !important;
+}
+
+#p-logo-text {
+    margin-top: 0.1rem;
+}
+
+/* ------ end of top menu ----- */
+
+/*--------  main content layout  --------*/
+
+#p-namespaces {
+    display: none;
+}
+
+#firstHeading {
+    color: white !important;
+    text-align: center;
+    border-bottom: solid 2px #fff;
+}
+
+.mw-parser-output {
+    margin-top: 2em;
+}
+
+/*---------------------------------------*/
+
+/*Editor Markup Color Change*/
+
+/*Keywords and Storage, Formerly Blue : */
+
+#editform .ace-tm .ace_storage, .ace-tm .ace_keyword {
+    color: #2196F3;
+}
+
+/*Constants, Formerly green :*/
+
+#editform .ace-tm .ace_support.ace_constant {
+    color: #558B2F;
+}
+
+/*Numbers, Numeric Constants. Formerly blue :*/
+
+#editform .ace-tm .ace_constant.ace_numeric {
+    color: #2196F3;
+}
+
+/*Functions, Formerly dark-blue : */
+
+#editform .ace-tm .ace_support.ace_function {
+    color: #7E57C2;
+}
+
+/*Bare Tags, Formerly reddish-brown : */
+
+#editform .ace-tm .ace_constant {
+    color: #F4511E;
+}
+
+/*Strings, Formerly green : */
+
+#editform .ace-tm .ace_string {
+    color: #43A047;
+}
+
+/*Class Names, Formerly unstyled */
+
+#editform .ace-tm .ace_variable {
+    color: #F57C00;
+}
+
+/*---------- Left side menu --------------*/
+
+#p-Characters {
+    margin-left: 1.6em;
+    margin-top: 1em !important;
+}
+
+#p-Items_\&_Gear, #p-Game_Modes, #p-Other_Features, #p-Resources, #p-managewiki-sidebar-header {
+    margin-top: -0.8em !important;
+    margin-left: 1.6em;
+}
+
+#p-Characters h3, #p-Items_\&_Gear h3, #p-Game_Modes h3, #p-Other_Features h3, #p-Resources h3, #p-managewiki-sidebar-header h3 {
+    font-size: 1.3rem !important;
+    font-family: "roboto condensed";
+    font-weight: 900 !important;
+    border-bottom: none !important;
+}
+
+#p-Characters ul, #p-Items_\&_Gear ul, #p-Game_Modes ul, #p-Other_Features ul, #p-Resources ul, #p-managewiki-sidebar-header ul {
+    font-size: 1.05rem !important;
+    font-family: "roboto condensed";
+    margin-top: -1em !important;
+    line-height: 0.8;
+}
+
+#p-managewiki-sidebar-header ul {
+    padding-bottom: 10px !important;
+}
+
+#p-addthis {
+    display: none;
+}
+
+.sidebar-inner {
+    background-color: #111112;
+}
+
+/* ------------------------------------ */
+
+.wikitable tbody tr th, .sortable.wikitable tr th {
+    color: white;
+    background-color: #921131;
+}
+
+.wikitable tbody tr td, .sortable.wikitable tr td {
+    color: white;
+    background-color: #212129;
+}
+
+.wikitable tbody th, .wikitable tbody td, .sortable.wikitable th {
+    border: 1px solid black;
+}
+
+.wikitable {
+    border-width: 1px 1px 0em;
+    border-color: initial;
+}
