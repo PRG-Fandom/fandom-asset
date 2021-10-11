@@ -1,0 +1,269 @@
+body {
+    background-color: #F9E79F;
+}
+
+/*L'OPACITÉ DE LA VIGNETTE CHANGE LORS DU HOVER*/
+
+img:hover {
+    opacity: 0.8;
+    transition: opacity 0.9s;
+}
+
+/*LE STYLE DU TEXTE CLICK TO ZOOM*/
+
+.click {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+    color: white;
+    background-color: #0708a8;
+    font-size: 1em;
+    font-family: "Lucida Console", Courier, monospace;
+    opacity: 0;
+    /*opacity 0 car le texte ne doit pas être affiché avant le hover*/
+}
+
+.box:hover .click {
+    opacity: 1;
+    /*le texte passe à opacity 1 et devient visible*/
+    transition: opacity 0.9s;
+}
+
+/*flexbox*/
+
+.conteneur-flexbox {
+    max-width: 650px;
+    margin: 100px auto 0 auto;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #838383;
+}
+
+/*LIGHTBOX*/
+
+body:after {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/close.png) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/loading.gif) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/prev.png) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/next.png);
+    display: none;
+}
+
+body.lb-disable-scrolling {
+    overflow: hidden;
+}
+
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    display: none;
+}
+
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+}
+
+.lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+    /* Image border */
+    border: 4px solid white;
+}
+
+.lightbox a img {
+    border: none;
+}
+
+.lb-outerContainer {
+    position: relative;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+    /* Background color behind image.
+     This is visible during transitions. */
+    background-color: white;
+}
+
+.lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/loading.gif) no-repeat;
+}
+
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.lb-container>.nav {
+    left: 0;
+}
+
+.lb-nav a {
+    outline: none;
+    background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/prev.png) left 48% no-repeat;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/next.png) right 48% no-repeat;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    *zoom: 1;
+    width: 100%;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lb-data {
+    padding: 0 4px;
+    color: white;
+    font-family: "work_sans", sans-serif;
+}
+
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+    font-family: "work_sans", sans-serif;
+}
+
+.lb-data .lb-caption {
+    font-family: "work_sans", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+    color: #4ae;
+}
+
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999;
+}
+
+.lb-data .lb-close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/265602/close.png) top right no-repeat;
+    text-align: right;
+    outline: none;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+    cursor: pointer;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
