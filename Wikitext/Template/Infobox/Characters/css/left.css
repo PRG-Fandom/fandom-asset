@@ -49,16 +49,7 @@
     grid-area: icon;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-
-<<<<<<< Updated upstream
-    grid-template-areas: "a" "b" "c";
-=======
-<<<<<<< Updated upstream
-	grid-template-areas: "a" "b" "c";
-=======
     grid-template-areas: "a b c";
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
     border-top: 1px solid #4d4d4dbd;
 }

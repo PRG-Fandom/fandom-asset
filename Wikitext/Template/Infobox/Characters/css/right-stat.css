@@ -1,10 +1,5 @@
 .right .stat {
-<<<<<<< Updated upstream
     grid-area: stat;
-=======
-<<<<<<< Updated upstream
-	grid-area: stat;
->>>>>>> Stashed changes
 
     display: grid;
     grid-template-columns: 1fr;
@@ -24,34 +19,18 @@
 /*--------------------------------------------*/
 .right .table #content,
 .right .table #header {
-<<<<<<< Updated upstream
     text-align: center;
-=======
-	text-align: center;
-=======
-    grid-area: stat;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr min-content;
-    gap: 10px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "top" "graph" "table";
-    width: 300px;
-    padding-left: 1em;
->>>>>>> Stashed changes
 }
 
 /*--------------------------------------------*/
 
 .right .table #content, .right .table #header {
     text-align: center;
->>>>>>> Stashed changes
 }
 
 /*--------------------------------------------*/
 
 .stat .top {
-<<<<<<< Updated upstream
     grid-area: top;
     display: grid;
     grid-template-columns: min-content;
@@ -61,28 +40,11 @@
     grid-template-areas:
         "header"
         "content";
-=======
-<<<<<<< Updated upstream
-	grid-area: top;
-	display: grid;
-	grid-template-columns: min-content;
-	grid-template-rows: min-content min-content;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"header"
-		"content";
->>>>>>> Stashed changes
 }
 
 .stat .graph {
     grid-area: graph;
 
-<<<<<<< Updated upstream
-    object-position: 50% 50%;
-=======
-	object-position: 50% 50%;
-=======
     grid-area: top;
     display: grid;
     grid-template-columns: min-content;
@@ -90,13 +52,8 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header" "content";
-}
 
-.stat .graph {
-    grid-area: graph;
     object-position: 50% 50%;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 }
 
 .stat .table {
@@ -110,7 +67,6 @@
 }
 
 .stat .HP {
-<<<<<<< Updated upstream
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -120,18 +76,6 @@
         "header"
         "content";
     grid-area: HP;
-=======
-<<<<<<< Updated upstream
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"header"
-		"content";
-	grid-area: HP;
->>>>>>> Stashed changes
 }
 
 .stat .DEF {
@@ -172,15 +116,6 @@
 
     grid-area: CRIT;
 }
-=======
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "header" "content";
-    grid-area: HP;
-}
 
 .stat .DEF {
     display: grid;
@@ -211,4 +146,3 @@
     grid-template-areas: "header" "content";
     grid-area: CRIT;
 }
->>>>>>> Stashed changes

@@ -35,17 +35,8 @@
     text-align: center;
     align-self: end;
 
-<<<<<<< Updated upstream
     text-transform: uppercase;
-=======
-<<<<<<< Updated upstream
-	text-transform: uppercase;
-=======
-    text-transform: uppercase;
-
     font-weight: bolder;
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 }
 
 .data .frame {
@@ -64,7 +55,7 @@
     
     align-self: center;
 
-    background-color: #babfc0;
+    background-color: var(--character_infobox-h_line, #babfc0);
 
     width: 100%;
     height: 1px;
@@ -90,7 +81,7 @@
 
 .data #v_line {
     grid-area: v_line;
-    background-color: #babfc0;
+    background-color: var(--character_infobox-h_line, #babfc0);
 }
 
 .data .stat {
@@ -99,7 +90,7 @@
 
 .data #h_line {
     grid-area: h_line;
-    background-color: #babfc0;
+    background-color: var(--character_infobox-v_line, #babfc0);
 }
 
 .data .bottom {
