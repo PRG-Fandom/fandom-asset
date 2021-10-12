@@ -4,19 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
-:root {
-    /**************************- Website -**************************/
-    /*Whole Site Style*/
-    --ws-bg-color: #0F0F0F;
-    /*Sidebar Colors*/
-    --sb-bg-color: ;
-    --sb-link-color: #f72058;
-    --sb-v_link-color: #f72058;
-    /*Main Container Style*/
-    --main-bg-color: linear-gradient(#921131 0, #141416 7rem);
-    /**************************- Infobox -**************************/
-    /**/
-}
 
 body {
     font-family: 'Lato', sans-serif;
