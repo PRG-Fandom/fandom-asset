@@ -1,8 +1,6 @@
-body {
-    background-color: #F9E79F;
-}
-
-/*L'OPACITÉ DE LA VIGNETTE CHANGE LORS DU HOVER*/
+/*******************************************************************/
+/****************************- Gallery -****************************/
+/*******************************************************************/
 
 img:hover {
     opacity: 0.8;
@@ -11,7 +9,7 @@ img:hover {
 
 /*LE STYLE DU TEXTE CLICK TO ZOOM*/
 
-.click {
+.zoom {
     position: absolute;
     left: 0;
     right: 0;
@@ -20,14 +18,12 @@ img:hover {
     text-align: center;
     z-index: 10;
     color: white;
-    background-color: #0708a8;
+    background-color: var(--gallery-bg, #0708a8);
     font-size: 1em;
-    font-family: "Lucida Console", Courier, monospace;
     opacity: 0;
-    /*opacity 0 car le texte ne doit pas être affiché avant le hover*/
 }
 
-.box:hover .click {
+.image:hover .zoom {
     opacity: 1;
     /*le texte passe à opacity 1 et devient visible*/
     transition: opacity 0.9s;
@@ -45,7 +41,7 @@ img:hover {
     flex-wrap: wrap;
 }
 
-.box {
+.image {
     position: relative;
     width: 300px;
     height: 300px;
