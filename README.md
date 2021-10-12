@@ -5,17 +5,16 @@ Main repository for the [Punishing Grey Miraheze](). It serves as a backup as fo
 - [Test Environment](https://codesandbox.io/dashboard/home?workspace=30174fa7-6dfb-487f-80bf-ffe8a3fd1e27).
 - [Table Generator]().
 - [CSS Grid Compiler]().
-- [Mediatext Wiki]().
+- [Mediatext Wiki](www.mediawiki.org/wiki).
 
 # Folders 
 A quick description of the files layout on the github repository.
-(It may changes in the futur)
+(It may change in the futur).
+
 ## CSS
-Where all the CSS files use on the Fandom are stored. They are import on fandom using the @import command.
+Where all the CSS files used on the Fandom are stored. They are import on fandom using the @import command.
 
-For backup, a copy of the main files from Miraheze are also stored.  
-
-## Ressources
+For backup, a copy of the main files from Miraheze are also stored.
 
 
 ## Test
@@ -28,3 +27,4 @@ Where every function template and bit of code coded into mediawiki must be store
 
 ## Prototype
 Must be done, but later.
+It contains the Gallery.
