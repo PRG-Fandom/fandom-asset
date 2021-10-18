@@ -17,8 +17,10 @@
 .right .information #content,
 .right .information #header {
     text-align: center;
+    font-size: small;
 }
 
+/*--------------------------------------------*/
 /*--------------------------------------------*/
 .information .rank {
     grid-area: rank;
@@ -28,8 +30,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header"
-        "content";
+        "content;"
+        "header";
 }
 
 .information .class {
@@ -40,8 +42,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header"
-        "content";
+        "content;"
+        "header";
 }
 
 .information .archetype {
@@ -52,8 +54,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header"
-        "content";
+        "content;"
+        "header";
 }
 
 .information .signature-weapon {
@@ -64,8 +66,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header"
-        "content";
+        "content;"
+        "header";
 }
 
 .information .army {
@@ -76,8 +78,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header"
-        "content";
+        "content;"
+        "header";
 }
 
 .information .gift {
@@ -88,6 +90,6 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "header"
-        "content";
+        "content;"
+        "header";
 }
