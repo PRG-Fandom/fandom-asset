@@ -1,0 +1,29 @@
+:root {
+    /**- Website -**/
+    --text: white;
+
+    --link: #f72058;
+    --link-hover: ;
+    --link-open: #74122c;
+
+
+    /**- Main Container -**/
+    --main-bg: #0F0F0F;
+    --main-gradient: linear-gradient(#921131 0, #141416 7rem);
+    --main-text: #fcfcfc;
+
+    /**- Sidebar -**/
+    --sidebar-bg: ;
+
+
+    /**- Gallery -**/
+    --gallery-bg: ;
+
+
+    /**- Templates -**/
+    --character_infobox-v_line: #babfc0;
+    --character_infobox-h_line: var(--character_infobox-v_line, black);
+
+
+    /**- Tabs -**/
+}
