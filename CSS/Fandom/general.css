@@ -1,15 +1,3 @@
-#WikiaBar {
-    display: none;
-    /* bottom floaty editing toolbar */
-}
-
-/*
-.page__right-rail {
-    display: none;
-    // right hand rail
-}
-*/
-
 .main-container {
     margin-left: 0;
     width: 100%;
