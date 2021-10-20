@@ -1,8 +1,7 @@
-<includeonly>
 <div id="infobox-character">
     <div class="left">
         <div class="profile">
-            {{Icon|Name=Character-{{{Frame|}}}-Portrait|Unclickable=1}}
+            {{Icon|Name=Character-{{{Frame|}}}-Portrait|Size=300|Unclickable=1}}
         </div>
         <div class="icon">
             <div class="a">
@@ -29,150 +28,104 @@
         </div>
         <div class="element">
             <div id="header">Element</div>
-            <div id="content">
-                <ul>
-                    {{{Element|}}}
-                </ul>
+            <div id="content">{{{Element|}}}</div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="data">
+        <div class="top">
+                <div class="name">{{{Name|}}}</div>
+                <div class="frame">{{{Frame|}}}</div>
+                <div class="horizontal-line"></div>
+            </div>
+            <div class="middle">
+                <div class="biography">
+                    <div class="service">
+                        <div id="header">Service Time</div>
+                        <div id="content">{{{Service Time|}}} Years</div>
+                    </div>
+                    <div class="psychological">
+                        <div id="header">Psychological Age</div>
+                        <div id="content">{{{Psychological Age|}}}</div>
+                    </div>
+                    <div class="activation">
+                        <div id="header">Activation Date</div>
+                        <div id="content">{{{Activation|}}}</div>
+                    </div>
+                    <div class="height">
+                        <div id="header">Height</div>
+                        <div id="content">{{{Height|}}}</div>
+                    </div>
+                    <div class="weight">
+                        <div id="header">Weight</div>
+                        <div id="content">{{{Weight|}}}</div>
+                    </div>
+                    <div class="vital-fluid">
+                        <div id="header">Vital Fluid Type</div>
+                        <div id="content">{{{Vital Fluid|}}}</div>
+                    </div>
+                </div>
+                <div id="v_line"></div>
+                <div class="stat">
+                    <div class="top">
+                        <div id="header">Stat</div>
+                        <div id="content">Review</div>
+                    </div>
+                    <!--  <div class="graph">{{Icon|Name={{{Graph File|}}}|Unclickable=1}}</div> -->
+                    <div id="graph">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=300|Category=1}}</div>
+                    <div class="table" style="text-align: start; vertical-align: middle;">
+                        <div class="HP">
+                            <div id="header">HP</div>
+                            <div id="content">{{{HP|}}}</div>
+                        </div>
+                        <div class="DEF">
+                            <div id="header">DEF</div>
+                            <div id="content">{{{DEF|}}}</div>
+                        </div>
+                        <div class="ATK">
+                            <div id="header">ATK</div>
+                            <div id="content">{{{ATK|}}}</div>
+                        </div>
+                        <div class="CRIT">
+                            <div id="header">CRIT</div>
+                            <div id="content">{{{CRIT|}}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="h_line"></div>
+            <div class="bottom">
+                <div class="information">
+                    <div class="rank">
+                        <div id="header">Rank</div>
+                        <div id="content">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=60|Category=1}}</div>
+                    </div>
+                    <div class="class">
+                        <div id="header">Class</div>
+                        <div id="content">{{Icon|Name=Class-{{{Class|}}}-Icon-White|Size=60|Category=1}}</div>
+                    </div>
+                    <div class="archetype">
+                        <div id="header">Weapon</div>
+                        <div id="content">{{Icon|Name=Weapon-Category-{{{Category|}}}|Size=60|Category=1}}</div>
+                        <!--<div id="content">{{Icon|Name=Weapon-Type-{{{Weapon|}}}-Icon|Size=60|Link={{{Weapon|}}}}}</div>-->
+                    </div>
+                    <div class="signature-weapon">
+                        <div id="header">Signature</div>
+                        <div id="content">{{Icon|Name=Weapon-{{{Signature Weapon|}}}-Icon|Size=60|Link={{{Signature Weapon|}}}}}</div>
+                    </div>
+                    <div class="army">
+                        <div id="header">Army</div>
+                        <div id="content">{{Icon|Name=Army-{{{Army|}}}-Icon-White|Size=60|Link=[[Lore#{{{Army}}}]]}}</div>
+                    </div>
+                    <div class="gift">
+                        <div id="header">Gift</div>
+                        <div id="content">{{Icon|Name=Item-Gift-{{{Gift|}}}|Size=60|Link=[[Gift]]}}</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="right">
-        <tabs>
-            <tab name="Data">
-                <div class="data">
-                    <div class="top">
-                        <div class="name">
-                            {{{Name|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|0|<nowiki />-<nowiki />}}}}}
-                        </div>
-                        <div class="frame">
-                            {{{Frame|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}}}}
-                        </div>
-                        <div id="h_line"></div>
-                    </div>
-                    <div class="middle">
-                        <div class="biography">
-                            <div class="service">
-                                <div id="header">Service Time</div>
-                                <div id="content">
-                                    {{{Service Time|}}} Years
-                                </div>
-                            </div>
-                            <div class="psychological">
-                                <div id="header">Psychological Age</div>
-                                <div id="content">{{{Psychological Age|}}}</div>
-                            </div>
-                            <div class="activation">
-                                <div id="header">Activation Date</div>
-                                <div id="content">{{{Activation|}}}</div>
-                            </div>
-                            <div class="height">
-                                <div id="header">Height</div>
-                                <div id="content">{{{Height|}}}</div>
-                            </div>
-                            <div class="weight">
-                                <div id="header">Weight</div>
-                                <div id="content">{{{Weight|}}}</div>
-                            </div>
-                            <div class="vital-fluid">
-                                <div id="header">Vital Fluid Type</div>
-                                <div id="content">{{{Vital Fluid|}}}</div>
-                            </div>
-                        </div>
-                        <div id="v_line"></div>
-                        <div class="stat">
-                            <div class="top">
-                                <div id="header">Stat</div>
-                                <div id="content">Review</div>
-                            </div>
-                            <div class="graph">{{Icon|Name={{{Graph File|}}}|Unclickable=1}}</div>
-                            <div class="table" style="text-align: start; vertical-align: middle;">
-                                <div class="HP">
-                                    <div id="header">HP</div>
-                                    <div id="content">{{{HP|}}}</div>
-                                </div>
-                                <div class="DEF">
-                                    <div id="header">DEF</div>
-                                    <div id="content">{{{DEF|}}}</div>
-                                </div>
-                                <div class="ATK">
-                                    <div id="header">ATK</div>
-                                    <div id="content">{{{ATK|}}}</div>
-                                </div>
-                                <div class="CRIT">
-                                    <div id="header">CRIT</div>
-                                    <div id="content">{{{CRIT|}}}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="h_line"></div>
-                    <div class="bottom">
-                        <div class="information">
-                            <div class="rank">
-                                <div id="header">Rank</div>
-                                <div id="content">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=60|Category=1}}</div>
-                            </div>
-                            <div class="class">
-                                <div id="header">Class</div>
-                                <div id="content">{{Icon|Name=Class-{{{Class|}}}-Icon-White|Size=60|Category=1}}</div>
-                            </div>
-                            <div class="archetype">
-                                <div id="header">Archetype</div>
-                                <div id="content">{{Icon|Name=Weapon-Type-{{{Archetype|}}}-Icon|Size=60|Link={{{Weapon|}}}}}</div>
-                            </div>
-                            <div class="signature-weapon">
-                                <div id="header">Signature Weapon</div>
-                                <div id="content">{{Icon|Name=Weapon-{{{Signature Weapon|}}}-Icon|Size=60|Link={{{Signature Weapon|}}}}}</div>
-                            </div>
-                            <div class="army">
-                                <div id="header">Army</div>
-                                <div id="content">{{Icon|Name=Army-{{{Faction|}}}-Icon-White|Size=60|Link=[[Lore#{{{Faction}}}]]}}</div>
-                            </div>
-                            <div class="gift">
-                                <div id="header">Gift</div>
-                                <div id="content">{{Icon|Name=Item-Gift-{{{Gift|}}}|Size=60|Link=[[Gift]]}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tab>
-            <tab name="Secret">
-                <div class="secret">
-                    <div class="secret-1">
-                        <div class="header">Secret 1</div>
-                        <div class="content">{{{Secret 1|}}}</div>
-                    </div>
-                    <div class="secret-2">
-                        <div class="header">Secret 2</div>
-                        <div class="content">{{{Secret 2|}}}</div>
-                    </div>
-                    <div class="secret-3">
-                        <div class="header">Secret 3</div>
-                        <div class="content">{{{Secret 3|}}}</div>
-                    </div>
-                    <div class="secret-4">
-                        <div class="header">Secret 4</div>
-                        <div class="content">{{{Secret 4|}}}</div>
-                    </div>
-                    <div class="secret-5">
-                        <div class="header">Secret 5</div>
-                        <div class="content">{{{Secret 5|}}}</div>
-                    </div>
-                    <div class="secret-6">
-                        <div class="header">Secret 6</div>
-                        <div class="content">{{{Secret 6|}}}</div>
-                    </div>
-                </div>
-            </tab>
-            <tab name="Quote">
-
-            </tab>
-        </tabs>
-    </div>
 </div>
-
-</includeonly>
 
 <noinclude>
 == Detail ==
@@ -186,7 +139,7 @@
 |-
 |Information=
 |Speciality=
-|Element=<li></li> <!-- Surround each element with <li></li> -->
+|Element=
 |+
 |Service Time=
 |Psychological Age=
@@ -201,20 +154,7 @@
 |CRIT=
 |-
 |Army= <!--GrayRavenI ; GrayRavenII, GrayRavenIII, Forsaken, WGAA, etc.-->
-|Archetype= <!--Katana ; Chainsaw ; HandCannon ; Bow ; etc.-->
+|Weapon= <!--Katana ; Chainsaw ; HandCannon ; Bow ; Longsword.-->
 |Signature Weapon=
-|+
-|Secret 1=
-|Secret 2=
-|Secret 3=
-|Secret 4=
-|Secret 5=
-|Secret 6=
-|+
 }}
-</pre>
-
-== Exemple ==
-
-[[Category:Infobox]]
 </noinclude>

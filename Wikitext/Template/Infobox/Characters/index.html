@@ -10,53 +10,47 @@
     <body>
         <div id="infobox-character">
             <div class="left">
-<<<<<<< Updated upstream
                 <div class="profile">
-                    {{Icon|Name=Character-{{{Frame|}}}-Portrait|Size=300x300px|Unclickable=1}}
-                </div>
-                <div class="icons">
-=======
-<<<<<<< Updated upstream
-                <div class="Profile">
-                    {{Icon|Name={{{Character Artwork|}}}|Unclickable=1}}
-                </div>
-                <div class="Icons"></div>
-                <div class="Informations">
-=======
-                <div class="profile">
-                    {{Icon|Name=Character-{{{Frame|}}}-Portrait|Unclickable=1}}
+                    {{Icon|Name=Character-{{{Frame|}}}-Portrait|Size=300|Unclickable=1}}
                 </div>
                 <div class="icon">
->>>>>>> Stashed changes
-                    <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}</div>
-                    <div class="b">{{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}</div>
-                    <div class="c">{{Icon|Name=Dialogue-{{{Frame}}}-Awaken-Icon|Size=60|Unclickable=1}}</div>
+                    <div class="a">
+                        {{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}
+                    </div>
+                    <div class="b">
+                        {{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}
+                    </div>
+                    <div class="c">
+                        {{Icon|Name=Dialogue-{{{Frame}}}-Awaken-Icon|Size=60|Unclickable=1}}
+                    </div>
                 </div>
-<<<<<<< Updated upstream
-                <div class="informations">
-=======
                 <div class="information">
->>>>>>> Stashed changes
->>>>>>> Stashed changes
                     <div id="header">Information</div>
                     <div id="content">{{{Information|}}}</div>
                 </div>
                 <div class="speciality">
                     <div id="header">Speciality</div>
-                    <div id="content"><ul>{{{Speciality|}}}</ul></div>
+                    <div id="content">
+                        <ul>
+                            {{{Speciality|}}}
+                        </ul>
+                    </div>
                 </div>
                 <div class="element">
                     <div id="header">Element</div>
-                    <div id="content">{{{Element|}}}</div>
+                    <div id="content">
+                        <ul>
+                            {{{Element|}}}
+                        </ul>
+                    </div>
                 </div>
             </div>
-        
             <div class="right">
                 <div class="data">
-                    <div class="top">
-                        <div class="name">{{{Name|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|0|<nowiki />-<nowiki />}}}}}</div>
-                        <div class="frame">{{{Frame|{{#explode:{{PAGENAME}}|<nowiki />-<nowiki />|1}}}}}</div>
-                        <div id="h_line"></div>
+                <div class="top">
+                        <div class="name">{{{Name|}}}</div>
+                        <div class="frame">{{{Frame|}}}</div>
+                        <div class="horizontal-line"></div>
                     </div>
                     <div class="middle">
                         <div class="biography">
@@ -91,10 +85,9 @@
                                 <div id="header">Stat</div>
                                 <div id="content">Review</div>
                             </div>
-                            <div class="graph">
-                                {{Icon|Name={{{Graph File|}}}|Unclickable=1}}
-                            </div>
-                            <div class="table" style="text-align: start; vertical-align: middle">
+                            <!--  <div class="graph">{{Icon|Name={{{Graph File|}}}|Unclickable=1}}</div> -->
+                            <div id="graph">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=300|Category=1}}</div>
+                            <div class="table" style="text-align: start; vertical-align: middle;">
                                 <div class="HP">
                                     <div id="header">HP</div>
                                     <div id="content">{{{HP|}}}</div>
@@ -119,37 +112,28 @@
                         <div class="information">
                             <div class="rank">
                                 <div id="header">Rank</div>
-                                <div id="content">
-                                    {{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=60|Category=1}}
-                                </div>
+                                <div id="content">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=60|Category=1}}</div>
                             </div>
                             <div class="class">
                                 <div id="header">Class</div>
-                                <div id="content">
-                                    {{Icon|Name=Class-{{{Class|}}}-Icon-White|Size=60|Category=1}}
-                                </div>
+                                <div id="content">{{Icon|Name=Class-{{{Class|}}}-Icon-White|Size=60|Category=1}}</div>
                             </div>
                             <div class="archetype">
-                                <div id="header">Archetype</div>
-                                <div id="content">
-                                    {{Icon|Name=Weapon-Type-{{{Archetype|}}}-Icon|Size=60|Link={{{Weapon|}}}}}
-                                </div>
+                                <div id="header">Weapon</div>
+                                <div id="content">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=60|Category=1}}</div>
+                                <!--<div id="content">{{Icon|Name=Weapon-Type-{{{Weapon|}}}-Icon|Size=60|Link={{{Weapon|}}}}}</div>-->
                             </div>
                             <div class="signature-weapon">
-                                <div id="header">Signature Weapon</div>
+                                <div id="header">Signature</div>
                                 <div id="content">{{Icon|Name=Weapon-{{{Signature Weapon|}}}-Icon|Size=60|Link={{{Signature Weapon|}}}}}</div>
                             </div>
                             <div class="army">
                                 <div id="header">Army</div>
-                                <div id="content">
-                                    {{Icon|Name=Army-{{{Faction|}}}-Icon-White|Size=60|Link=[[Lore#{{{Faction}}}]]}}
-                                </div>
+                                <div id="content">{{Icon|Name=Army-{{{Army|}}}-Icon-White|Size=60|Link=[[Lore#{{{Army}}}]]}}</div>
                             </div>
                             <div class="gift">
                                 <div id="header">Gift</div>
-                                <div id="content">
-                                    {{Icon|Name=Item-Gift-{{{Gift|}}}|Size=60|Link=[[Gift]]}}
-                                </div>
+                                <div id="content">{{Icon|Name=Item-Gift-{{{Gift|}}}|Size=60|Link=[[Gift]]}}</div>
                             </div>
                         </div>
                     </div>
