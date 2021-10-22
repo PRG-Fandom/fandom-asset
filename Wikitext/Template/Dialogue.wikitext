@@ -1,0 +1,32 @@
+<includeonly>
+<div id="dialogue">
+    {{#ifeq: {{{Character|}}}|Narrator
+    |<div class="narrator">{{{Content 1|}}}</div>
+    |<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+    <div class="content">
+        <div class="character">{{{Character}}}</div>
+        <div class="text">{{{Content|}}}</div>
+    </div>
+    }}
+</div>
+</includeonly>
+
+<noinclude>
+== Description ==
+
+== Code ==
+{{Dialogue
+|Character= <!--If The character is the Narrator, then you just have to use the Content 1-->
+|Frame=
+|+ <!--Fill for each choise available (no need to use Choice 1 if there is only one choice)-->
+|Choice 1=
+|Content 1=
+|Choice 2=
+|Content 2=
+|Choice 3=
+|Content 3=
+|}}
+== Exemple ==
+
+[[Category:Template]]
+</noinclude>
