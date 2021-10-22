@@ -1,0 +1,10 @@
+:root {
+    --background-dialogue-1: #0c0c0c;
+    --background-dialogue-2: #4b0e21;
+
+
+}
+
+#dialogue {
+    background-color: var(--background-dialogue-1);
+}#4b0e21
