@@ -1,15 +1,34 @@
-<includeonly>{{#if:{{{Unclickable}}}|<div class="disableClick">|}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]{{#if:{{{Unclickable}}}|</div>|}}</includeonly>
+<includeonly><!--
+--><{{#if: {{{Icon}}}|span|div}} {{#if:{{{Unclickable}}}|class="disableClick"}}>[[File:{{{Name}}}.{{{Extension|png}}}|{{#if: {{{Icon}}}|5|{{{Size}}}}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]</{{#if:{{{Icon}}}|span|div}}><!--
+--></includeonly>
 
 <noinclude>
 == Description ==
-Use this template to create an icon. 
-"Size" define the size in pixel of the icon, while "Name" is the file name. The extension is by default set to be ''png'', but it can be changed too. 
-''Name'' is to define the file name, it's extension can be set using ''Extension'' (by default, it's '''png''').
-The size can also be choose using ''Size'', as well as it's alignement using ''Position'' (by default, it's '''centered''').
-Finally, the image can be configure to redirect to a page: if ''Link'' has a value (anything), it will redirect to the page that has the same name as the file. Same for ''Category'': if this parameter has any value, then it will redirect to the Category.
+Use this template to create an icon. <br />
+'''Size''' define the size in pixel of the icon. This parameter has a particular syntax: ''Height'' x ''Width''.<br />
+<ul>
+<li> Each of them can be set seperately.</li>
+<li> If only one value is set, it will be for both height and width.</li>
+<li> If a value is set before the ''x'', it will only be the height. The width will be the file original.</li>
+<li> If a value is set after the ''x'', it will only be the width. The height will be the file original.</li>
+</ul>
+<br />
+'''Name''' is to define the file name, it's extension can be set using '''Extension''' (by default, it's ''png'').<br />
+The size can also be choose using '''Size''', as well as it's alignement using '''Position''' (by default, it's ''centered'').<br />
+Finally, the image can be configure to redirect to a page: if '''Link''' has a value (anything), it will redirect to the page that has the same name as the file. Same for '''Category''': if this parameter has any value, then it will redirect to the Category.<br />
+<br />
+'''Icon''' is a preset made to add icon in the middle of a block of text. It sets the size to 5px.<br />
 == Code ==
 <pre>
-{{icon|Name=|Icon=<!--Boolean-->|Extension=<!--Can stay empty (default: png)-->|Size=<!--Can stay empty (default: 40px)-->|Category=<!--Can stay empty-->|Position=<!--Can stay empty (default: center)-->|Link=<!--Boolean-->|Unclickable=}}
+{{icon|Icon=<!--Boolean-->|Name=|Extension=<!--Can stay empty (default: png)-->|Size=|Position=<!--Can stay empty (default: center)-->|Link=<!--Boolean-->|Category=<!--Boolean-->|Unclickable=<!--Boolean-->}}
 </pre>
+
+== Exemple ==
+{{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}
+
 [[Category:Template]]
 </noinclude>
+
+<includeonly>{{#if:{{{Unclickable}}}||<span class="disableClick">}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}|{{#if:{{{Link|}}}|link={{#if:{{{Category}}}|Category:|}}{{{Link}}}}}]] {{#if:{{{Unclickable}}}||</span>}}</includeonly>
+<!--[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Name}}}}}]]
+This is bugged. Keep it here just in case-->
