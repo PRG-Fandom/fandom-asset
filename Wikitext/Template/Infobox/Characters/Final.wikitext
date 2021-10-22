@@ -154,7 +154,7 @@
 |CRIT=
 |-
 |Army= <!--GrayRavenI ; GrayRavenII, GrayRavenIII, Forsaken, WGAA, etc.-->
-|Weapon= <!--Katana ; Chainsaw ; HandCannon ; Bow ; Longsword.-->
+|Category= <!--Bow ; Cannon ; Dagger ; DualGuns ; Greatsword ; Katana ; LeviGun ; Saw ; Scythe ; SpearShield ; Gauntlets ; Amplifier ; RifleSet ; CompositerGreatsword ; CompositerDragonSpear ; CompositerCelloBlade ; CompositerChainSword ; 2B ; 2A ; 9S ; Gunblade ; BannerSpear ; Scepter ; CollabBot-->
 |Signature Weapon=
 }}
 </noinclude>
