@@ -1,18 +1,11 @@
+<includeonly>
 <div id="infobox-character">
     <div class="left">
-        <div class="profile">
-            {{Icon|Name=Character-{{{Frame|}}}-Portrait|Size=300|Unclickable=1}}
-        </div>
+        <div class="profile">{{Icon|Name=Character-{{{Frame|}}}-Portrait|Size=300|Unclickable=1}}</div>
         <div class="icon">
-            <div class="a">
-                {{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}
-            </div>
-            <div class="b">
-                {{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}
-            </div>
-            <div class="c">
-                {{Icon|Name=Dialogue-{{{Frame}}}-Awaken-Icon|Size=60|Unclickable=1}}
-            </div>
+            <div class="a">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Unclickable=1}}</div>
+            <div class="b">{{Icon|Name=Dialogue-{{{Frame}}}-Chibi-Icon|Size=60|Unclickable=1}}</div>
+            <div class="c">{{Icon|Name=Dialogue-{{{Frame}}}-Awaken-Icon|Size=60|Unclickable=1}}</div>
         </div>
         <div class="information">
             <div id="header">Information</div>
@@ -20,11 +13,7 @@
         </div>
         <div class="speciality">
             <div id="header">Speciality</div>
-            <div id="content">
-                <ul>
-                    {{{Speciality|}}}
-                </ul>
-            </div>
+            <div id="content">{{{Speciality|}}}</div>
         </div>
         <div class="element">
             <div id="header">Element</div>
@@ -72,7 +61,7 @@
                         <div id="content">Review</div>
                     </div>
                     <!--  <div class="graph">{{Icon|Name={{{Graph File|}}}|Unclickable=1}}</div> -->
-                    <div id="graph">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=300|Category=1}}</div>
+                    <div id="graph">{{Icon|Name=Rank-{{{Rank|}}}-Icon|Size=300|Unclickable=1}}</div>
                     <div class="table" style="text-align: start; vertical-align: middle;">
                         <div class="HP">
                             <div id="header">HP</div>
@@ -126,6 +115,7 @@
         </div>
     </div>
 </div>
+</includeonly>
 
 <noinclude>
 == Detail ==

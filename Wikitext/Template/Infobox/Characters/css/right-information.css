@@ -30,8 +30,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "content;"
-        "header";
+        "header"
+        "content";
 }
 
 .information .class {
@@ -42,8 +42,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "content;"
-        "header";
+        "header"
+        "content";
 }
 
 .information .archetype {
@@ -54,8 +54,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "content;"
-        "header";
+        "header"
+        "content";
 }
 
 .information .signature-weapon {
@@ -66,8 +66,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "content;"
-        "header";
+        "header"
+        "content";
 }
 
 .information .army {
@@ -78,8 +78,8 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "content;"
-        "header";
+        "header"
+        "content";
 }
 
 .information .gift {
@@ -90,6 +90,6 @@
     grid-template-rows: calc(fit-content+4px) 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "content;"
-        "header";
+        "header"
+        "content";
 }
