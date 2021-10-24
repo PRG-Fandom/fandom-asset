@@ -1,13 +1,37 @@
 <includeonly>
 <div id="dialogue">
-    {{#ifeq: {{{Character|}}}|Narrator
-    |<div class="narrator">{{{Content 1|}}}</div>
-    |<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-    <div class="content">
-        <div class="character">{{{Character}}}</div>
-        <div class="text">{{{Content|}}}</div>
-    </div>
-    }}
+{{#ifeq: {{{Character|}}}|Narrator
+|<div class="narrator">{{{Content 1|}}}</div>
+|{{#if: {{{Choice 2|}}}|<tabs>
+<tab name="{{{Choice 1|}}}">
+<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 1|}}}</div>
+</div>
+</tab>
+<tab name="{{{Choice 2|}}}">
+<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 2|}}}</div>
+</div>
+</tab>
+{{#if: {{{Choice 3|}}}|<tab name="{{{Choice 3|}}}">
+<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 3|}}}</div>
+</div>
+</tab>}}
+</tabs>
+|<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 1|}}}</div>
+</div>
+}}
+}}
 </div>
 </includeonly>
 
@@ -18,7 +42,7 @@
 {{Dialogue
 |Character= <!--If The character is the Narrator, then you just have to use the Content 1-->
 |Frame=
-|+ <!--Fill for each choise available (no need to use Choice 1 if there is only one choice)-->
+|+ <!--Fill for each Choice available (no need to use Choice 1 if there is only one choice)-->
 |Choice 1=
 |Content 1=
 |Choice 2=
@@ -30,3 +54,51 @@
 
 [[Category:Template]]
 </noinclude>
+
+<!--
+Version 1.0
+<div id="dialogue"
+    <div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+    <div class="content">
+        <div class="character">{{{Character}}}</div>
+        <div class="text">{{{Content |}}}</div>
+    </div>
+    <div class="narrator">{{{Content 1|}}}</div>
+</div>
+
+Version 2.0
+<div id="dialogue">
+{{#ifeq: {{{Character|}}}|Narrator
+|<div class="narrator">{{{Content 1|}}}</div>
+|{{#if: {{{Choice 2|}}}|<tabs>
+<tab name="{{{Choice 1|}}}">
+<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 1|}}}</div>
+</div>
+</tab>
+<tab name="{{{Choice 2|}}}">
+<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 2|}}}</div>
+</div>
+</tab>
+{{#if: {{{Choice 3|}}}|<tab name="{{{Choice 3|}}}">
+<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 3|}}}</div>
+</div>
+</tab>}}
+</tabs>
+|<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+<div class="content">
+    <div class="character">{{{Character}}}</div>
+    <div class="text">{{{Content 1|}}}</div>
+</div>
+}}
+}}
+</div>
+-->
