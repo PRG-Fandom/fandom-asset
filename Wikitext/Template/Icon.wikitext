@@ -1,11 +1,11 @@
 <includeonly><!--
---><{{#if: {{{Icon}}}|span|div}} {{#if:{{{Unclickable}}}|class="disableClick"}}>[[File:{{{Name}}}.{{{Extension|png}}}|{{#if: {{{Icon}}}|5|{{{Size}}}}}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]</{{#if:{{{Icon}}}|span|div}}><!--
+--><{{#if: {{{Inline}}}|div|span}} {{#if:{{{Unclickable}}}||class="disableClick"}}>[[File:{{{Name}}}.{{{Extension|png}}}|{{#if: {{{Inline}}}|{{{Size}}}|12}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]</{{#if:{{{Inline}}}|div|span}}><!--
 --></includeonly>
 
 <noinclude>
 == Description ==
 Use this template to create an icon. <br />
-'''Size''' define the size in pixel of the icon. This parameter has a particular syntax: ''Height'' x ''Width''.<br />
+'''Size''' define the size in pixel of the icon. This parameter has a particular syntax: ''Height'' x ''Width''.<span style="font-weight: bolder; color: red">(It seems to not working right now).</span><br />
 <ul>
 <li> Each of them can be set seperately.</li>
 <li> If only one value is set, it will be for both height and width.</li>
@@ -17,10 +17,10 @@ Use this template to create an icon. <br />
 The size can also be choose using '''Size''', as well as it's alignement using '''Position''' (by default, it's ''centered'').<br />
 Finally, the image can be configure to redirect to a page: if '''Link''' has a value (anything), it will redirect to the page that has the same name as the file. Same for '''Category''': if this parameter has any value, then it will redirect to the Category.<br />
 <br />
-'''Icon''' is a preset made to add icon in the middle of a block of text. It sets the size to 5px.<br />
+'''Inline''' is a preset made to add icon in the middle of a block of text. It sets the size to 12px.<br />
 == Code ==
 <pre>
-{{icon|Icon=<!--Boolean-->|Name=|Extension=<!--Can stay empty (default: png)-->|Size=|Position=<!--Can stay empty (default: center)-->|Link=<!--Boolean-->|Category=<!--Boolean-->|Unclickable=<!--Boolean-->}}
+{{Icon|Inline=<!--Boolean-->|Name=|Extension=<!--Can stay empty (default: png)-->|Size=|Position=<!--Can stay empty (default: center)-->|Link=<!--Boolean-->|Category=<!--Boolean-->|Unclickable=<!--Boolean-->}}
 </pre>
 
 == Exemple ==
