@@ -1,119 +1,144 @@
 <includeonly>
-    == Skill Orb ==
-    <div class="custom-class-1">
-        <tabber>
-            Red Orb=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{Red Orb Description}}}
+<div class="custom-space_1"></div>
+<div class="custom-tab_1">
+<tabber>
+Red Orb=
+{{Skill Table|File=Skill-{{{Frame|}}}-Orb-Red|Title={{{Red Orb}}}
+|Details={{{Red Orb Detail}}}
+}}
 |-|
-            Blue Orb=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{Blue Orb Description}}}
+Yellow Orb=
+{{Skill Table|File=Skill-{{{Frame|}}}-Orb-Yellow|Title={{{Yellow Orb}}}
+|Details={{{Yellow Orb Detail}}}
+}}
 |-|
-            Yellow Orb=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{Yellow Orb Description}}}
-        </tabber>
+Blue Orb=
+{{Skill Table|File=Skill-{{{Frame|}}}-Orb-Blue|Title={{{Blue Orb}}}
+|Details={{{Blue Orb Detail}}}
+}}
+</tabber>
+</div>
 
-    == Abilities ==
-        <tabber>
-            Basic Attack=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to use the tabber name]|Size=60}}
-            {{{Basic Attack}}}
+<div class="custom-space_2"></div>
+<div class="custom-tab_1">
+<tabber>
+Basic Attack=
+{{Skill Table|File=Skill-Katana|Title={{{Basic}}}
+|Details={{{Basic Attack Detail}}}
+}}
 |-|
-            Ultimate Skill=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{Ultimate Attack}}}
-|-|
-            QTE=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{QTE Attack}}}
-|-|
-            Class-Specific Passive=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{#switch: [[Category:{{{Category}}}]]
-                |Attacker=Damage is increased by 10('''20''')%.
-                |Tank= Enemies take 10('''20''')% more damage when attacked by you, lasts for 5 seconds.
-                |Support= Increase healing effectiveness by 10('''20''')%.
-                |Compositer=Gain +10('''20''')% damage and 10('''20''')% HP worth of shield for 10s whenever the character enters the battle.
-                |Error: Please set a category for the character. 
-            }}
-            <!--Have to find a way to fill it depending of the Category of the character-->
-|-|
-            Awakening=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-When entering the battle, get 3 signal balls immediately (only once per battle). Needs to be unlocked.
-        </tabber>
+Signature=
+{{Skill Table|File=Skill-{{{Frame}}}-Signature|Title={{{Signature}}}
+|Details={{{Signature Detail}}}
+}}
 
-    == Passives ==
-        <tabber>
-            Core=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{Core Passive}}}
 |-|
-            Leader=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{Leader Passive}}}
+QTE=
+{{Skill Table|File=Skill-QTE|Title={{{QTE}}}
+|Details={{{QTE Detail}}}
+}}
 |-|
-            Passive I=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{I Passive}}}
+Class=
+{{Skill Table|File=Passive - {{{Frame}}} - Core|Title={{{Profession}}}
+|Details={{#switch: {{{Class}}}
+|Attacker = Extra DMG Bonus increases by <span style="color:#FF6549;">20%</span>.
+|Tank = Atacks lower the target's Extra DMG Reduction by <span style="color:#FF6549;">20%</span> for 5 seconds.
+|Support= Healing amount increases by <span style="color:#FF6549;">20%</span>.
+|Compositer=Gain +<span style="color:#FF6549;">20%</span> damage and <span style="color:#FF6549;">20%</span> HP worth of shield for 10s whenever the character enters the battle.
+|Error: Please set a category for the character. 
+}}
+}}
 |-|
-            Passive II=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{II Passive}}}
+Awakening=
+{{Skill Table|File=Skill-Awakening|Title=Ultima Awaken
+|Details= Gains 3 Signal Orbs when entering battle.
+}}
+</tabber>
+</div>
+
+<div class="custom-space_2"></div>
+<div class="custom-tab_1">
+<tabber>
+Core=
+{{Skill Table|File=Skill-{{{Frame|}}}-Passive-Core|Title={{{Core}}}
+|Details={{{Core Detail}}}
+|Core=1
+|Core Activation= {{{Core Activation}}}
+}}
 |-|
-            Passive III=
-            {{icon|Name=Skill_{{{Frame}}}_[Find a way to take the tabber name]|Size=60}}
-            {{{III Passive}}}
-        </tabber>
-    </div>
+Leader=
+{{Skill Table|File=Skill-{{{Frame|}}}-Passive-Leader|Title={{{Leader}}}
+|Details={{{Leader Detail}}}
+}}
+|-|
+SS Rank=
+{{Skill Table|File=Skill-{{{Frame|}}}-Passive-SS|Title={{{SS Rank}}}
+|Details={{{SS Rank Detail}}}
+}}
+|-|
+SSS Rank=
+{{Skill Table|File=Skill-{{{Frame|}}}-Passive-SSS|Title={{{SSS Rank}}}
+|Details={{{SSS Rank Detail}}}
+}}
+|-|
+SSS+ Rank=
+{{Skill Table|File=Skill-{{{Frame|}}}-Passive-SSS+|Title={{{SSS+ Rank}}}
+|Details={{{SSS+ Rank Detail}}}
+}}
+</tabber>
+</div>
+<div class="custom-space_3"></div>
 </includeonly>
-<noinclude>
-    == Description ==
-    This template is use to display the attacks, passives and orbs for each character. 
-    This template use the "Icon" template, so the image extension for the icons must be png.
-    
-    The template isn't finish yet:
-    First, I need to find a way for the template to auto-complete itself when it comes to the Icon template. He need to read his tabber title, and replace a parameter with it.
-    Second, using the category, auto-complete the "Core Passive" parameter.
 
-    == Parameters ==
-    <div style="text-align: center;">
-    Frame: Frame Name.
-    [Red;Blue;Yellow] Orb Description: Description and details on the orb attack.
-    Basic Attack: As the name suggest.
-    Ultimate Attack: Same.
-    QTE Attack: Same again.
-    Class Passive: Must be write right now, may not need to be in the futur.
-    Core Passive: Frame passive, must have a the icon schema too.
-    Leader Passive: As the name suggest.
-    I Passive: Passive unlock at S rank.
-    II Passive: Passive unlock at SS rank.
-    III Passive: Passive unlock at SSS rank.
-    </div>
-    == Code ==
-    <pr>
-        {{Character_Skill
-            |Frame=
-            |-
-            |Red Orb Description=
-            |Blue Orb Description=
-            |Yellow Orb Description=
-            |-
-            |Basic Attack=
-            |Ultimate Attack=
-            |QTE Attack=
-            |Class Passive= 
-                <!--Delete if patch found-->
-            |-
-            |Core Passive=
-            |Leader Passive=
-            |I Passive=
-            |II Passive=
-            |III Passive=
-        }}
-    </pr>
+<noinclude>
+== Description ==
+This template is set to display the attacks, passives and orbs of each character. 
+This template use the '''Skill Table''' template.
+
+For this template to work, pictures must follow the '''File Naming 101'''.
+Parameters not including ''Detail'' or ''Activation'' in their name are the passive/attack name. 
+Other Parameters are the details of such skills.
+''Core Activation'' is to explain how to trigger the core. Like ''Detail'', you can name 
+Finally, Class is a switch function which is case sensitive. The only possible choices are: Attacker, Tank, Support and Compositer. Using any other choise will result in a error message.
+
+=== Future Patch ===
+The template isn't finish yet:
+First, I need to find a way for the template to auto-complete itself when it comes to the Class: using the category, auto-complete the ''Class Specific'' parameter.
+
+== Code ==
+<pre>
+{{Character Skills
+|Frame=
+|Class= <!--Delete if patch found ; Attacker, Tank, Support, Compositer-->
+|Profession=
+|- <!--Orbs-->
+|Red Orb=
+|Red Orb Detail=
+|Yellow Orb=
+|Yellow Orb Detail=
+|Blue Orb=
+|Blue Orb Detail=
+|- <!--Abilities-->
+|Basic=
+|Basic Attack Detail=
+|Signature=
+|Signature Detail=
+|QTE=
+|QTE Detail=
+|- <!--Passives-->
+|Core=
+|Core Detail=
+|Core Activation=
+|Leader=
+|Leader Detail=
+|SS Rank=
+|SS Rank Detail=
+|SSS Rank=
+|SSS Rank Detail=
+|SSS+ Rank=
+|SSS+ Rank Detail=
+}}
+</pre>
 
 [[Category:Template]]
 </noinclude>
