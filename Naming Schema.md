@@ -20,15 +20,15 @@ Syntax: ```Skill-{Frame Name}-{Category}-{Title}```
 
 ### Exemple
 Lucia Lotus Specific Icons:
->- Skill-Lotus-Orb-Blue
->- Skill-Lotus-Orb-Red
->- Skill-Lotus-Orb-Yellow
->- Skill-Lotus-Passive-Core
->- Skill-Lotus-Passive-Leader
->- Skill-Lotus-Passive-SS
->- Skill-Lotus-Passive-SSS
->- Skill-Lotus-Passive-SSS+
->- Skill-Lotus-Signature
+> Skill-Lotus-Orb-Blue <br>
+> Skill-Lotus-Orb-Red <br>
+> Skill-Lotus-Orb-Yellow <br>
+> Skill-Lotus-Passive-Core <br>
+> Skill-Lotus-Passive-Leader <br>
+> Skill-Lotus-Passive-SS <br>
+> Skill-Lotus-Passive-SSS <br>
+> Skill-Lotus-Passive-SSS+ <br>
+> Skill-Lotus-Signature <br>
 
 ### Standard
 These are icons that will be applied for every characters.
@@ -89,3 +89,21 @@ Syntax: ```Weapon-Category-{Weapon}-Icon```
 - Scepter
 - CompositerChainSword
 - CollabBot
+
+---
+
+## Profile Icons
+Syntax: ```Dialogue-{Frame}-{Type}-Icon```
+
+**Frame** is the frame of the character. 
+
+
+**Type** is the type of icon we want:
+- Chibi
+- Awaken
+You can also let this parameter empty to display the default.
+
+### Exemple
+> Dialogue-Veritas-Chibi-Icon <br>
+> Dialogue-SilverFang-Icon <br>
+> Dialogue-Rozen-Icon-Icon <br>
