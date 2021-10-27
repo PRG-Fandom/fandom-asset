@@ -1,7 +1,52 @@
 <includeonly><!--
---><{{#if: {{{Inline}}}|div|span}} {{#if:{{{Unclickable}}}||class="disableClick"}}>[[File:{{{Name}}}.{{{Extension|png}}}|{{#if: {{{Inline}}}|{{{Size}}}|12}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]</{{#if:{{{Inline}}}|div|span}}><!--
+-->[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|}}}px|{{{Position|center}}}|{{#if: {{{Link}}}|<nowiki>|link=</nowiki>{{{Link}}}|}}{{#if: {{{Category}}}|<nowiki>|category=</nowiki>{{{Name}}}|}}|{{{Caption}}}]]<!--
 --></includeonly>
 
+<noinclude>
+== Description ==
+Use this template to create an icon. <br />
+<br />
+'''Name''' is to define the file name, it's extension can be set using '''Extension''' (by default, it's ''png'').<br />
+'''Size''' define the size in pixel of the icon. <br />
+It's alignement can be changed as well, using '''Position'''. By default, it is set to be ''centered'', but it can be changed to ''right'', ''left'' or ''none''. <br />
+A redirection to a page or a category can be configure using '''Link''' or '''Category'''. These parameters are optionnal. 
+<ul>
+<li> If '''Link''' is a space, you will not be able to open it (like what the <span style="text-decoration: underline;">disableClick</span> class do), else, it will redirect to the page or website.</li>
+<li> For '''Category''', you just have to set the category name.</li>
+</ul>
+'''Caption''' is to add a caption that will be displayed when hovering the image. This parameter is optionnal.<br />
+== Code ==
+<pre>
+{{Icon|Name=|Extension=<!--(default: png)-->|Size=|Position=<!--(default: center)-->|Link=<!--Optionnal-->|Category=<!--Optionnal-->|Caption=<!--Optionnal-->}}
+</pre>
+
+== Exemple ==
+<pre>{{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}</pre>>
+{{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}
+
+[[Category:Template]]
+</noinclude>
+
+
+
+
+
+
+
+
+
+<!--Backup-->
+1.0
+<!--This is bugged. Keep it here just in case-->
+[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Name}}}}}]]
+
+
+2.0
+{{#if:{{{Unclickable}}}||<span class="disableClick">}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}|{{#if:{{{Link|}}}|link={{#if:{{{Category}}}|Category:|}}{{{Link}}}}}]] {{#if:{{{Unclickable}}}||</span>}}
+
+
+2.1
+<includeonly><{{#if: {{{Inline}}}|div|span}} {{#if:{{{Unclickable}}}||class="disableClick"}}>[[File:{{{Name}}}.{{{Extension|png}}}|{{#if: {{{Inline}}}|{{{Size}}}|12}}px|{{{Position|center}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Link}}}}}]]</{{#if:{{{Inline}}}|div|span}}></includeonly>
 <noinclude>
 == Description ==
 Use this template to create an icon. <br />
@@ -26,20 +71,6 @@ Finally, the image can be configure to redirect to a page: if '''Link''' has a v
 == Exemple ==
 <pre>{{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}</pre>>
 {{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}
-
-[[Category:Template]]
 </noinclude>
 
-
-
-
-
-
-
-
-
-<!--Backup-->
-<includeonly>{{#if:{{{Unclickable}}}||<span class="disableClick">}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}|{{#if:{{{Link|}}}|link={{#if:{{{Category}}}|Category:|}}{{{Link}}}}}]] {{#if:{{{Unclickable}}}||</span>}}</includeonly>
-
-<!--This is bugged. Keep it here just in case-->
-[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Name}}}}}]]
+2.2
