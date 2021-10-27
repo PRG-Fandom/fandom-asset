@@ -1,0 +1,23 @@
+<includeonly>
+{| align="center" width="{{{Width|630px}}}" style="text-align:center; border:1px solid #494A5E;"
+|-
+| width="{{{Image Size|80px}}}" height="{{{Height|80px}}}" | {{Icon|Name={{{Image Name|Dialogue-Celica-Icon}}}|Size={{{Image Size|80px}}}|Unclickable=1}}
+| ''{{{Message}}}''
+|}
+</includeonly>
+<noinclude>
+== Information ==
+This template is Warning. It is made to notify the users/readers.
+
+'''Width''' is by default 630px, '''Height''' and '''Image Size''' are 80px (the same size as the image). 
+'''Image Name''' is set to be Dialogue-Celica-Icon, but it can be changed. 
+'''Message''' is the information you want to communicate to the user.
+== Code ==
+<pre>
+{{Warning|Width=|Height=|Image Size=|Image Name=|Message=}}
+</pre>
+
+== Exemple ==
+{{Warning|Message=Blip Blop, I'm a robot}}
+[[Category:Template]]
+</noinclude>
