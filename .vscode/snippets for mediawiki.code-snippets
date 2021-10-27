@@ -37,19 +37,27 @@
 
 	"Switch": {
 		"prefix": "switch",
-		"body": ["{{#switch: ${1:variable}", "|${2:Case 1}= ", "|#default= ${3| ,Error|}", "}}"],
+		"body": ["{{#switch: ${1:variable}", 
+			"|${2:Case 1}= ", 
+			"|#default= ${3| ,Error|}", 
+			"}}"],
 		"description": "To create a switch statement."
 	},
 
 	"Loop": {
 		"prefix": ["loop", "for"],
-		"body": ["{{#loop: ${1:variable}", "|${2:starting value}", "|${3:number of loop}", "|${4:content}", "}}"],
+		"body": ["{{#loop: ${1:variable}",
+			"|${2:starting value}",
+			"|${3:number of loop}",
+			"|${4:content}", 
+			"}}"],
 		"description": "To create a loop."
 	},
 
 	"While": {
 		"prefix": "while",
-		"body": ["{{#while: |${1:condition}", "|${2:content}}}"],
+		"body": ["{{#while: |${1:condition}",
+			"|${2:content}}}"],
 		"description": "To create a while."
 	}
 
