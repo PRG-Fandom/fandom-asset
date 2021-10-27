@@ -24,11 +24,22 @@ Finally, the image can be configure to redirect to a page: if '''Link''' has a v
 </pre>
 
 == Exemple ==
+<pre>{{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}</pre>>
 {{Icon|Name=Dialogue-Celica-Icon|Size=200x400|Position=left|Unclickable=1}}
 
 [[Category:Template]]
 </noinclude>
 
+
+
+
+
+
+
+
+
+<!--Backup-->
 <includeonly>{{#if:{{{Unclickable}}}||<span class="disableClick">}}[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}|{{#if:{{{Link|}}}|link={{#if:{{{Category}}}|Category:|}}{{{Link}}}}}]] {{#if:{{{Unclickable}}}||</span>}}</includeonly>
-<!--[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Name}}}}}]]
-This is bugged. Keep it here just in case-->
+
+<!--This is bugged. Keep it here just in case-->
+[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|40}}}px|{{{Position|}}}{{#if:{{{Link|}}}|link={{#if:{{{Category|}}}|Category:|}}{{{Name}}}}}]]
