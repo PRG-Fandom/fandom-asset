@@ -31,7 +31,7 @@ Lucia Lotus Specific Icons:
 > Skill-Lotus-Signature <br>
 
 ### Standard
-These are icons that will be applied for every characters.
+These are icons are for every characters.
 - Skill-Awakening
 - Skill-QTE
 - Skill-Katana (this is for basic attacks using katana)
@@ -101,9 +101,10 @@ Syntax: ```Dialogue-{Frame}-{Type}-Icon```
 **Type** is the type of icon we want:
 - Chibi
 - Awaken
-You can also let this parameter empty to display the default.
+
+You can also let this parameter empty to display the default icon.
 
 ### Exemple
-> Dialogue-Veritas-Chibi-Icon <br>
-> Dialogue-SilverFang-Icon <br>
-> Dialogue-Rozen-Icon-Icon <br>
+> Dialogue-Veritas-Chibi-Icon <br />
+> Dialogue-SilverFang-Icon <br />
+> Dialogue-Rozen-Icon-Icon <br />
