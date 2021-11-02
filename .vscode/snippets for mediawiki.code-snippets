@@ -16,6 +16,18 @@
 	// 	"description": "Log output to console"
 	// }
 
+// Preset
+	"": {
+		"prefix": "",
+		"body": "",
+		"description": ""
+	},
+
+// --------------------------------------------------------------------------
+
+/***************************************************
+*********             Variable             *********
+***************************************************/
 
 	"Variable": {
 		"prefix": "var",
@@ -24,15 +36,55 @@
 	},
 
 	"Define Variable": {
-		"prefix": "define var",
+		"prefix": "vardefine, define var",
 		"body": "{{#vardefine: ${1:variable name}|${2:specified value}}}",
 		"description": "Set a value for a variable."
 	},
+
+	"Variable Exist": {
+		"prefix": "varexist, exist",
+		"body": "{{#varexists: ${1:variable} | ${2:exist} | ${3:don't exist} }}",
+		"description": "Verify if a variable exists: by default, use boolean values."
+	},
+
 // --------------------------------------------------------------------------
+
+/****************************************************
+*********          Parser Function          *********
+****************************************************/
+
+	"Expression": {
+		"prefix": "expr",
+		"body": "{{#expr: ${1|ceil,floor|()} ${2:expression} ${3|round,trunc|} }",
+		"description": "Do a math calcul of an expression. Use round to set its max decimal value. Add trunc before to chop off the decimal. Use ceil() to round up to the largest integer ; use floor() for the opposite.",
+	},
+
+//======================
+//			If
+//======================
+
 	"If": {
 		"prefix": "if",
-		"body": "{{#if: ${1:variable}|${2:true}|${3:false}}}",
-		"description": "To create an if statement."
+		"body": "{{#if: ${1:variable} | ${2:not empty} | ${3:empty} }}",
+		"description": "Verify if a variable is not empty."
+	},
+
+	"If Compare": {
+		"prefix": "ifeq",
+		"body": "{{#ifeq: ${1:variable} | ${2:compare} | ${3:identique} | ${4:different} }}",
+		"description": "Compare variable."
+	},
+
+	"If Expression": {
+		"prefix": "ifexpr",
+		"body": "{{#ifexpr: ${1:expression} | ${2:true} | ${3:false} }}",
+		"description": "State if an expression is correct."
+	},
+
+	"If Exist": {
+		"prefix": "ifexist",
+		"body": "{{#ifexist: ${1:variable} | ${2:exist} | ${3:dont exist} }}",
+		"description": "Verify if something exist, like an expression or a page title."
 	},
 
 	"Switch": {
@@ -41,8 +93,13 @@
 			"|${2:Case 1}= ", 
 			"|#default= ${3| ,Error|}", 
 			"}}"],
-		"description": "To create a switch statement."
+		"description": "Switch statement. Default is if no case are verify."
 	},
+
+//========================
+//			Loop
+//========================
+
 
 	"Loop": {
 		"prefix": ["loop", "for"],
@@ -59,7 +116,74 @@
 		"body": ["{{#while: |${1:condition}",
 			"|${2:content}}}"],
 		"description": "To create a while."
-	}
+	},
+
+//========================
+//			Time
+//========================
+
+
+	"Time": {
+		"prefix": "time",
+		"body": "{{#time: ${1:format} | ${2:date/time object} | ${3:language} | ${4|0, 1|} }}",
+		"description": ""
+	},
+
+	
 
 // --------------------------------------------------------------------------
+
+/****************************************************
+*********          String Function          *********
+****************************************************/
+
+	"Length": {
+		"prefix": "len",
+		"body": "{{#len: ${string} }}",
+		"description": "Return the length of the string."
+	},
+
+	"Position": {
+		"prefix": "pos",
+		"body": "{{#pos: ${1:string} | ${2:search term} | ${3:offset} }}",
+		"description": "Return the position of the given search term. Offset (if specified) tells where he should start searching. Search term (if not found, return 0), return the position of the first."
+	},
+
+	"Last Position": {
+		"prefix": "rpos",
+		"body": " {{#rpos: ${1:string} | ${2:search term} }}",
+		"description": "Return the last position of the given search term. Search term (if not found, return -1), return the position of the last."
+	},
+
+	"Substring": {
+		"prefix": "sub",
+		"body": "{{#sub: ${1:string} | ${2:start} | ${3:length} }}",
+		"description": ""
+	},
+
+	"Count": {
+		"prefix": "count",
+		"body": "{{#count: ${1:string} | ${2:substring} }}",
+		"description": "Returns the number of times a given substring appears within the provided text. "
+	},
+
+	"Replace": {
+		"prefix": "replace",
+		"body": "{{#replace: ${1:string} | ${2:search term} | ${3:replacement term} }}",
+		"description": ""
+	},
+
+	"Explode": {
+		"prefix": "explode",
+		"body": "{{#explode: ${1:string} | ${2:delimiter} | ${3:position} | ${4:limit} }}",
+		"description": ""
+	},
+
+	"URL Decode": {
+		"prefix": "urldecode",
+		"body": "{{#urldecode: &{value} }}",
+		"description": ""
+	},
+
+
 }
