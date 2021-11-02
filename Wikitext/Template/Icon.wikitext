@@ -1,5 +1,5 @@
 <includeonly><!--
--->[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|}}}px|{{{Position|center}}}|{{#if: {{{Link}}}|<nowiki>|link=</nowiki>{{{Link}}}|}}{{#if: {{{Category}}}|<nowiki>|category=</nowiki>{{{Name}}}|}}|{{{Caption}}}]]<!--
+-->[[File:{{{Name}}}.{{{Extension|png}}}|{{{Size|}}}px|{{{Position|center}}}{{#if:"{{{Link|}}}"|{{!}}link={{{Link|}}}|}}{{#if:{{{Category|}}}|{{!}}category={{{Category}}}|}}{{#if:{{{Caption}}}|{{!}}{{{Caption|}}}|}}]]<!--
 --></includeonly>
 
 <noinclude>
