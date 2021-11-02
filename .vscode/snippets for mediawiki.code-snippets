@@ -183,4 +183,28 @@
 		"body": "{{#urldecode: &{value} }}",
 		"description": ""
 	},
+
+	// --------------------------------------------------------------------------
+
+/****************************************************
+*********          Custom Function          *********
+****************************************************/
+
+	"Tabber": {
+		"prefix": "tabber",
+		"body": ["<tabber>",
+			"${1:first tabber}=",
+			"${2:content}",
+			"|-|",
+			"</tabber>"],
+		"description": ""
+	},
+
+	"Tab": {
+		"prefix": "tab",
+		"body": ["<tabs>",
+			"<tab name=${1:tab name}>${2:content}</tab>",
+			"</tabs>"],
+		"description": "Create tabs. Works the same as Tabber."
+	},
 }
