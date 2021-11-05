@@ -1,0 +1,23 @@
+<includeonly>
+{{#loop: i
+|1
+|{{{Number}}}
+|[[File:Screenshot-{{{Frame}}}-{{{Coating}}}-{{#var: i}}}.png|170px|{{#var: i}}]]
+}}
+</includeonly>
+
+<noinclude>
+== Detail ==
+This template is ''Screenshot''. It was specificaly made for the coating screenshot.<br />
+It creates a slideshow gallery.<br />
+<br />
+'''Frame''' is the name of the frame. No space must be in the parameter.<br />
+'''Coating''' is the name of the coating. No space must be in the parameter.<br />
+'''Number''' is the number of screenshot taken.<br />
+== Code ==
+<pre>
+{{Screenshot|Number=|Frame=|Coating=}}
+</pre>
+
+[[Category:Template]]
+</noinclude>
