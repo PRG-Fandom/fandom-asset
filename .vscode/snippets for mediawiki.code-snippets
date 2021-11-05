@@ -207,4 +207,10 @@
 			"</tabs>"],
 		"description": "Create tabs. Works the same as Tabber."
 	},
+
+	"Icon": {
+		"prefix": "icon",
+		"body": "{{Icon|Name=${1:Name}|Extension=${2:Extension}|Size=${3:Size}|Position=${4:Position}|Link=${5:Link}|Category=${7:Category}|Caption=${8:Caption}}}",
+		"description": ""
+	},
 }
