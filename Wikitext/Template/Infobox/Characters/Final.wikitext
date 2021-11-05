@@ -119,6 +119,11 @@
 
 <noinclude>
 == Detail ==
+This template is the ''infobox'' for the '''Characters'''. This template is one <br />
+<br />
+'''Name''' is the character's name. '''Frame''' is the name of frame use by this character.<br />
+The '''Rarity''' is the one the character is by default: there is only 3 values possible: B, A or S.<br />
+The '''Class''' is the same as the character's 
 == Code ==
 <pre>
 {{Character-Infobox|
