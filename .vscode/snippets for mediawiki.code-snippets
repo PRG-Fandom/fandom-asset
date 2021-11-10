@@ -31,7 +31,7 @@
 
 	"Variable": {
 		"prefix": "var",
-		"body": "{{#var: ${variable name}}}",
+		"body": "{{#var: ${1:variable name}}}",
 		"description": "To set a variable"
 	},
 
@@ -55,7 +55,7 @@
 
 	"Expression": {
 		"prefix": "expr",
-		"body": "{{#expr: ${1|ceil,floor|()} ${2:expression} ${3|round,trunc|} }",
+		"body": "{{#expr: ${2:expression} ${3|round,trunc|} }",
 		"description": "Do a math calcul of an expression. Use round to set its max decimal value. Add trunc before to chop off the decimal. Use ceil() to round up to the largest integer ; use floor() for the opposite.",
 	},
 
