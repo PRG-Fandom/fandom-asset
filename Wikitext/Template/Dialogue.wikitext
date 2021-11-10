@@ -1,54 +1,112 @@
 <includeonly>
-<div id="dialogue">
-    {{#ifeq: {{{Character|}}}|Narrator
-    |<div id="narrator">{{{Content 1|}}}</div>
-    |<div id="character">
-        {{#ifeq: {{{Choice 2|}}}|1|<tabs>
-        <tab name="{{{Choice 1|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 1|}}}</div>
-        </div><!--
-        --></tab>
-        <tab name="{{{Choice 2|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 2|}}}</div>
-        </div><!--
-        --></tab>
-        {{#ifeq: {{{Choice 3|}}}|1|<tab name="{{{Choice 3|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 3|}}}</div>
-        </div><!--
-        --></tab>}}
-        </tabs>
-        |<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 1|}}}</div>
-        </div>
-        }}
+{{#css: :root {
+    --body-background-color: 11, 12, 14;
+}
+
+.dialogue {
+    display: grid;
+    min-height: 60px;
+    width: 90%;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(var(--body-background-color),0.25);
+}
+
+.dialogue#narrator {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+}
+
+.dialogue#character {
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "image content content"
+        "image content content";
+
+    align-content: center;
+    justify-content: center;
+}
+.dialogue#character .image {
+    grid-area: image;
+
+    display: inherit;
+}
+.dialogue#character .content {
+    grid-area: content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "title"
+        "text"
+        "text";
+
+    display: inherit;
+}
+.dialogue#character .content .title {
+    grid-area: title;
+
+    display: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-content: center;
+}
+.dialogue#character .content .text {
+    grid-area: text;
+
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+}}
+
+{{#vardefine: i|{{#if: {{{Choice 3|}}}|3|{{#if: {{{Choice 2|}}}|2|1}} }} }}
+
+{{#ifeq: {{{Character}}}|Narrator|<div class="dialogue" id="narrator">{{{Content 1|}}}</div>
+|{{#if: {{{Choice 1|}}}|<tabs>
+{{#loop: j|1|{{#var: i}}
+|<tab name="{{{Choice {{#var: j}}|}}}">
+<div class="dialogue" id="character">
+    <div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link={{{Character}}}: {{{Frame}}}}}</div>
+    <div class="content">
+        <div class="title">{{{Character|}}}</div>
+        <div class="text">{{{Content {{#var: j}}|}}}</div>
     </div>
-    }}
 </div>
+</tab>
+}}
+</tabs>
+}}|<div class="dialogue" id="character">
+    <div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link={{{Character}}}: {{{Frame}}}}}</div>
+    <div class="content">
+        <div class="title">{{{Character|}}}</div>
+        <div class="text">{{{Content {{#var: j}}|}}}</div>
+    </div>
+</div>
+}}
 </includeonly>
 
 <noinclude>
 == Description ==
-This template is __Gallery__. It is use to create the panel for a line of dialogue. <br />
-'''Character''' is the parameter for the name of the character. <br />
-'''Frame''' is the frame of the character. It is for the dialogue icon. <br />
+This is Dialogue. This template is use to set the layout for a dialogue, including ones with multiple choices. <br />
+This template dynamically change it's size, depending on the number of choices. <br />
 <br />
-'''Content''' is to write what the character said during the dialogue. <br />
-The '''Choice''' are if there is a dialogue option.
+'''Character''' and '''Frame''' are for the dialogue icon (it redirects to the frame page). The first one is the name while the second is the frame of the character.<br />
+This template has 2 different layout, a custom one if the '''Character''' is the ''Narrator'', and another one if it is any other ''Character''. Just write ''Narrator'' if it is him.<br />  
 <br />
-This template has 2 different layout, one if it is a ''Character'' and the other one if it is the ''Narrator''.<br />
-Just write ''Narrator'' if it is him.<br />  
-
+'''Choice''' is if there is a dialogue option. If there is more than a choice, choose the the corresponding number.<br />
+'''Content''' is to write what the character said during the dialogue. If there is more than a choice, choose the the corresponding number.<br />
+<br />
 == Code ==
 {{Dialogue
 |Character= <!--If The character is the Narrator, then you just have to use the Content 1-->
@@ -60,7 +118,7 @@ Just write ''Narrator'' if it is him.<br />
 |Content 2=
 |Choice 3=
 |Content 3=
-|}}
+}}
 == Exemple ==
 
 [[Category:Template]]
@@ -76,9 +134,9 @@ Version 1.0
     </div>
     <div class="narrator">{{{Content 1|}}}</div>
 </div>
+-->
 
-
-
+<!--
 Version 2.0
 <div id="dialogue">
 {{#ifeq: {{{Character|}}}|Narrator
@@ -114,34 +172,30 @@ Version 2.0
 }}
 }}
 </div>
+-->
 
+<!--
 Version 2.1
 <div id="dialogue">
     {{#ifeq: {{{Character|}}}|Narrator
     |<div id="narrator">{{{Content 1|}}}</div>
-    |<div id="character">
+    |<div id="character" >
         {{#ifeq: {{{Choice 2|}}}|1|<tabs>
-        <tab name="{{{Choice 1|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+        <tab name="{{{Choice 1|}}}"><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
         <div class="content">
             <div class="character">{{{Character}}}</div>
             <div class="text">{{{Content 1|}}}</div>
-        </div><!--
-        --></tab>
-        <tab name="{{{Choice 2|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+        </div></tab>
+        <tab name="{{{Choice 2|}}}"><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
         <div class="content">
             <div class="character">{{{Character}}}</div>
             <div class="text">{{{Content 2|}}}</div>
-        </div><!--
-        --></tab>
-        {{#ifeq: {{{Choice 3|}}}|1|<tab name="{{{Choice 3|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+        </div></tab>
+        {{#ifeq: {{{Choice 3|}}}|1|<tab name="{{{Choice 3|}}}"><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
         <div class="content">
             <div class="character">{{{Character}}}</div>
             <div class="text">{{{Content 3|}}}</div>
-        </div><!--
-        --></tab>}}
+        </div></tab>}}
         </tabs>
         |<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
         <div class="content">
@@ -152,4 +206,25 @@ Version 2.1
     </div>
     }}
 </div>
+-->
+
+<!--
+Version 4.0
+{{#vardefine: i|{{#if: {{{Content 3|}}}|3|{{#if: {{{Content 2|}}}|2|1}} }} }}
+
+{{#ifeq: {{{Character}}}|Narrator|<div class="dialogue" id="narrator">{{{Content 1|}}}</div>
+|<tabs>
+{{#loop: j|1|{{#var: i}}
+|<tab name="{{{Choice {{#var: j}}|}}}">
+<div class="dialogue" id="character">
+    <div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link={{{Character}}}: {{{Frame}}}}}</div>
+    <div class="content">
+        <div class="title">{{{Character|}}}</div>
+        <div class="text">{{{Content {{#var: j}}|}}}</div>
+    </div>
+</div>
+</tab>
+}}
+</tabs>
+}}
 -->
