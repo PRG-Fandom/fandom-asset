@@ -1,7 +1,3 @@
-/*************************************************************************/
-body {
-    font-family: 'Barlow', sans-serif !important;
-}
 /*This drawer is composed of class used to set a translucid background. Background color are coded into hex.
 rgba(red, green, blue, opacity (in decimal 10%->0.1));
 */
