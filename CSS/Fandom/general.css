@@ -1,6 +1,6 @@
 /*************************************************************************/
 * {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', sans-serif !important;
     src: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/5/56/Barlow-Medium.ttf) format("woff2"),
 }
 
