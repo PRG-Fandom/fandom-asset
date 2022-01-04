@@ -1,8 +1,14 @@
+/*************************************************************************/
+* {
+    font-family: 'Barlow', sans-serif;
+    src: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/5/56/Barlow-Medium.ttf) format("woff2"),
+}
+
 /*This drawer is composed of class used to set a translucid background. Background color are coded into hex.
 rgba(red, green, blue, opacity (in decimal 10%->0.1));
 */
 .transparent30 {
-    background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .transparent80 {
