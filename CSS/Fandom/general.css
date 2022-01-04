@@ -1,15 +1,3 @@
-.main-container {
-    margin-left: 0;
-    width: 100%;
-}
-
-/* stretch main page to compensate for the lack of global nav */
-.global-navigation {
-    display: none;
-}
-
-/* remove global nav completely*/
-
 /*This drawer is composed of class used to set a translucid background. Background color are coded into hex.
 rgba(red, green, blue, opacity (in decimal 10%->0.1));
 */
@@ -42,3 +30,86 @@ rgba(red, green, blue, opacity (in decimal 10%->0.1));
 .disableClick {
     pointer-events: none;
 }
+
+/*************************************************************************/
+@font-face {
+    font-family: 'Barlow', sans-serif;
+    src: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/5/56/Barlow-Medium.ttf) format("woff2"),
+    }
+.archer {
+	height:100%;
+	width:85px;
+	display:inline-grid;
+	margin:0 3px 0 3px;
+	font-family: 'Barlow', sans-serif;
+	text-align:center;
+}
+.rin-, .rin-1, .rin-2, .rin-3, .rin-4, .rin-5, .rin-6 {
+	position:relative;
+	background-color:#9c144c;
+    display: inline-flex;
+	border:1px #FFF solid;
+	border-radius: 10px;
+	height:100px;
+	width:85px;
+	overflow: hidden;
+}
+.rin-:hover, .rin-1:hover, .rin-2:hover, .rin-3:hover, .rin-4:hover, .rin-5:hover, .rin-6:hover {
+	border-color:#919191;
+}
+
+.rin-6 .ishtar:after {
+    background-image: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/c/c9/UI-Supply-6Star.png);
+}
+.rin-5 .ishtar:after{
+    background-image: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/4/4e/UI-Supply-5Star.png);
+}
+.rin-4 .ishtar:after {
+    background-image: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/1/1a/UI-Supply-4Star.png);
+}
+.rin-3 .ishtar:after {
+    background-image: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/c/cd/UI-Supply-3Star.png);
+}
+.rin-2 .ishtar:after {
+    background-image: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/d/d9/UI-Supply-2Star.png);
+}
+.rin-1 .ishtar:after {
+    background-image: url(https://static.wikia.nocookie.net/punishing-gray-raven/images/8/8b/UI-Supply-1Star.png);
+}
+.ishtar img{
+	border:none;
+	height:100%;
+	width:100%;
+	object-fit: cover;
+    object-position: center center;
+}
+.rin-1 .ishtar:after, .rin-2 .ishtar:after, .rin-3 .ishtar:after, .rin-4 .ishtar:after, .rin-5 .ishtar:after, .rin-6 .ishtar:after {
+    content: "";
+    background-size: 70%, auto, contain;
+    background-position: bottom 10% left 10%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+.fate {
+	background-color: #000;
+	opacity:0.7;
+	font-size:0.7em;
+	color:#FFF;
+	position:absolute;
+	z-index:2;
+	margin: 5px 0 0 7px;
+	padding: 5px 0 0 0;
+    height:20px;
+    width:18px;
+    border-radius: 3px;
+    pointer-events: none;
+}
+.babylonia {
+	line-height: 1.1;
+}
+*/
