@@ -1,155 +1,191 @@
 <includeonly>
-<div id="dialogue">
-    {{#ifeq: {{{Character|}}}|Narrator
-    |<div id="narrator">{{{Content 1|}}}</div>
-    |<div id="character">
-        {{#ifeq: {{{Choice 2|}}}|1|<tabs>
-        <tab name="{{{Choice 1|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 1|}}}</div>
-        </div><!--
-        --></tab>
-        <tab name="{{{Choice 2|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 2|}}}</div>
-        </div><!--
-        --></tab>
-        {{#ifeq: {{{Choice 3|}}}|1|<tab name="{{{Choice 3|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 3|}}}</div>
-        </div><!--
-        --></tab>}}
-        </tabs>
-        |<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 1|}}}</div>
-        </div>
-        }}
-    </div>
-    }}
+{{#css:
+.dialogue {
+    display: grid;
+    min-height: 60px;
+    width: 90%;
+    margin-bottom: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dialogue#narrator {
+    display: grid;
+    align-content: center;
+    background-color: #4b0e21;
+    color: white;
+    vertical-align: middle;
+}
+.dialogue#character {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 60px 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "image content"
+        ".     content";
+    align-content: center;
+    justify-content: center;
+    background-color: #0c0c0c;
+}
+.dialogue#character .image {
+    grid-area: image;
+    background-color: black;
+    display: block;
+}
+.dialogue#character .image img#profile {
+    opacity: 0.7;
+    position: absolute;
+}
+.dialogue#character .image img#connection {
+    width: 60px;
+    position: relative;
+    z-index: 1;
+    image-rendering: pixelated;
+    top: 51px;
+}
+.dialogue#character .content {
+    grid-area: content;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "title"
+        "text";
+    display: inherit;
+    padding: 10px;
+}
+.dialogue#character .content .title {
+    grid-area: title;
+    display: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-content: center;
+    color: #7e7e7e;
+}
+.dialogue#character .content .text {
+    grid-area: text;
+
+    display: inherit;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+}}
+
+{{#if:{{{Choice 2|}}}|<tabber>
+{{{Choice 1|}}}=
+{{#ifeq: {{{Character 1}}}|Narrator|<div class="dialogue" id="narrator">
+<div style="padding: 15px">{{{Text 1|Empty Head}}}</div>
 </div>
+|<div class="dialogue" id="character">
+<div class="image">
+<div id="profile">[[File:Dialogue-{{{Frame 1|}}}-Icon.png]]</div>
+<div id="connection">[[File:Dialogue-Connecting.png]]</div>
+</div>
+<div class="content">
+<div class="title">{{{Character 1}}}</div>
+<div class="text">{{{Text 1|Empty Head}}}</div>
+</div></div>}}
+|-|
+{{{Choice 2|}}}=
+{{#ifeq: {{{Character 2|}}}|Narrator|<div class="dialogue" id="narrator">
+<div style="padding: 15px">{{{Text 2|Empty Head}}}</div>
+</div>
+|<div class="dialogue" id="character">
+<div class="image">
+<div id="profile">[[File:Dialogue-{{{Frame 2|}}}-Icon.png]]</div>
+<div id="connection">[[File:Dialogue-Connecting.png]]</div>
+</div>
+<div class="content"><div class="title">{{{Character 2|}}}</div>
+<div class="text">{{{Text 2|Empty Head}}}</div></div></div>}}
+{!}{!}#if: {{{Choice 3|}}}||-|
+{{{Choice 3|}}}=
+{{#ifeq: {{{Character 3|}}}|Narrator|<div class="dialogue" id="narrator">
+<div style="padding: 15px">{{{Text 3|Empty Head}}}</div>
+</div>
+|<div class="dialogue" id="character">
+<div class="image">
+<div id="profile">[[File:Dialogue-{{{Frame 3|}}}-Icon.png]]</div>
+<div id="connection">[[File:Dialogue-Connecting.png]]</div>
+</div>
+<div class="content">
+<div class="title">{{{Character 3|}}}</div>
+<div class="text">{{{Text 3|Empty Head}}}</div>
+</div></div>}}|{!}{!}
+</tabber>
+|{{#ifeq: {{{Character 1}}}|Narrator|<div class="dialogue" id="narrator">
+<div style="padding: 15px">{{{Text 1|Empty Head}}}</div>
+</div>
+|<div class="dialogue" id="character">
+<div class="image">
+<div id="profile">[[File:Dialogue-{{{Frame 1|}}}-Icon.png]]</div>
+<div id="connection">[[File:Dialogue-Connecting.png]]</div>
+</div>
+<div class="content">
+<div class="title">{{{Character 1|}}}</div>
+<div class="text">{{{Text 1|Empty Head}}}</div>
+</div></div>}}
+}}
 </includeonly>
 
 <noinclude>
 == Description ==
-This template is __Gallery__. It is use to create the panel for a line of dialogue. <br />
-'''Character''' is the parameter for the name of the character. <br />
-'''Frame''' is the frame of the character. It is for the dialogue icon. <br />
+This is Dialogue. This template is use to generate the layout for the dialogues, even the one with multiple choices. <br />
 <br />
-'''Content''' is to write what the character said during the dialogue. <br />
-The '''Choice''' are if there is a dialogue option.
+'''Character''' and '''Frame''' are for the dialogue icon. The first one is the name while the second is the frame of the character. If the character who is speaking is us, then the character name should be ''Narrator''.<br />
+'''Text''' is to write what the corresponding character is saying.<br />
 <br />
-This template has 2 different layout, one if it is a ''Character'' and the other one if it is the ''Narrator''.<br />
-Just write ''Narrator'' if it is him.<br />  
+'''Choice''' are the dialogue option we can choose during these dialogues. For each '''Choice''' the player can make, the '''Character''', '''Frame''' and '''Text''' must be set (by default, ''choice 2'' and ''3'' use ''choice 1'' character and frame).<br />  
+<br />
 
+<br />
 == Code ==
+<pre>
 {{Dialogue
-|Character= <!--If The character is the Narrator, then you just have to use the Content 1-->
-|Frame=
-|+ <!--Fill for each Choice available (no need to use Choice 1 if there is only one choice)-->
-|Choice 1=
-|Content 1=
-|Choice 2=
-|Content 2=
-|Choice 3=
-|Content 3=
-|}}
+|Character 1= 
+|Frame 1= 
+|Text 1=
+|+
+|Character 2= 
+|Frame 2= 
+|Text 2=
+|+
+|Character 3= 
+|Frame 3= 
+|Text 3=
+|+
+}}
+</pre>
 == Exemple ==
-
-[[Category:Template]]
+{{Dialogue
+|Character 1=Narrator
+|Frame 1=
+|Text 1=I hope it works
+}}
+{{Dialogue
+|Character 1=Lucia
+|Frame 1=Lotus
+|Text 1=I will fight Alpha and I'm gonna win !
+}}
 </noinclude>
 
 <!--
-Version 1.0
-<div id="dialogue"
-    <div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
+    Character's Line
+<div class="dialogue" id="character">
+    <div class="image">
+        <img id="profile">[[File:Dialogue-{{{Frame 1}}}-Icon.png]]</img>
+        <img id="connection">[[File:Dialogue-Connection.png]]</img>
+    </div>
     <div class="content">
-        <div class="character">{{{Character}}}</div>
-        <div class="text">{{{Content |}}}</div>
+        <div class="title">{{{Character 1|Narrator}}}</div>
+        <div class="text">{{{Text 1|Empty Head}}}</div>
     </div>
-    <div class="narrator">{{{Content 1|}}}</div>
 </div>
 
-
-
-Version 2.0
-<div id="dialogue">
-{{#ifeq: {{{Character|}}}|Narrator
-|<div class="narrator">{{{Content 1|}}}</div>
-|{{#if: {{{Choice 2|}}}|<tabs>
-<tab name="{{{Choice 1|}}}">
-<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-<div class="content">
-    <div class="character">{{{Character}}}</div>
-    <div class="text">{{{Content 1|}}}</div>
-</div>
-</tab>
-<tab name="{{{Choice 2|}}}">
-<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-<div class="content">
-    <div class="character">{{{Character}}}</div>
-    <div class="text">{{{Content 2|}}}</div>
-</div>
-</tab>
-{{#if: {{{Choice 3|}}}|<tab name="{{{Choice 3|}}}">
-<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-<div class="content">
-    <div class="character">{{{Character}}}</div>
-    <div class="text">{{{Content 3|}}}</div>
-</div>
-</tab>}}
-</tabs>
-|<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-<div class="content">
-    <div class="character">{{{Character}}}</div>
-    <div class="text">{{{Content 1|}}}</div>
-</div>
-}}
-}}
-</div>
-
-Version 2.1
-<div id="dialogue">
-    {{#ifeq: {{{Character|}}}|Narrator
-    |<div id="narrator">{{{Content 1|}}}</div>
-    |<div id="character">
-        {{#ifeq: {{{Choice 2|}}}|1|<tabs>
-        <tab name="{{{Choice 1|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 1|}}}</div>
-        </div><!--
-        --></tab>
-        <tab name="{{{Choice 2|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 2|}}}</div>
-        </div><!--
-        --></tab>
-        {{#ifeq: {{{Choice 3|}}}|1|<tab name="{{{Choice 3|}}}"><!--
-        --><div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 3|}}}</div>
-        </div><!--
-        --></tab>}}
-        </tabs>
-        |<div class="image">{{Icon|Name=Dialogue-{{{Frame}}}-Icon|Size=60|Link=1}}</div>
-        <div class="content">
-            <div class="character">{{{Character}}}</div>
-            <div class="text">{{{Content 1|}}}</div>
-        </div>
-        }}
-    </div>
-    }}
+    Commander's Line
+<div class="dialogue" id=Narrator>
+    <div style="padding: 15px"></div>
 </div>
 -->
