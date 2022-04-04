@@ -1,4 +1,3 @@
-<includeonly>
 {{#css:
 .dialogue {
     display: grid;
@@ -31,6 +30,7 @@
     grid-area: image;
     background-color: black;
     display: block;
+    pointer-events: none;
 }
 .dialogue#character .image img#profile {
     opacity: 0.7;
@@ -73,9 +73,9 @@
     color: white;
 }
 }}
-
-{{#if:{{{Choice 2|}}}|<tabber>
-{{{Choice 1|}}}=
+<includeonly>
+{{#if:{{{Choice 2|}}}|{{#tag:tabber|
+{{{Choice 1|}}} =
 {{#ifeq: {{{Character 1}}}|Narrator|<div class="dialogue" id="narrator">
 <div style="padding: 15px">{{{Text 1|Empty Head}}}</div>
 </div>
@@ -88,8 +88,8 @@
 <div class="title">{{{Character 1}}}</div>
 <div class="text">{{{Text 1|Empty Head}}}</div>
 </div></div>}}
-|-|
-{{{Choice 2|}}}=
+{{!}}-{{!}}
+{{{Choice 2|}}} =
 {{#ifeq: {{{Character 2|}}}|Narrator|<div class="dialogue" id="narrator">
 <div style="padding: 15px">{{{Text 2|Empty Head}}}</div>
 </div>
@@ -100,8 +100,8 @@
 </div>
 <div class="content"><div class="title">{{{Character 2|}}}</div>
 <div class="text">{{{Text 2|Empty Head}}}</div></div></div>}}
-{!}{!}#if: {{{Choice 3|}}}||-|
-{{{Choice 3|}}}=
+{{#if: {{{Choice 3|}}}|{{!}}-{{!}}
+{{{Choice 3|}}} =
 {{#ifeq: {{{Character 3|}}}|Narrator|<div class="dialogue" id="narrator">
 <div style="padding: 15px">{{{Text 3|Empty Head}}}</div>
 </div>
@@ -113,9 +113,7 @@
 <div class="content">
 <div class="title">{{{Character 3|}}}</div>
 <div class="text">{{{Text 3|Empty Head}}}</div>
-</div></div>}}|{!}{!}
-</tabber>
-|{{#ifeq: {{{Character 1}}}|Narrator|<div class="dialogue" id="narrator">
+</div></div>}}|}}}}|{{#ifeq: {{{Character 1}}}|Narrator|<div class="dialogue" id="narrator">
 <div style="padding: 15px">{{{Text 1|Empty Head}}}</div>
 </div>
 |<div class="dialogue" id="character">
@@ -126,9 +124,7 @@
 <div class="content">
 <div class="title">{{{Character 1|}}}</div>
 <div class="text">{{{Text 1|Empty Head}}}</div>
-</div></div>}}
-}}
-</includeonly>
+</div></div>}}}}</includeonly>
 
 <noinclude>
 == Description ==
@@ -139,53 +135,64 @@ This is Dialogue. This template is use to generate the layout for the dialogues,
 <br />
 '''Choice''' are the dialogue option we can choose during these dialogues. For each '''Choice''' the player can make, the '''Character''', '''Frame''' and '''Text''' must be set (by default, ''choice 2'' and ''3'' use ''choice 1'' character and frame).<br />  
 <br />
-
-<br />
 == Code ==
 <pre>
 {{Dialogue
-|Character 1= 
-|Frame 1= 
+|Choice 1=
+|Character 1=
+|Frame 1=
 |Text 1=
 |+
-|Character 2= 
-|Frame 2= 
+|Choice 2=
+|Character 2=
+|Frame 2=
 |Text 2=
 |+
-|Character 3= 
-|Frame 3= 
+|Choice 3=
+|Character 3=
+|Frame 3=
 |Text 3=
-|+
 }}
 </pre>
+<br />
 == Exemple ==
 {{Dialogue
-|Character 1=Narrator
-|Frame 1=
-|Text 1=I hope it works
+|Choice 1= Lv1
+|Character 1= Lucia
+|Frame 1= Lotus
+|Text 1= I will defeat my edgy side!
+|+
+|Choice 2= Lv2
+|Character 2= Lucia
+|Frame 2= CrimsonAbyss
+|Text 2= ''Draw Yamato'' Lol no
+|+
+|Choice 3= Lv3
+|Character 3= Lucia
+|Frame 3= Plume
+|Text 3= I'm back bi**h
 }}
 {{Dialogue
-|Character 1=Lucia
-|Frame 1=Lotus
-|Text 1=I will fight Alpha and I'm gonna win !
+|Character 1=Narrator
+|Text 1=WTF
 }}
-</noinclude>
+[[Category:Template]]</noinclude>
 
 <!--
     Character's Line
 <div class="dialogue" id="character">
-    <div class="image">
-        <img id="profile">[[File:Dialogue-{{{Frame 1}}}-Icon.png]]</img>
-        <img id="connection">[[File:Dialogue-Connection.png]]</img>
-    </div>
-    <div class="content">
-        <div class="title">{{{Character 1|Narrator}}}</div>
-        <div class="text">{{{Text 1|Empty Head}}}</div>
-    </div>
+<div class="image">
+<img id="profile">[[File:Dialogue-{{{Frame}}}-Icon.png]]</img>
+<img id="connection">[[File:Dialogue-Connecting.png]]</img>
+</div>
+<div class="content">
+<div class="title">{{{Character 1|}}}</div>
+<div class="text">{{{Text 1|Empty Head}}}</div>
+</div>
 </div>
 
     Commander's Line
 <div class="dialogue" id=Narrator>
-    <div style="padding: 15px"></div>
+<div style="padding: 15px"></div>
 </div>
 -->
